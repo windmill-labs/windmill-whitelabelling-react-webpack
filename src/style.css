@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  *,
+  ::before,
+  ::after {
+    @apply dark:border-gray-600;
+  }
+
+  @font-face {
+    font-family: "Inter";
+    src: url("./Inter-Variable.ttf");
+    font-weight: 100 900;
+    font-display: swap;
+  }
+
+  .splitpanes--vertical > .splitpanes__pane {
+    transition: none !important;
+  }
+
+  .splitpanes--horizontal > .splitpanes__pane {
+    transition: none !important;
+  }
+
+  .monaco-workbench > .notifications-toasts.visible {
+    display: none !important;
+  }
+
+  .nowrap pre code.hljs {
+    whitespace: normal !important;
+  }
+
+  .z5000 {
+    z-index: 5000 !important;
+  }
+
+  pre code.hljs {
+    overflow: visible !important;
+  }
+
+  svelte-virtual-list-row {
+    overflow: visible !important;
+  }
+
+  svelte-virtual-list-contents > * + * {
+    border-top-width: 1px !important;
+    border-bottom-width: 0px !important;
+  }
+
+  .monaco-editor textarea:focus {
+    box-shadow: none !important;
+  }
+
+  .Template-editor span.mtk20 {
+    color: black !important;
+  }
+
+  ::-webkit-scrollbar {
+    width: 9px;
+    height: 9px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(155, 155, 155, 0.5);
+    border: transparent;
+  }
+}
+
+@layer components {
+  /* Flow graph viewer -> Svelvet library internal class overwrite */
+  .Node {
+    display: flex !important;
+  }
+}
