@@ -6,6 +6,7 @@ UserService.login({
 }).then(() => {
   console.log("Logged in as");
 });
+
 export default function App() {
   return (
     <div className="p-2 border border-black embedded">

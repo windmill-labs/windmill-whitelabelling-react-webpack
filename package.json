@@ -2,6 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://windmill-labs.github.io/windmill-whitelabelling-react-webpack",
   "dependencies": {
     "@windmill-labs/windmill-react-sdk": "^1.305.4",
     "lucide-svelte": "^0.367.0",
