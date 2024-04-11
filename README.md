@@ -1,5 +1,7 @@
 # Windmill React App Whitelabelling
 
+[Demo](https://windmill-labs.github.io/windmill-whitelabelling-react-webpack)
+
 This project demonstrates how Windmill can be whitelabelled in a react app using
 webpack.
 
