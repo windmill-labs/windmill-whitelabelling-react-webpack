@@ -7,7 +7,7 @@ jobs:
   publish:
     runs-on: ubicloud-standard-16
     permissions:
-      contents: read
+      contents: write
       deployments: write
     name: Publish to Cloudflare Pages
     steps:
