@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@windmill-labs/windmill-react-sdk": "^1.163.2",
+    "@windmill-labs/windmill-react-sdk": "^1.305.4",
+    "lucide-svelte": "^0.367.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -21,12 +22,12 @@
     "style-loader": "^4.0.0",
     "tailwindcss": "^3.4.3",
     "webpack": "^5.91.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.2"
+    "webpack-cli": "^5.1.4"
   },
   "proxy": "http://localhost:8000",
   "scripts": {
     "start": "react-scripts start",
+    "postinstall": "cp -r node_modules/@windmill-labs/windmill-react-sdk/dist/assets public",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },

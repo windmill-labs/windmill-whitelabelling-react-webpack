@@ -70,6 +70,10 @@
   }
 }
 
+iframe {
+  display: none;
+}
+
 @layer components {
   /* Flow graph viewer -> Svelvet library internal class overwrite */
   .Node {
