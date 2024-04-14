@@ -148,6 +148,21 @@ export default function App() {
           <>
             {componentType === "flowbuilder" && (
               <FlowBuilder
+                onDeploy={async (path) => {
+                  setPath(path);
+                  await getPaths(componentType, workspace);
+                }}
+                onDetails={async (path) => {
+                  console.log("details", path);
+                }}
+                onSaveDraftOnlyAtNewPath={async (path, selectedId) => {
+                  setPath(path);
+                  await getPaths(componentType, workspace);
+                }}
+                onSaveInitial={async (path) => {
+                  setPath(path);
+                  await getPaths(componentType, workspace);
+                }}
                 newFlow={path === ""}
                 initialPath={path}
                 key={path}
