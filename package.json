@@ -4,11 +4,13 @@
   "private": true,
   "homepage": "https://windmill-labs.github.io/windmill-whitelabelling-react-webpack",
   "dependencies": {
-    "@windmill-labs/windmill-react-sdk": "^1.305.8",
+    "@windmill-labs/windmill-react-sdk": "^1.306.12",
     "lucide-svelte": "^0.367.0",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
-    "react-scripts": "5.0.1"
+    "react-scripts": "5.0.1",
+    "windmill-client": "^1.306.3",
+    "windmill-components": "^1.306.13"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
@@ -26,7 +28,6 @@
   "proxy": "http://localhost:8000",
   "scripts": {
     "start": "react-scripts start",
-    "postinstall": "cp -r node_modules/@windmill-labs/windmill-react-sdk/dist/assets public",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },

@@ -9,12 +9,17 @@ import { OpenAPI as ClientOpenAPI } from "windmill-client";
 import { OpenAPI as ComponentsOpenAPI } from "windmill-components/gen/core/OpenAPI";
 import App from "./App";
 
-ClientOpenAPI.BASE = "/api";
-ClientOpenAPI.CREDENTIALS = "include";
-ClientOpenAPI.WITH_CREDENTIALS = true;
-ComponentsOpenAPI.BASE = "/api";
-ComponentsOpenAPI.CREDENTIALS = "include";
-ComponentsOpenAPI.WITH_CREDENTIALS = true;
+function initializeClients() {
+  ClientOpenAPI.BASE = "/api";
+  ClientOpenAPI.CREDENTIALS = "include";
+  ClientOpenAPI.WITH_CREDENTIALS = true;
+
+  ComponentsOpenAPI.BASE = ClientOpenAPI.BASE;
+  ComponentsOpenAPI.CREDENTIALS = ClientOpenAPI.CREDENTIALS;
+  ComponentsOpenAPI.WITH_CREDENTIALS = ClientOpenAPI.WITH_CREDENTIALS;
+}
+
+initializeClients();
 
 // react 18
 // let react = ReactDOM.createRoot(document.getElementById("root"));
