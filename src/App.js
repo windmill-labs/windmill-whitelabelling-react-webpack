@@ -96,6 +96,7 @@ export default function App() {
               disabled={!whoami}
               value={workspace}
               onChange={async (e) => {
+                setPath("");
                 setWorkspace(e.target.value);
                 switchWorkspace(e.target.value);
                 await getPaths(componentType, e.target.value);
