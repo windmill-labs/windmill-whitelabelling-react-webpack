@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/windmill-whitelabelling-react-webpack/static/css/main.fda707e3.css",
-    "main.js": "/windmill-whitelabelling-react-webpack/static/js/main.653c4094.js",
+    "main.js": "/windmill-whitelabelling-react-webpack/static/js/main.aadda5b8.js",
     "static/js/964.4cb3897c.chunk.js": "/windmill-whitelabelling-react-webpack/static/js/964.4cb3897c.chunk.js",
     "static/js/408.57d44915.chunk.js": "/windmill-whitelabelling-react-webpack/static/js/408.57d44915.chunk.js",
     "static/js/745.470e8e64.chunk.js": "/windmill-whitelabelling-react-webpack/static/js/745.470e8e64.chunk.js",
@@ -25,7 +25,7 @@
     "static/media/Inter-Variable.ttf": "/windmill-whitelabelling-react-webpack/static/media/Inter-Variable.aadb65ac45347ff46699.ttf",
     "index.html": "/windmill-whitelabelling-react-webpack/index.html",
     "main.fda707e3.css.map": "/windmill-whitelabelling-react-webpack/static/css/main.fda707e3.css.map",
-    "main.653c4094.js.map": "/windmill-whitelabelling-react-webpack/static/js/main.653c4094.js.map",
+    "main.aadda5b8.js.map": "/windmill-whitelabelling-react-webpack/static/js/main.aadda5b8.js.map",
     "964.4cb3897c.chunk.js.map": "/windmill-whitelabelling-react-webpack/static/js/964.4cb3897c.chunk.js.map",
     "408.57d44915.chunk.js.map": "/windmill-whitelabelling-react-webpack/static/js/408.57d44915.chunk.js.map",
     "745.470e8e64.chunk.js.map": "/windmill-whitelabelling-react-webpack/static/js/745.470e8e64.chunk.js.map",
@@ -49,6 +49,6 @@
   },
   "entrypoints": [
     "static/css/main.fda707e3.css",
-    "static/js/main.653c4094.js"
+    "static/js/main.aadda5b8.js"
   ]
 }
