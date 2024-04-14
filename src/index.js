@@ -10,7 +10,7 @@ import { OpenAPI as ComponentsOpenAPI } from "windmill-components/gen/core/OpenA
 import App from "./App";
 
 function initializeClients() {
-  ClientOpenAPI.BASE = "/api";
+  ClientOpenAPI.BASE = "./api";
   ClientOpenAPI.CREDENTIALS = "include";
   ClientOpenAPI.WITH_CREDENTIALS = true;
 
