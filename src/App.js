@@ -12,7 +12,7 @@ import {
   WorkspaceService,
   FlowService,
   AppService,
-} from "windmill-components/gen";
+} from "windmill-client";
 
 export default function App() {
   const [email, setEmail] = useState("");

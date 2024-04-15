@@ -5,13 +5,18 @@ import React from "react";
 // import ReactDOM from "react-dom/client";
 import ReactDOM from "react-dom";
 
+import { OpenAPI as ClientOpenAPI } from "windmill-client";
 import { OpenAPI as ComponentsOpenAPI } from "windmill-components/gen/core/OpenAPI";
 import App from "./App";
 
 async function initializeClients() {
-  ComponentsOpenAPI.BASE = "./api";
-  ComponentsOpenAPI.CREDENTIALS = "include";
-  ComponentsOpenAPI.WITH_CREDENTIALS = true;
+  ClientOpenAPI.BASE = "./api";
+  ClientOpenAPI.CREDENTIALS = "include";
+  ClientOpenAPI.WITH_CREDENTIALS = true;
+
+  ComponentsOpenAPI.BASE = ClientOpenAPI.BASE;
+  ComponentsOpenAPI.CREDENTIALS = ClientOpenAPI.CREDENTIALS;
+  ComponentsOpenAPI.WITH_CREDENTIALS = ClientOpenAPI.WITH_CREDENTIALS;
 }
 
 await initializeClients();
