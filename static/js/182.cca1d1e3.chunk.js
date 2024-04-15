@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[182],{4182:(e,c,n)=>{n.r(c),n.d(c,{detect:()=>p});const p=()=>({encoding:"utf8",confidence:1})}}]);
