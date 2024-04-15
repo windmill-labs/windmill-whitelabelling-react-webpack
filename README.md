@@ -1,11 +1,11 @@
 # Windmill React App Whitelabelling
 
-[Demo](https://windmill-sdk-example.com/)
+Demo can be found [here](https://windmill-sdk-example.com/).
 
-It uses app.windmill.dev as a backend so create an account there and use your
+The example uses app.windmill.dev as a backend to create an account there and use your
 credentials to login.
 
-This project demonstrates how Windmill can be whitelabelled in a react app using
+This project demonstrates how Windmill can be whitelabelled in a React app using
 webpack.
 
 Whitelabelling requires a special license and the package
