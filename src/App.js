@@ -15,8 +15,8 @@ import {
 } from "windmill-client";
 
 export default function App() {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("whitelabel@windmill-test.com");
+  const [password, setPassword] = useState("changeme");
   const [workspace, setWorkspace] = useState("");
 
   const [componentType, setComponentType] = useState("flowbuilder");
@@ -48,6 +48,7 @@ export default function App() {
         <label>
           email:
           <input
+            type="email"
             value={email} // ...force the input's value to match the state variable...
             onChange={(e) => setEmail(e.target.value)} // ... and update the state variable on any edits!
           />
