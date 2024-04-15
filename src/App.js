@@ -1,18 +1,19 @@
 //foobar
 import { useState } from "react";
-import {
-  UserService,
-  FlowService,
-  AppService,
-  WorkspaceService,
-} from "windmill-client";
+
 import {
   AppViewer,
   FlowBuilder,
   switchWorkspace,
 } from "@windmill-labs/windmill-react-sdk";
 
-//foo
+import {
+  UserService,
+  WorkspaceService,
+  FlowService,
+  AppService,
+} from "windmill-components/gen";
+
 export default function App() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -27,7 +28,6 @@ export default function App() {
   const [path, setPath] = useState("");
 
   async function getPaths(typ, workspace) {
-    console.log(typ, workspace);
     if (typ === "flowbuilder") {
       let paths = await FlowService.listFlowPaths({
         workspace: workspace,
