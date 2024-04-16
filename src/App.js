@@ -88,16 +88,16 @@ export default function App() {
           {error && error?.body ? error?.body?.toString() : error?.toString()}
         </div>
         <div className="text-xs">
-          Example of using the windmill SDK backed by app.windmill.dev to
-          whitelabel windmill's Flow Builder and App Viewer in a React app using
-          the default create-react-app template. The sources are available
+          Example of using the Windmill SDK backed by app.windmill.dev to
+          whitelabel Windmill's Flow Builder and App Viewer in a React app using
+          the default create-react-app template. The sources are available {' '}
           <a href="https://github.com/windmill-labs/windmill-whitelabelling-react-webpack">
             here
-          </a>
+          </a>{' .'}
           The account used has limits, so if no runs are available, contact us
-          and we will provide you with another test account. The SDK is not
-          open-source and require a whitelabel license to install (private npm
-          package) and use. sales@windmill.dev
+          at sales@windmill.dev and we will provide you with another test account.
+          The SDK is not open-source and requires a whitelabel license to install and use
+          (private npm package).
         </div>
       </div>
       <div className="flex gap-4 pb-4 text-sm p-2">
