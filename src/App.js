@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
   AppViewer,
   FlowBuilder,
+  ScriptBuilder,
   switchWorkspace,
 } from "@windmill-labs/windmill-react-sdk";
 
@@ -12,6 +13,7 @@ import {
   WorkspaceService,
   FlowService,
   AppService,
+  ScriptService,
 } from "windmill-client";
 
 export default function App() {
@@ -33,12 +35,17 @@ export default function App() {
         workspace: workspace,
       });
       setAllPaths(paths);
-    } else {
+    } else if (typ === "appviewer") {
       let paths = (
         await AppService.listSearchApp({
           workspace: workspace,
         })
       ).map((a) => a.path);
+      setAllPaths(paths);
+    } else if (typ === "scriptbuilder") {
+      let paths = await ScriptService.listScriptPaths({
+        workspace: workspace,
+      });
       setAllPaths(paths);
     }
   }
@@ -134,7 +141,8 @@ export default function App() {
             }}
           >
             <option value="flowbuilder">Flow Builder</option>
-            <option value="appviewer">App viewer</option>
+            <option value="appviewer">App Viewer</option>
+            <option value="scriptbuilder">Script Builder</option>
           </select>
         </div>
         <label>
@@ -178,6 +186,23 @@ export default function App() {
                   await getPaths(componentType, workspace);
                 }}
                 newFlow={path === ""}
+                initialPath={path}
+                key={path}
+              />
+            )}
+            {componentType === "scriptbuilder" && (
+              <ScriptBuilder
+                onDeploy={async (path) => {
+                  setPath(path);
+                  await getPaths(componentType, workspace);
+                }}
+                onDetails={async (path) => {
+                  console.log("details", path);
+                }}
+                onSaveInitial={async (path) => {
+                  setPath(path);
+                  await getPaths(componentType, workspace);
+                }}
                 initialPath={path}
                 key={path}
               />

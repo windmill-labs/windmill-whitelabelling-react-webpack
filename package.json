@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://windmill-sdk-example.com",
   "dependencies": {
-    "windmill-client": "1.306.4",
-    "@windmill-labs/windmill-react-sdk": "^1.306.15",
+    "windmill-client": "1.309.2",
+    "@windmill-labs/windmill-react-sdk": "^1.309.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.1"
