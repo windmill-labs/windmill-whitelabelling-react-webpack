@@ -30,37 +30,45 @@ export default function App() {
   const [path, setPath] = useState("");
 
   async function getPaths(typ, workspace) {
+    console.log("getPaths", typ, workspace);
     if (typ === "flowbuilder") {
-      let paths = await FlowService.listFlowPaths({
-        workspace: workspace,
-      });
+      let paths = (
+        await FlowService.listFlowPaths({
+          workspace: workspace,
+        })
+      ).sort();
       setAllPaths(paths);
     } else if (typ === "appviewer") {
       let paths = (
         await AppService.listSearchApp({
           workspace: workspace,
         })
-      ).map((a) => a.path);
+      )
+        .map((a) => a.path)
+        .sort();
       setAllPaths(paths);
     } else if (typ === "scriptbuilder") {
-      let paths = await ScriptService.listScriptPaths({
-        workspace: workspace,
-      });
+      let paths = (
+        await ScriptService.listScriptPaths({
+          workspace: workspace,
+        })
+      ).sort();
       setAllPaths(paths);
     }
   }
   return (
     <>
-      <div className="flex gap-4 text-sm p-2 items-center">
-        <label>
+      <div className="flex gap-4 text-sm p-2 items-center w-full">
+        <label className="w-[500px]">
           email:
           <input
+            className="w-full"
             type="email"
             value={email} // ...force the input's value to match the state variable...
             onChange={(e) => setEmail(e.target.value)} // ... and update the state variable on any edits!
           />
         </label>
-        <label>
+        <label className="w-[500px]">
           password:
           <input
             type="password"
@@ -69,6 +77,7 @@ export default function App() {
           />
         </label>
         <button
+          autoFocus
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mx-8 mt-4"
           onClick={async () => {
             try {
@@ -97,19 +106,20 @@ export default function App() {
         <div className="text-xs">
           Example of using the Windmill SDK backed by app.windmill.dev to
           whitelabel Windmill's Flow Builder and App Viewer in a React app using
-          the default create-react-app template. The sources are available {' '}
+          the default create-react-app template. The sources are available{" "}
           <a href="https://github.com/windmill-labs/windmill-whitelabelling-react-webpack">
             here
-          </a>{' .'}
+          </a>
+          {" ."}
           The account used has limits, so if no runs are available, contact us
-          at sales@windmill.dev and we will provide you with another test account.
-          The SDK is not open-source and requires a whitelabel license to install and use
-          (private npm package).
+          at sales@windmill.dev and we will provide you with another test
+          account. The SDK is not open-source and requires a whitelabel license
+          to install and use (private npm package).
         </div>
       </div>
       <div className="flex gap-4 pb-4 text-sm p-2">
-        <label>
-          <div className="w-full max-w-[700px]">
+        <label className="w-full max-w-[200px]">
+          <div>
             workspace:
             <select
               className="w-full"
@@ -134,6 +144,7 @@ export default function App() {
         <div className="w-full max-w-[200px]">
           component:
           <select
+            disabled={!workspace}
             value={componentType}
             onChange={async (e) => {
               setComponentType(e.target.value);
@@ -145,8 +156,8 @@ export default function App() {
             <option value="scriptbuilder">Script Builder</option>
           </select>
         </div>
-        <label>
-          <div className="w-full max-w-[700px]">
+        <label className="w-full max-w-[700px]">
+          <div className="w-full">
             path:
             <select
               className="w-full"
@@ -192,15 +203,24 @@ export default function App() {
             )}
             {componentType === "scriptbuilder" && (
               <ScriptBuilder
-                onDeploy={async (path) => {
-                  setPath(path);
+                onDeploy={async (hash) => {
+                  let sc = await ScriptService.getScriptByHash({
+                    workspace,
+                    hash,
+                  });
+                  setPath(sc.path);
                   await getPaths(componentType, workspace);
                 }}
                 onDetails={async (path) => {
                   console.log("details", path);
                 }}
-                onSaveInitial={async (path) => {
-                  setPath(path);
+                onSaveInitial={async (hash) => {
+                  let sc = await ScriptService.getScriptByHash({
+                    workspace,
+                    hash,
+                  });
+                  setPath(sc.path);
+
                   await getPaths(componentType, workspace);
                 }}
                 initialPath={path}
