@@ -28,7 +28,6 @@ export default function App() {
 
   const [allPaths, setAllPaths] = useState([]); // ...state variable to store the list of paths...
   const [path, setPath] = useState("");
-
   async function getPaths(typ, workspace) {
     console.log("getPaths", typ, workspace);
     if (typ === "flowbuilder") {
