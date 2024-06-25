@@ -14,7 +14,11 @@ import {
   FlowService,
   AppService,
   ScriptService,
+  ResourceService,
 } from "windmill-client";
+import ScriptEditor from "./ScriptEditor";
+import SchemaEditor from "./SchemaEditor";
+import ResourceEditor from "./ResourceEditor";
 
 export default function App() {
   const [email, setEmail] = useState("whitelabel@windmill-test.com");
@@ -52,6 +56,15 @@ export default function App() {
           workspace: workspace,
         })
       ).sort();
+      setAllPaths(paths);
+    } else if (typ === "resourceeditor") {
+      let paths = (
+        await ResourceService.listResource({
+          workspace: workspace,
+        })
+      )
+        .map((x) => x.path)
+        .sort();
       setAllPaths(paths);
     }
   }
@@ -153,6 +166,9 @@ export default function App() {
             <option value="flowbuilder">Flow Builder</option>
             <option value="appviewer">App Viewer</option>
             <option value="scriptbuilder">Script Builder</option>
+            <option value="scripteditor">Script Editor</option>
+            <option value="resourceeditor">Resource Editor</option>
+            <option value="schemaeditor">Schema Editor</option>
           </select>
         </div>
         <label className="w-full max-w-[700px]">
@@ -160,7 +176,11 @@ export default function App() {
             path:
             <select
               className="w-full"
-              disabled={!workspace}
+              disabled={
+                !workspace ||
+                componentType == "scripteditor" ||
+                componentType == "schemaeditor"
+              }
               value={path}
               onChange={(e) => setPath(e.target.value)}
             >
@@ -233,6 +253,21 @@ export default function App() {
                 ) : (
                   <p>No app loaded, select an app and click "Load"</p>
                 )}
+              </>
+            )}
+            {componentType === "scripteditor" && (
+              <>
+                <ScriptEditor></ScriptEditor>
+              </>
+            )}
+            {componentType === "schemaeditor" && (
+              <>
+                <SchemaEditor></SchemaEditor>
+              </>
+            )}
+            {componentType === "resourceeditor" && (
+              <>
+                <ResourceEditor path={path}></ResourceEditor>
               </>
             )}
           </>

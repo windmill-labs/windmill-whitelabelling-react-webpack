@@ -2,8 +2,8 @@
 
 Demo can be found [here](https://windmill-sdk-example.com/).
 
-The example uses app.windmill.dev as a backend to create an account there and use your
-credentials to login.
+The example uses app.windmill.dev as a backend to create an account there and
+use your credentials to login.
 
 This project demonstrates how Windmill can be whitelabelled in a React app using
 webpack.
@@ -21,3 +21,9 @@ package.json/proxy) that accepts `admin@windmill.dev / changeme`
 npm install
 npm run dev
 ```
+
+## Workers
+
+Monaco workers need to be available at the /assets/ path. This is done by
+calling `./copy_workers.sh` which will pull them from node_modules. It is
+already done on this repo.

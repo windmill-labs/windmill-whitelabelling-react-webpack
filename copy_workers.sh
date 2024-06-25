@@ -1,0 +1,1 @@
+cp  node_modules/@windmill-labs/windmill-react-sdk/dist/assets/* public/assets/

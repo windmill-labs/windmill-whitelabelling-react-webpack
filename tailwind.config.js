@@ -386,6 +386,14 @@ const config = {
         900: "#2b394f",
         950: "#1d2534",
       },
+      marine: {
+        50: "#E9E9F4",
+        100: "#859AC7",
+        200: "#586F9E",
+        300: "#4A5F8A",
+        400: "#394A6D",
+        500: "#323F5B",
+      },
       surface: "rgb(var(--color-surface) / <alpha-value>)",
       "surface-secondary":
         "rgb(var(--color-surface-secondary) / <alpha-value>)",
