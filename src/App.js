@@ -178,8 +178,8 @@ export default function App() {
               className="w-full"
               disabled={
                 !workspace ||
-                componentType == "scripteditor" ||
-                componentType == "schemaeditor"
+                componentType === "scripteditor" ||
+                componentType === "schemaeditor"
               }
               value={path}
               onChange={(e) => setPath(e.target.value)}

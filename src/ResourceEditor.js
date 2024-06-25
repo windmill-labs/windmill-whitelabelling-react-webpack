@@ -25,7 +25,7 @@ export default function ResourceEditor({ path }) {
           <label>Create/Update</label>
           <select
             value={createResource}
-            onChange={(e) => setCreateResource(e.target.value == "true")}
+            onChange={(e) => setCreateResource(e.target.value === "true")}
           >
             <option value={true}>Create Resource</option>
             <option value={false}>Update Resource</option>
