@@ -178,7 +178,8 @@ export default function App() {
           <label>Mode</label>
           <select
             disabled={
-              componentType != "flowbuilder" && componentType != "scriptbuilder"
+              componentType !== "flowbuilder" &&
+              componentType !== "scriptbuilder"
             }
             className="min-w-[120px]"
             value={mode}
@@ -230,7 +231,7 @@ export default function App() {
             {componentType === "flowbuilder" && (
               <>
                 <div className="flex flex-col gap-2 max-w-md p-2 mb-8">
-                  {mode == "fork" && (
+                  {mode === "fork" && (
                     <div>
                       <label>Fork Path</label>
                       <input
@@ -260,9 +261,9 @@ export default function App() {
                   }}
                   key={mode + path + forkPath}
                   mode={
-                    mode == "fork"
+                    mode === "fork"
                       ? { path, type: mode, forkPath }
-                      : mode == "create"
+                      : mode === "create"
                         ? { path, type: mode }
                         : { path, type: mode }
                   }
@@ -283,7 +284,7 @@ export default function App() {
                       <option value="fork">Fork</option>
                     </select>
                   </div>
-                  {mode == "fork" && (
+                  {mode === "fork" && (
                     <div>
                       <label>Fork Path</label>
                       <input
@@ -294,7 +295,7 @@ export default function App() {
                       />
                     </div>
                   )}
-                  {mode == "create" && (
+                  {mode === "create" && (
                     <div>
                       <label>Language</label>
                       <select
@@ -342,9 +343,9 @@ export default function App() {
                   }}
                   key={mode + path + lang + forkPath}
                   mode={
-                    mode == "fork"
+                    mode === "fork"
                       ? { path, type: mode, forkPath }
-                      : mode == "create"
+                      : mode === "create"
                         ? { path, type: mode, lang }
                         : { path, type: mode }
                   }
