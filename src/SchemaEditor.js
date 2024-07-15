@@ -1,4 +1,5 @@
 import { SchemaEditor as CSchemaEditor } from "@windmill-labs/windmill-react-sdk";
+import { useState } from "react";
 
 export default function SchemaEditor() {
   const schema = {
@@ -9,16 +10,26 @@ export default function SchemaEditor() {
       },
     },
   };
+
+  const [schemaToSave, setSchema] = useState(schema);
+
   return (
     <>
-      <div className="h-full">
-        <CSchemaEditor
-          schema={schema}
-          // onChange={(s) => console.log(JSON.stringify(s, null, 2))}
-          onChange={(e) => {
-            console.log("onChange", schema);
-          }}
-        ></CSchemaEditor>
+      <div className="grid grid-cols-2">
+        <div className="h-full">
+          <CSchemaEditor
+            schema={schemaToSave}
+            // onChange={(s) => console.log(JSON.stringify(s, null, 2))}
+            onChange={(newSchema) => {
+              setSchema(structuredClone(newSchema));
+              console.log("onChange", schema);
+            }}
+          ></CSchemaEditor>
+        </div>
+        <div>
+          <h1>Schema</h1>
+          <pre className="text-xs">{JSON.stringify(schemaToSave, null, 2)}</pre>
+        </div>
       </div>
     </>
   );
