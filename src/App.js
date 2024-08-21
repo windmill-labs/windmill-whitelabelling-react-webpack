@@ -251,11 +251,8 @@ export default function App() {
                   onDetails={async (path) => {
                     console.log("details", path);
                   }}
-                  onSaveDraftOnlyAtNewPath={async (path, selectedId) => {
-                    setPath(path);
-                    await getPaths(componentType, workspace);
-                  }}
-                  onSaveInitial={async (path) => {
+                  onSaveDraft={async (path, status) => {
+                    console.log("savedraft", path, status);
                     setPath(path);
                     await getPaths(componentType, workspace);
                   }}
