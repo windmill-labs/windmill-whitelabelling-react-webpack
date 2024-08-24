@@ -1,0 +1,9 @@
+
+:8080 {
+    root * /build
+    file_server
+
+    handle_path /api/* {
+        reverse_proxy localhost:3000
+    }
+}
