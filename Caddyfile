@@ -1,9 +1,9 @@
 
 :8080 {
-    root * /build
+    bind localhost
+    root * /git/create-react-app-windmill/build/
     file_server
 
-    handle_path /api/* {
-        reverse_proxy localhost:3000
-    }
+    reverse_proxy /api/* localhost:8000
 }
+
