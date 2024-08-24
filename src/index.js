@@ -6,7 +6,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 
 import { OpenAPI as ClientOpenAPI } from "windmill-client";
-import { OpenAPI as ComponentsOpenAPI } from "windmill-components/gen/core/OpenAPI";
+import { OpenAPI as ComponentsOpenAPI } from "@windmill-labs/windmill-react-sdk";
 import App from "./App";
 
 async function initializeClients() {
