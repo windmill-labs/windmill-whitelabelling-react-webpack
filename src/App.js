@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import {
-  AppViewer,
+  // AppViewer,
   FlowBuilder,
   ScriptBuilder,
   switchWorkspace,
@@ -352,8 +352,9 @@ export default function App() {
             {componentType === "appviewer" && (
               <>
                 {path ? (
-                  <AppViewer key={path} appPath={path} workspace={workspace} />
+                  <p>FOO</p>
                 ) : (
+                  // <AppViewer key={path} appPath={path} workspace={workspace} />
                   <p>No app loaded, select an app and click "Load"</p>
                 )}
               </>
