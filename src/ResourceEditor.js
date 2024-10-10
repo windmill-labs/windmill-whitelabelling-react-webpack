@@ -1,4 +1,5 @@
 import { ResourceEditor as CResourceEditor } from "@windmill-labs/windmill-react-sdk";
+
 import { useState } from "react";
 
 export default function ResourceEditor({ path }) {
