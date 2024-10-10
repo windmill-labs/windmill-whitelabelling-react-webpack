@@ -6,6 +6,7 @@ import {
   FlowBuilder,
   ScriptBuilder,
   switchWorkspace,
+  INITIAL_CODE,
 } from "@windmill-labs/windmill-react-sdk";
 
 import {
@@ -21,6 +22,8 @@ import SchemaEditor from "./SchemaEditor";
 import ResourceEditor from "./ResourceEditor";
 
 export default function App() {
+  INITIAL_CODE.python3.script = `def main(x: str) -> str:`;
+
   const [email, setEmail] = useState("whitelabel@windmill-test.com");
   const [password, setPassword] = useState("changeme");
   const [workspace, setWorkspace] = useState("");
