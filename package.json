@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://windmill-sdk-example.com",
   "dependencies": {
-    "@windmill-labs/windmill-react-sdk": "^1.407.3",
+    "@windmill-labs/windmill-react-sdk": "^1.408.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
     "react-scripts": "5.0.1",
@@ -24,7 +24,7 @@
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },
-  "proxy": "http://localhost:8000",
+  "proxy": "http://127.0.0.1:8000",
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
     "start": "react-scripts start",

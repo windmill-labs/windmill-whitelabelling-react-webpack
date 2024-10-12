@@ -6,6 +6,7 @@ import {
   FlowBuilder,
   ScriptBuilder,
   switchWorkspace,
+  // customIcon,
   INITIAL_CODE,
 } from "@windmill-labs/windmill-react-sdk";
 
@@ -23,6 +24,10 @@ import ResourceEditor from "./ResourceEditor";
 
 export default function App() {
   INITIAL_CODE.python3.script = `def main(x: str) -> str:`;
+  // customIcon.normal =
+  //   "https://www.exabeam.com/wp-content/uploads/MISC-Exabeam-light-logo-01.svg";
+  // customIcon.white =
+  //   "https://www.exabeam.com/wp-content/uploads/MISC-Exabeam-light-logo-01.svg";
 
   const [email, setEmail] = useState("whitelabel@windmill-test.com");
   const [password, setPassword] = useState("changeme");
@@ -39,7 +44,6 @@ export default function App() {
   const [forkPath, setForkPath] = useState("u/admin/foo_forked");
   const [lang, setLang] = useState("python3");
   async function getPaths(typ, workspace) {
-    console.log("getPaths", typ, workspace);
     if (typ === "flowbuilder") {
       let paths = (
         await FlowService.listFlowPaths({
@@ -104,7 +108,7 @@ export default function App() {
               });
               let whoami = await UserService.globalWhoami();
               const workspaces = await WorkspaceService.listWorkspaces();
-              setAllworkspaces(workspaces.map((w) => w.name));
+              setAllworkspaces(workspaces.map((w) => w.id));
               setWhoami(whoami);
               setError(undefined);
             } catch (e) {
@@ -229,7 +233,7 @@ export default function App() {
       </div>
 
       <div className="p-2 h-full border embedded">
-        {workspace ? (
+        {workspace || true ? (
           <>
             {componentType === "flowbuilder" && (
               <>
