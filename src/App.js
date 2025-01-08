@@ -290,7 +290,7 @@ export default function App() {
               <div class="h-screen w-full">
                 <AppEditor
                   onDeploy={async (npath) => {
-                    if (npath != path) {
+                    if (npath !== path) {
                       setPath(npath);
                     }
                     if (mode === "create") {
