@@ -54,7 +54,7 @@ export default function App() {
       setAllPaths(paths);
     } else if (typ === "appbuilder") {
       let paths = (
-        await AppService.listSearchApp({
+        await AppService.listApps({
           workspace: workspace,
         })
       )
