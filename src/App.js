@@ -289,13 +289,14 @@ export default function App() {
             {componentType === "appbuilder" && (
               <div class="h-screen w-full">
                 <AppEditor
-                  onDeploy={(npath) => {
+                  onDeploy={async (npath) => {
                     if (npath != path) {
                       setPath(npath);
                     }
                     if (mode === "create") {
                       setMode("edit");
                     }
+                    await getPaths(componentType, workspace);
                   }}
                   key={mode + path + forkPath}
                   mode={
