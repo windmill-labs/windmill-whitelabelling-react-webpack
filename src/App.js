@@ -8,6 +8,7 @@ import {
   switchWorkspace,
   // customIcon,
   INITIAL_CODE,
+  AppEditor,
 } from "@windmill-labs/windmill-react-sdk";
 
 import {
@@ -50,6 +51,15 @@ export default function App() {
           workspace: workspace,
         })
       ).sort();
+      setAllPaths(paths);
+    } else if (typ === "appbuilder") {
+      let paths = (
+        await AppService.listSearchApp({
+          workspace: workspace,
+        })
+      )
+        .map((x) => x.path)
+        .sort();
       setAllPaths(paths);
     } else if (typ === "appviewer") {
       let paths = (
@@ -174,6 +184,7 @@ export default function App() {
             }}
           >
             <option value="flowbuilder">Flow Builder</option>
+            <option value="appbuilder">App Builder</option>
             {/* <option value="appviewer">App Viewer</option> */}
             <option value="scriptbuilder">Script Builder</option>
             <option value="scripteditor">Script Editor</option>
@@ -186,7 +197,8 @@ export default function App() {
           <select
             disabled={
               componentType !== "flowbuilder" &&
-              componentType !== "scriptbuilder"
+              componentType !== "scriptbuilder" &&
+              componentType !== "appbuilder"
             }
             className="min-w-[120px]"
             value={mode}
@@ -273,6 +285,20 @@ export default function App() {
                   }
                 />
               </>
+            )}
+            {componentType === "appbuilder" && (
+              <div class="h-screen w-full">
+                <AppEditor
+                  key={mode + path + forkPath}
+                  mode={
+                    mode === "fork"
+                      ? { path, type: mode, forkPath }
+                      : mode === "create"
+                        ? { path, type: mode }
+                        : { path, type: mode }
+                  }
+                ></AppEditor>
+              </div>
             )}
             {componentType === "scriptbuilder" && (
               <>
