@@ -289,6 +289,14 @@ export default function App() {
             {componentType === "appbuilder" && (
               <div class="h-screen w-full">
                 <AppEditor
+                  onDeploy={(npath) => {
+                    if (npath != path) {
+                      setPath(npath);
+                    }
+                    if (mode === "create") {
+                      setMode("edit");
+                    }
+                  }}
                   key={mode + path + forkPath}
                   mode={
                     mode === "fork"
