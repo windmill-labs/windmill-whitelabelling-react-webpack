@@ -10,6 +10,11 @@
     "react-scripts": "5.0.1",
     "windmill-client": "1.339.1"
   },
+  "overrides": {
+    "monaco-graphql": {
+      "monaco-editor": "npm:@codingame/monaco-vscode-editor-api@~11.1.2"
+    }
+  },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@craco/craco": "^7.1.0",
