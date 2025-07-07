@@ -1,12 +1,12 @@
 {
-  "name": "my-app",
+  "name": "Windmill Whitelabel Example",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://windmill-sdk-example.com",
   "dependencies": {
-    "@windmill-labs/windmill-react-sdk": "^1.501.24",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0",
+    "@windmill-labs/windmill-react-sdk": "^1.501.26",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "windmill-client": "1.339.1"
   },
