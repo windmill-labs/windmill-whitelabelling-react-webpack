@@ -2,8 +2,9 @@ import "@windmill-labs/windmill-react-sdk/styles";
 import "./style.css";
 import React from "react";
 // react 18
-import ReactDOM from "react-dom/client";
-// import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom/client";
+//react 17
+import ReactDOM from "react-dom";
 // react 19
 // import { createRoot } from 'react-dom/client';
 import { OpenAPI as ClientOpenAPI } from "windmill-client";
@@ -31,17 +32,17 @@ await initializeClients();
 // );
 
 // react 18
-let react = ReactDOM.createRoot(document.getElementById("root"));
-react.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// react 17
-// ReactDOM.render(
+// let react = ReactDOM.createRoot(document.getElementById("root"));
+// react.render(
 //   <React.StrictMode>
 //     <App />
-//   </React.StrictMode>,
-//   document.getElementById("root")
+//   </React.StrictMode>
 // );
+
+// react 17
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById("root")
+);
