@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+
   *,
   ::before,
   ::after {
@@ -16,16 +17,24 @@
     font-display: swap;
   }
 
-  .splitpanes--vertical > .splitpanes__pane {
+  .splitpanes--vertical>.splitpanes__pane {
     transition: none !important;
   }
 
-  .splitpanes--horizontal > .splitpanes__pane {
+  .splitpanes--horizontal>.splitpanes__pane {
     transition: none !important;
   }
 
-  .monaco-workbench > .notifications-toasts.visible {
+  .monaco-workbench>.notifications-toasts.visible {
     display: none !important;
+  }
+
+  #o1>.splitpanes__pane {
+    overflow: visible !important;
+  }
+
+  #o2>.splitpanes__pane {
+    overflow: visible !important;
   }
 
   .nowrap pre code.hljs {
@@ -44,7 +53,7 @@
     overflow: visible !important;
   }
 
-  svelte-virtual-list-contents > * + * {
+  svelte-virtual-list-contents>*+* {
     border-top-width: 1px !important;
     border-bottom-width: 0px !important;
   }
@@ -61,22 +70,13 @@
     width: 9px;
     height: 9px;
   }
+
   ::-webkit-scrollbar-track {
     background: transparent;
   }
+
   ::-webkit-scrollbar-thumb {
     background-color: rgba(155, 155, 155, 0.5);
     border: transparent;
-  }
-}
-
-iframe {
-  display: none;
-}
-
-@layer components {
-  /* Flow graph viewer -> Svelvet library internal class overwrite */
-  .Node {
-    display: flex !important;
   }
 }

@@ -8,7 +8,7 @@ import {
   switchWorkspace,
   // customIcon,
   INITIAL_CODE,
-  AppEditor,
+  // AppEditor,
 } from "@windmill-labs/windmill-react-sdk";
 
 import {
@@ -214,7 +214,7 @@ export default function App() {
             path:
             {(componentType === "flowbuilder" ||
               componentType === "scriptbuilder") &&
-            mode === "create" ? (
+              mode === "create" ? (
               <input
                 className="w-full"
                 value={path}
@@ -243,52 +243,52 @@ export default function App() {
           </div>
         </label>
       </div>
-
-      <div className="p-2 h-full border embedded">
-        {workspace || true ? (
-          <>
-            {componentType === "flowbuilder" && (
-              <>
-                <div className="flex flex-col gap-2 max-w-md p-2 mb-8">
-                  {mode === "fork" && (
-                    <div>
-                      <label>Fork Path</label>
-                      <input
-                        placeholder="fork path"
-                        type="text"
-                        value={forkPath}
-                        onChange={(e) => setForkPath(e.target.value)}
-                      />
-                    </div>
-                  )}
-                </div>
-                <FlowBuilder
-                  onDeploy={async (path) => {
-                    setPath(path);
-                    await getPaths(componentType, workspace);
-                  }}
-                  onDetails={async (path) => {
-                    console.log("details", path);
-                  }}
-                  onSaveDraft={async (path, status) => {
-                    console.log("savedraft", path, status);
-                    setPath(path);
-                    await getPaths(componentType, workspace);
-                  }}
-                  key={mode + path + forkPath}
-                  mode={
-                    mode === "fork"
-                      ? { path, type: mode, forkPath }
-                      : mode === "create"
-                        ? { path, type: mode }
-                        : { path, type: mode }
-                  }
-                />
-              </>
-            )}
-            {componentType === "appbuilder" && (
-              <div class="h-screen w-full">
-                <AppEditor
+      {(whoami || true) && (
+        <div className="p-2 h-full border embedded">
+          {workspace || true ? (
+            <>
+              {componentType === "flowbuilder" && (
+                <>
+                  <div className="flex flex-col gap-2 max-w-md p-2 mb-8">
+                    {mode === "fork" && (
+                      <div>
+                        <label>Fork Path</label>
+                        <input
+                          placeholder="fork path"
+                          type="text"
+                          value={forkPath}
+                          onChange={(e) => setForkPath(e.target.value)}
+                        />
+                      </div>
+                    )}
+                  </div>
+                  <FlowBuilder
+                    onDeploy={async (path) => {
+                      setPath(path);
+                      await getPaths(componentType, workspace);
+                    }}
+                    onDetails={async (path) => {
+                      console.log("details", path);
+                    }}
+                    onSaveDraft={async (path, status) => {
+                      console.log("savedraft", path, status);
+                      setPath(path);
+                      await getPaths(componentType, workspace);
+                    }}
+                    key={mode + path + forkPath}
+                    mode={
+                      mode === "fork"
+                        ? { path, type: mode, forkPath }
+                        : mode === "create"
+                          ? { path, type: mode }
+                          : { path, type: mode }
+                    }
+                  />
+                </>
+              )}
+              {componentType === "appbuilder" && (
+                <div class="h-screen w-full">
+                  {/* <AppEditor
                   onDeploy={async (npath) => {
                     if (npath !== path) {
                       setPath(npath);
@@ -306,122 +306,123 @@ export default function App() {
                         ? { path, type: mode }
                         : { path, type: mode }
                   }
-                ></AppEditor>
-              </div>
-            )}
-            {componentType === "scriptbuilder" && (
-              <>
-                <div className="flex flex-col gap-2 max-w-md p-2 mb-8">
-                  <div>
-                    <label>Mode</label>
-                    <select
-                      value={mode}
-                      onChange={(e) => setMode(e.target.value)}
-                    >
-                      <option value="create">Create</option>
-                      <option value="edit">Edit</option>
-                      <option value="fork">Fork</option>
-                    </select>
-                  </div>
-                  {mode === "fork" && (
+                ></AppEditor> */}
+                </div>
+              )}
+              {componentType === "scriptbuilder" && (
+                <>
+                  <div className="flex flex-col gap-2 max-w-md p-2 mb-8">
                     <div>
-                      <label>Fork Path</label>
-                      <input
-                        placeholder="fork path"
-                        type="text"
-                        value={forkPath}
-                        onChange={(e) => setForkPath(e.target.value)}
-                      />
-                    </div>
-                  )}
-                  {mode === "create" && (
-                    <div>
-                      <label>Language</label>
+                      <label>Mode</label>
                       <select
-                        value={lang}
-                        onChange={(e) => setLang(e.target.value)}
+                        value={mode}
+                        onChange={(e) => setMode(e.target.value)}
                       >
-                        <option value="python3">Python</option>
-                        <option value="deno">Deno</option>
-                        <option value="go">Go</option>
-                        <option value="bash">Bash</option>
-                        <option value="powershell">Powershell</option>
-                        <option value="postgresql">Postgresql</option>
-                        <option value="mysql">Mysql</option>
-                        <option value="bigquery">Bigquery</option>
-                        <option value="snowflake">Snowflake</option>
-                        <option value="mssql">Mssql</option>
-                        <option value="graphql">Graphql</option>
-                        <option value="nativets">Nativets</option>
-                        <option value="bun">Bun</option>
-                        <option value="php">Php</option>
+                        <option value="create">Create</option>
+                        <option value="edit">Edit</option>
+                        <option value="fork">Fork</option>
                       </select>
                     </div>
-                  )}
-                </div>
-                <ScriptBuilder
-                  onDeploy={async (hash) => {
-                    let sc = await ScriptService.getScriptByHash({
-                      workspace,
-                      hash,
-                    });
-                    setPath(sc.path);
-                    await getPaths(componentType, workspace);
-                  }}
-                  onDetails={async (path) => {
-                    console.log("details", path);
-                  }}
-                  onSaveInitial={async (hash) => {
-                    let sc = await ScriptService.getScriptByHash({
-                      workspace,
-                      hash,
-                    });
-                    setPath(sc.path);
+                    {mode === "fork" && (
+                      <div>
+                        <label>Fork Path</label>
+                        <input
+                          placeholder="fork path"
+                          type="text"
+                          value={forkPath}
+                          onChange={(e) => setForkPath(e.target.value)}
+                        />
+                      </div>
+                    )}
+                    {mode === "create" && (
+                      <div>
+                        <label>Language</label>
+                        <select
+                          value={lang}
+                          onChange={(e) => setLang(e.target.value)}
+                        >
+                          <option value="python3">Python</option>
+                          <option value="deno">Deno</option>
+                          <option value="go">Go</option>
+                          <option value="bash">Bash</option>
+                          <option value="powershell">Powershell</option>
+                          <option value="postgresql">Postgresql</option>
+                          <option value="mysql">Mysql</option>
+                          <option value="bigquery">Bigquery</option>
+                          <option value="snowflake">Snowflake</option>
+                          <option value="mssql">Mssql</option>
+                          <option value="graphql">Graphql</option>
+                          <option value="nativets">Nativets</option>
+                          <option value="bun">Bun</option>
+                          <option value="php">Php</option>
+                        </select>
+                      </div>
+                    )}
+                  </div>
+                  <ScriptBuilder
+                    onDeploy={async (hash) => {
+                      let sc = await ScriptService.getScriptByHash({
+                        workspace,
+                        hash,
+                      });
+                      setPath(sc.path);
+                      await getPaths(componentType, workspace);
+                    }}
+                    onDetails={async (path) => {
+                      console.log("details", path);
+                    }}
+                    onSaveInitial={async (hash) => {
+                      let sc = await ScriptService.getScriptByHash({
+                        workspace,
+                        hash,
+                      });
+                      setPath(sc.path);
 
-                    await getPaths(componentType, workspace);
-                  }}
-                  key={mode + path + lang + forkPath}
-                  mode={
-                    mode === "fork"
-                      ? { path, type: mode, forkPath }
-                      : mode === "create"
-                        ? { path, type: mode, lang }
-                        : { path, type: mode }
-                  }
-                />
-              </>
-            )}
-            {componentType === "appviewer" && (
-              <>
-                {path ? (
-                  <p>FOO</p>
-                ) : (
-                  // <AppViewer key={path} appPath={path} workspace={workspace} />
-                  <p>No app loaded, select an app and click "Load"</p>
-                )}
-              </>
-            )}
-            {componentType === "scripteditor" && (
-              <>
-                <ScriptEditor></ScriptEditor>
-              </>
-            )}
-            {componentType === "schemaeditor" && (
-              <>
-                <SchemaEditor></SchemaEditor>
-              </>
-            )}
-            {componentType === "resourceeditor" && (
-              <>
-                <ResourceEditor path={path}></ResourceEditor>
-              </>
-            )}
-          </>
-        ) : (
-          <p>Login to load components</p>
-        )}
-        {/* <AppViewer /> */}
-      </div>
+                      await getPaths(componentType, workspace);
+                    }}
+                    key={mode + path + lang + forkPath}
+                    mode={
+                      mode === "fork"
+                        ? { path, type: mode, forkPath }
+                        : mode === "create"
+                          ? { path, type: mode, lang }
+                          : { path, type: mode }
+                    }
+                  />
+                </>
+              )}
+              {componentType === "appviewer" && (
+                <>
+                  {path ? (
+                    <p>FOO</p>
+                  ) : (
+                    // <AppViewer key={path} appPath={path} workspace={workspace} />
+                    <p>No app loaded, select an app and click "Load"</p>
+                  )}
+                </>
+              )}
+              {componentType === "scripteditor" && (
+                <>
+                  <ScriptEditor></ScriptEditor>
+                </>
+              )}
+              {componentType === "schemaeditor" && (
+                <>
+                  <SchemaEditor></SchemaEditor>
+                </>
+              )}
+              {componentType === "resourceeditor" && (
+                <>
+                  <ResourceEditor path={path}></ResourceEditor>
+                </>
+              )}
+            </>
+          ) : (
+            <p>Login to load components</p>
+          )}
+        </div>
+      )}
+      {/* <AppViewer /> */}
     </>
   );
 }

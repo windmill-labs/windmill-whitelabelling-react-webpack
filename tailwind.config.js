@@ -65,8 +65,8 @@ function hexToRgb(hex) {
 const config = {
   content: [
     "./src/**/*.{html,js,ts}",
-    "./node_modules/windmill-react-sdk/src/**/*.{html,js,svelte,ts}",
-    "./node_modules/windmill-components/package/**/*.{html,js,svelte,ts}",
+    "./node_modules/@windmill-labs/windmill-react-sdk/dist/**/*.{html,js,svelte,ts}",
+    // "./node_modules/windmill-components/package/**/*.{html,js,svelte,ts}",
     "./public/index.html",
   ],
   safelist: [
@@ -81,15 +81,15 @@ const config = {
     "wm-tab-selected",
     ...(process.env.NODE_ENV === "production"
       ? [
-          { pattern: /^m(\w?)-.*$/ },
-          { pattern: /^p(\w?)-.*$/ },
-          { pattern: /^rounded-.*$/ },
-          { pattern: /^shadow-.*$/, variants: ["hover"] },
-          { pattern: /^text-[^/]*$/, variants: ["hover", "active", "focus"] },
-          { pattern: /^bg-[^/]*$/, variants: ["hover", "active", "focus"] },
-          { pattern: /^border-[^/]*$/, variants: ["hover", "active", "focus"] },
-          { pattern: /^ring-[^/]*$/, variants: ["hover", "active", "focus"] },
-        ]
+        { pattern: /^m(\w?)-.*$/ },
+        { pattern: /^p(\w?)-.*$/ },
+        { pattern: /^rounded-.*$/ },
+        { pattern: /^shadow-.*$/, variants: ["hover"] },
+        { pattern: /^text-[^/]*$/, variants: ["hover", "active", "focus"] },
+        { pattern: /^bg-[^/]*$/, variants: ["hover", "active", "focus"] },
+        { pattern: /^border-[^/]*$/, variants: ["hover", "active", "focus"] },
+        { pattern: /^ring-[^/]*$/, variants: ["hover", "active", "focus"] },
+      ]
       : []),
   ],
   theme: {
@@ -649,39 +649,39 @@ const config = {
           backgroundImage: `url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");`,
         },
         'input:not(.windmillapp),input[type="text"]:not(.windmillapp),input[type="email"]:not(.windmillapp),input[type="url"]:not(.windmillapp),input[type="password"]:not(.windmillapp),input[type="number"]:not(.windmillapp),input[type="date"]:not(.windmillapp),input[type="datetime-local"]:not(.windmillapp),input[type="month"]:not(.windmillapp),input[type="search"]:not(.windmillapp),input[type="tel"]:not(.windmillapp),input[type="time"]:not(.windmillapp),input[type="week"]:not(.windmillapp),textarea:not(.windmillapp):not(.monaco-mouse-cursor-text),select:not(.windmillapp)':
-          {
-            display: "block",
-            fontSize: theme("fontSize.sm"),
-            boxShadow: theme("boxShadow.sm"),
-            width: "100%",
-            padding: `${theme("spacing.1")} ${theme("spacing.2")}`,
-            border: `1px solid ${theme("colors.gray.300")}`,
-            borderRadius: theme("borderRadius.md"),
-            "&:focus": {
-              "--tw-ring-color": theme("colors.frost.100"),
-              "--tw-ring-offset-shadow":
-                "var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)",
-              "--tw-ring-shadow":
-                "var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color)",
-              boxShadow:
-                "var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)",
-            },
-            "&:disabled,[disabled]": {
-              backgroundColor: theme("colors.gray.100") + " !important",
-              ".dark &": {
-                backgroundColor: theme("colors.gray.700") + " !important",
-              },
+        {
+          display: "block",
+          fontSize: theme("fontSize.sm"),
+          boxShadow: theme("boxShadow.sm"),
+          width: "100%",
+          padding: `${theme("spacing.1")} ${theme("spacing.2")}`,
+          border: `1px solid ${theme("colors.gray.300")}`,
+          borderRadius: theme("borderRadius.md"),
+          "&:focus": {
+            "--tw-ring-color": theme("colors.frost.100"),
+            "--tw-ring-offset-shadow":
+              "var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)",
+            "--tw-ring-shadow":
+              "var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color)",
+            boxShadow:
+              "var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)",
+          },
+          "&:disabled,[disabled]": {
+            backgroundColor: theme("colors.gray.100") + " !important",
+            ".dark &": {
+              backgroundColor: theme("colors.gray.700") + " !important",
             },
           },
+        },
         '.dark input:not(.windmillapp),.dark input[type="text"]:not(.windmillapp),.dark input[type="email"]:not(.windmillapp),.dark input[type="url"]:not(.windmillapp),.dark input[type="password"]:not(.windmillapp),.dark input[type="number"]:not(.windmillapp),.dark input[type="date"]:not(.windmillapp),.dark input[type="datetime-local"]:not(.windmillapp),.dark input[type="month"]:not(.windmillapp),.dark input[type="search"]:not(.windmillapp),.dark input[type="tel"]:not(.windmillapp),.dark input[type="time"]:not(.windmillapp),.dark input[type="week"]:not(.windmillapp),.dark textarea:not(.windmillapp):not(.monaco-mouse-cursor-text),.dark select:not(.windmillapp)':
-          {
-            backgroundColor: theme("colors.gray.700"),
-            color: theme("colors.gray.200"),
-            borderColor: theme("colors.gray.600"),
-            "&:focus": {
-              "--tw-ring-color": theme("colors.frost.700"),
-            },
+        {
+          backgroundColor: theme("colors.gray.700"),
+          color: theme("colors.gray.200"),
+          borderColor: theme("colors.gray.600"),
+          "&:focus": {
+            "--tw-ring-color": theme("colors.frost.700"),
           },
+        },
 
         "button:disabled,button[disabled=true],a:disabled,a[disabled=true]": {
           pointerEvents: "none",
