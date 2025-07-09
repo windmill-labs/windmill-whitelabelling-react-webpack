@@ -65,7 +65,7 @@ function hexToRgb(hex) {
 const config = {
   content: [
     "./src/**/*.{html,js,ts}",
-    "./node_modules/@windmill-labs/windmill-react-sdk/dist/**/*.{html,js,svelte,ts}",
+    "./node_modules/@windmill-labs/windmill-react-sdk-light/dist/**/*.{html,js,svelte,ts}",
     // "./node_modules/windmill-components/package/**/*.{html,js,svelte,ts}",
     "./public/index.html",
   ],

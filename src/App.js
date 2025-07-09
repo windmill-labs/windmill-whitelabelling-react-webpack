@@ -4,12 +4,12 @@ import { useState } from "react";
 import {
   // AppViewer,
   FlowBuilder,
-  ScriptBuilder,
+  // ScriptBuilder,
   switchWorkspace,
   // customIcon,
-  INITIAL_CODE,
+  // INITIAL_CODE,
   // AppEditor,
-} from "@windmill-labs/windmill-react-sdk";
+} from "@windmill-labs/windmill-react-sdk-light";
 
 import {
   UserService,
@@ -19,12 +19,12 @@ import {
   ScriptService,
   ResourceService,
 } from "windmill-client";
-import ScriptEditor from "./ScriptEditor";
-import SchemaEditor from "./SchemaEditor";
-import ResourceEditor from "./ResourceEditor";
+// import ScriptEditor from "./ScriptEditor";
+// import SchemaEditor from "./SchemaEditor";
+// import ResourceEditor from "./ResourceEditor";
 
 export default function App() {
-  INITIAL_CODE.python3.script = `def main(x: str) -> str:`;
+  // INITIAL_CODE.python3.script = `def main(x: str) -> str:`;
   // customIcon.normal =
   //   "https://www.exabeam.com/wp-content/uploads/MISC-Exabeam-light-logo-01.svg";
   // customIcon.white =
@@ -359,7 +359,7 @@ export default function App() {
                       </div>
                     )}
                   </div>
-                  <ScriptBuilder
+                  {/* <ScriptBuilder
                     onDeploy={async (hash) => {
                       let sc = await ScriptService.getScriptByHash({
                         workspace,
@@ -388,7 +388,7 @@ export default function App() {
                           ? { path, type: mode, lang }
                           : { path, type: mode }
                     }
-                  />
+                  /> */}
                 </>
               )}
               {componentType === "appviewer" && (
@@ -403,17 +403,17 @@ export default function App() {
               )}
               {componentType === "scripteditor" && (
                 <>
-                  <ScriptEditor></ScriptEditor>
+                  {/* <ScriptEditor></ScriptEditor> */}
                 </>
               )}
               {componentType === "schemaeditor" && (
                 <>
-                  <SchemaEditor></SchemaEditor>
+                  {/* <SchemaEditor></SchemaEditor> */}
                 </>
               )}
               {componentType === "resourceeditor" && (
                 <>
-                  <ResourceEditor path={path}></ResourceEditor>
+                  {/* <ResourceEditor path={path}></ResourceEditor> */}
                 </>
               )}
             </>
