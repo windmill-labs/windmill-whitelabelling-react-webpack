@@ -52,7 +52,9 @@ export default function ResourceEditor({ path }) {
             hidePath={true}
             onChange={(e) => {
               console.log(e);
-              setResource(e);
+              if (JSON.stringify(e) !== JSON.stringify(resource)) {
+                setResource(e);
+              }
             }}
           ></CResourceEditor>
         </div>
