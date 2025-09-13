@@ -1,0 +1,47 @@
+0 verbose cli /usr/bin/node-22 /usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.16.0
+3 silly config load:file:/usr/lib/node_modules_22/npm/npmrc
+4 silly config load:file:/home/rfiszel/windmill-whitelabelling-react-webpack/.npmrc
+5 silly config load:file:/home/rfiszel/.npmrc
+6 silly config load:file:/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "false"
+9 verbose logfile logs-max:10 dir:/home/rfiszel/windmill-whitelabelling-react-webpack/false/_logs/2025-09-13T10_58_46_591Z-
+10 verbose logfile /home/rfiszel/windmill-whitelabelling-react-webpack/false/_logs/2025-09-13T10_58_46_591Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @windmill-labs/windmill-react-sdk@^1.542.6
+15 silly packumentCache full:https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk cache-miss
+16 http fetch GET 404 https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk 1673ms (cache skip)
+17 silly placeDep ROOT @windmill-labs/windmill-react-sdk@ REPLACE for: Windmill Whitelabel Example@0.1.0 want: ^1.542.6
+18 verbose stack HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk - Not found
+18 verbose stack     at /usr/lib/node_modules_22/npm/node_modules/npm-registry-fetch/lib/check-response.js:103:15
+18 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+18 verbose stack     at async RegistryFetcher.packument (/usr/lib/node_modules_22/npm/node_modules/pacote/lib/registry.js:90:19)
+18 verbose stack     at async RegistryFetcher.manifest (/usr/lib/node_modules_22/npm/node_modules/pacote/lib/registry.js:128:23)
+18 verbose stack     at async #fetchManifest (/usr/lib/node_modules_22/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1202:20)
+18 verbose stack     at async #nodeFromEdge (/usr/lib/node_modules_22/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1040:19)
+18 verbose stack     at async #buildDepStep (/usr/lib/node_modules_22/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:904:11)
+18 verbose stack     at async Arborist.buildIdealTree (/usr/lib/node_modules_22/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:181:7)
+18 verbose stack     at async Promise.all (index 1)
+18 verbose stack     at async Arborist.reify (/usr/lib/node_modules_22/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:131:5)
+19 verbose statusCode 404
+20 verbose pkgid @windmill-labs/windmill-react-sdk@^1.542.6
+21 error code E404
+22 error 404 Not Found - GET https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk - Not found
+23 error 404
+24 error 404  '@windmill-labs/windmill-react-sdk@^1.542.6' is not in this registry.
+25 error 404
+26 error 404 Note that you can also install from a
+27 error 404 tarball, folder, http url, or git url.
+28 silly unfinished npm timer reify 1757761126695
+29 silly unfinished npm timer reify:loadTrees 1757761126695
+30 verbose cwd /home/rfiszel/windmill-whitelabelling-react-webpack
+31 verbose os Linux 6.14.8-400.asahi.fc42.aarch64+16k
+32 verbose node v22.16.0
+33 verbose npm  v10.9.2
+34 verbose exit 1
+35 verbose code 1
+36 error A complete log of this run can be found in: /home/rfiszel/windmill-whitelabelling-react-webpack/false/_logs/2025-09-13T10_58_46_591Z-debug-0.log

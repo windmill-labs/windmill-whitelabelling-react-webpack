@@ -1,0 +1,1476 @@
+0 verbose cli /usr/bin/node-22 /usr/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.16.0
+3 silly config load:file:/usr/lib/node_modules_22/npm/npmrc
+4 silly config load:file:/home/rfiszel/windmill-whitelabelling-react-webpack/.npmrc
+5 silly config load:file:/home/rfiszel/.npmrc
+6 silly config load:file:/etc/npmrc
+7 verbose title npm install
+8 verbose argv "install" "--cache" "false"
+9 verbose logfile logs-max:10 dir:/home/rfiszel/windmill-whitelabelling-react-webpack/false/_logs/2025-09-13T10_59_01_137Z-
+10 verbose logfile /home/rfiszel/windmill-whitelabelling-react-webpack/false/_logs/2025-09-13T10_59_01_137Z-debug-0.log
+11 silly logfile done cleaning log files
+12 silly packumentCache heap:4345298944 maxSize:1086324736 maxEntrySize:543162368
+13 silly idealTree buildDeps
+14 silly fetch manifest @windmill-labs/windmill-react-sdk@^1.542.6
+15 silly packumentCache full:https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk 1319ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/@windmill-labs%2fwindmill-react-sdk set size:367265 disposed:false
+18 silly fetch manifest ag-charts-community@^9.0.1
+19 silly packumentCache full:https://registry.npmjs.org/ag-charts-community cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/ag-charts-community 49ms (cache miss)
+21 silly packumentCache full:https://registry.npmjs.org/ag-charts-community set size:undefined disposed:false
+22 silly fetch manifest ag-charts-enterprise@^9.0.1
+23 silly packumentCache full:https://registry.npmjs.org/ag-charts-enterprise cache-miss
+24 http fetch GET 200 https://registry.npmjs.org/ag-charts-enterprise 578ms (cache miss)
+25 silly packumentCache full:https://registry.npmjs.org/ag-charts-enterprise set size:undefined disposed:false
+26 silly fetch manifest ag-grid-community@^31.3.4
+27 silly packumentCache full:https://registry.npmjs.org/ag-grid-community cache-miss
+28 http fetch GET 200 https://registry.npmjs.org/ag-grid-community 43ms (cache miss)
+29 silly packumentCache full:https://registry.npmjs.org/ag-grid-community set size:undefined disposed:false
+30 silly fetch manifest ag-grid-enterprise@^31.3.4
+31 silly packumentCache full:https://registry.npmjs.org/ag-grid-enterprise cache-miss
+32 http fetch GET 200 https://registry.npmjs.org/ag-grid-enterprise 49ms (cache miss)
+33 silly packumentCache full:https://registry.npmjs.org/ag-grid-enterprise set size:undefined disposed:false
+34 silly fetch manifest chart.js@^4.4.6
+35 silly packumentCache full:https://registry.npmjs.org/chart.js cache-miss
+36 http fetch GET 200 https://registry.npmjs.org/chart.js 34ms (cache miss)
+37 silly packumentCache full:https://registry.npmjs.org/chart.js set size:undefined disposed:false
+38 silly fetch manifest chartjs-adapter-date-fns@^3.0.0
+39 silly packumentCache full:https://registry.npmjs.org/chartjs-adapter-date-fns cache-miss
+40 http fetch GET 200 https://registry.npmjs.org/chartjs-adapter-date-fns 611ms (cache miss)
+41 silly packumentCache full:https://registry.npmjs.org/chartjs-adapter-date-fns set size:undefined disposed:false
+42 silly fetch manifest date-fns@>=2.0.0
+43 silly packumentCache full:https://registry.npmjs.org/date-fns cache-miss
+44 http fetch GET 200 https://registry.npmjs.org/date-fns 163ms (cache miss)
+45 silly packumentCache full:https://registry.npmjs.org/date-fns set size:undefined disposed:false
+46 silly fetch manifest chartjs-plugin-zoom@^2.0.0
+47 silly packumentCache full:https://registry.npmjs.org/chartjs-plugin-zoom cache-miss
+48 http fetch GET 200 https://registry.npmjs.org/chartjs-plugin-zoom 35ms (cache miss)
+49 silly packumentCache full:https://registry.npmjs.org/chartjs-plugin-zoom set size:undefined disposed:false
+50 silly fetch manifest ol@^7.4.0
+51 silly packumentCache full:https://registry.npmjs.org/ol cache-miss
+52 http fetch GET 200 https://registry.npmjs.org/ol 143ms (cache miss)
+53 silly packumentCache full:https://registry.npmjs.org/ol set size:undefined disposed:false
+54 silly fetch manifest pdfjs-dist@4.8.69
+55 silly packumentCache full:https://registry.npmjs.org/pdfjs-dist cache-miss
+56 http fetch GET 200 https://registry.npmjs.org/pdfjs-dist 61ms (cache miss)
+57 silly packumentCache full:https://registry.npmjs.org/pdfjs-dist set size:undefined disposed:false
+58 silly fetch manifest quill@^1.3.7
+59 silly packumentCache full:https://registry.npmjs.org/quill cache-miss
+60 http fetch GET 200 https://registry.npmjs.org/quill 30ms (cache miss)
+61 silly packumentCache full:https://registry.npmjs.org/quill set size:undefined disposed:false
+62 silly fetch manifest react@^18.0.0
+63 silly packumentCache full:https://registry.npmjs.org/react cache-miss
+64 http fetch GET 200 https://registry.npmjs.org/react 92ms (cache miss)
+65 silly packumentCache full:https://registry.npmjs.org/react set size:undefined disposed:false
+66 silly fetch manifest react-dom@^18.0.0
+67 silly packumentCache full:https://registry.npmjs.org/react-dom cache-miss
+68 http fetch GET 200 https://registry.npmjs.org/react-dom 104ms (cache miss)
+69 silly packumentCache full:https://registry.npmjs.org/react-dom set size:undefined disposed:false
+70 silly placeDep ROOT @windmill-labs/windmill-react-sdk@1.542.6 REPLACE for: Windmill Whitelabel Example@0.1.0 want: ^1.542.6
+71 silly placeDep ROOT ol@7.5.2 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^7.4.0
+72 silly placeDep ROOT ag-charts-community@9.3.2 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^9.0.1
+73 silly placeDep ROOT ag-charts-enterprise@9.3.2 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^9.0.1
+74 silly placeDep ROOT ag-grid-community@31.3.4 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^31.3.4
+75 silly placeDep ROOT ag-grid-enterprise@31.3.4 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^31.3.4
+76 silly placeDep ROOT chart.js@4.5.0 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^4.4.6
+77 silly placeDep ROOT chartjs-adapter-date-fns@3.0.0 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^3.0.0
+78 silly placeDep ROOT date-fns@4.1.0 OK for: chartjs-adapter-date-fns@3.0.0 want: >=2.0.0
+79 silly placeDep ROOT chartjs-plugin-zoom@2.2.0 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^2.0.0
+80 silly placeDep ROOT pdfjs-dist@4.8.69 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: 4.8.69
+81 silly placeDep ROOT quill@1.3.7 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: ^1.3.7
+82 silly fetch manifest windmill-components@1.542.5
+83 silly packumentCache full:https://registry.npmjs.org/windmill-components cache-miss
+84 silly fetch manifest clone@^2.1.1
+85 silly packumentCache full:https://registry.npmjs.org/clone cache-miss
+86 silly fetch manifest extend@^3.0.2
+87 silly packumentCache full:https://registry.npmjs.org/extend cache-miss
+88 silly fetch manifest parchment@^1.1.4
+89 silly packumentCache full:https://registry.npmjs.org/parchment cache-miss
+90 silly fetch manifest deep-equal@^1.0.1
+91 silly packumentCache full:https://registry.npmjs.org/deep-equal cache-miss
+92 silly fetch manifest quill-delta@^3.6.2
+93 silly packumentCache full:https://registry.npmjs.org/quill-delta cache-miss
+94 silly fetch manifest eventemitter3@^2.0.3
+95 silly packumentCache full:https://registry.npmjs.org/eventemitter3 cache-miss
+96 silly fetch manifest canvas@^3.0.0-rc2
+97 silly packumentCache full:https://registry.npmjs.org/canvas cache-miss
+98 silly fetch manifest path2d@^0.2.1
+99 silly packumentCache full:https://registry.npmjs.org/path2d cache-miss
+100 silly fetch manifest @types/hammerjs@^2.0.45
+101 silly packumentCache full:https://registry.npmjs.org/@types%2fhammerjs cache-miss
+102 silly fetch manifest hammerjs@^2.0.8
+103 silly packumentCache full:https://registry.npmjs.org/hammerjs cache-miss
+104 http fetch GET 200 https://registry.npmjs.org/hammerjs 64ms (cache miss)
+105 silly packumentCache full:https://registry.npmjs.org/hammerjs set size:undefined disposed:false
+106 silly fetch manifest @kurkle/color@^0.3.0
+107 silly packumentCache full:https://registry.npmjs.org/@kurkle%2fcolor cache-miss
+108 http fetch GET 200 https://registry.npmjs.org/extend 74ms (cache miss)
+109 silly packumentCache full:https://registry.npmjs.org/extend set size:undefined disposed:false
+110 silly fetch manifest pbf@3.2.1
+111 silly packumentCache full:https://registry.npmjs.org/pbf cache-miss
+112 http fetch GET 200 https://registry.npmjs.org/clone 77ms (cache miss)
+113 silly packumentCache full:https://registry.npmjs.org/clone set size:undefined disposed:false
+114 silly fetch manifest rbush@^3.0.1
+115 silly packumentCache full:https://registry.npmjs.org/rbush cache-miss
+116 http fetch GET 200 https://registry.npmjs.org/quill-delta 78ms (cache miss)
+117 silly packumentCache full:https://registry.npmjs.org/quill-delta set size:undefined disposed:false
+118 silly fetch manifest earcut@^2.2.3
+119 silly packumentCache full:https://registry.npmjs.org/earcut cache-miss
+120 http fetch GET 200 https://registry.npmjs.org/eventemitter3 81ms (cache miss)
+121 silly packumentCache full:https://registry.npmjs.org/eventemitter3 set size:undefined disposed:false
+122 silly fetch manifest geotiff@^2.0.7
+123 silly packumentCache full:https://registry.npmjs.org/geotiff cache-miss
+124 http fetch GET 200 https://registry.npmjs.org/canvas 85ms (cache miss)
+125 silly packumentCache full:https://registry.npmjs.org/canvas set size:undefined disposed:false
+126 silly fetch manifest ol-mapbox-style@^10.1.0
+127 silly packumentCache full:https://registry.npmjs.org/ol-mapbox-style cache-miss
+128 http fetch GET 200 https://registry.npmjs.org/parchment 87ms (cache miss)
+129 silly packumentCache full:https://registry.npmjs.org/parchment set size:undefined disposed:false
+130 http fetch GET 200 https://registry.npmjs.org/path2d 90ms (cache miss)
+131 silly packumentCache full:https://registry.npmjs.org/path2d set size:undefined disposed:false
+132 http fetch GET 200 https://registry.npmjs.org/@types%2fhammerjs 90ms (cache miss)
+133 silly packumentCache full:https://registry.npmjs.org/@types%2fhammerjs set size:undefined disposed:false
+134 http fetch GET 200 https://registry.npmjs.org/deep-equal 91ms (cache miss)
+135 silly packumentCache full:https://registry.npmjs.org/deep-equal set size:undefined disposed:false
+136 http fetch GET 200 https://registry.npmjs.org/@kurkle%2fcolor 51ms (cache miss)
+137 silly packumentCache full:https://registry.npmjs.org/@kurkle%2fcolor set size:undefined disposed:false
+138 http fetch GET 200 https://registry.npmjs.org/rbush 50ms (cache miss)
+139 silly packumentCache full:https://registry.npmjs.org/rbush set size:undefined disposed:false
+140 http fetch GET 200 https://registry.npmjs.org/pbf 54ms (cache miss)
+141 silly packumentCache full:https://registry.npmjs.org/pbf set size:undefined disposed:false
+142 http fetch GET 200 https://registry.npmjs.org/earcut 67ms (cache miss)
+143 silly packumentCache full:https://registry.npmjs.org/earcut set size:undefined disposed:false
+144 http fetch GET 200 https://registry.npmjs.org/geotiff 69ms (cache miss)
+145 silly packumentCache full:https://registry.npmjs.org/geotiff set size:undefined disposed:false
+146 http fetch GET 200 https://registry.npmjs.org/ol-mapbox-style 71ms (cache miss)
+147 silly packumentCache full:https://registry.npmjs.org/ol-mapbox-style set size:undefined disposed:false
+148 http fetch GET 200 https://registry.npmjs.org/windmill-components 164ms (cache miss)
+149 silly packumentCache full:https://registry.npmjs.org/windmill-components set size:undefined disposed:false
+150 silly fetch manifest svelte@^5.0.0
+151 silly packumentCache full:https://registry.npmjs.org/svelte cache-miss
+152 http fetch GET 200 https://registry.npmjs.org/svelte 62ms (cache miss)
+153 silly packumentCache full:https://registry.npmjs.org/svelte set size:undefined disposed:false
+154 silly placeDep ROOT windmill-components@1.542.5 OK for: @windmill-labs/windmill-react-sdk@1.542.6 want: 1.542.5
+155 silly fetch manifest @anthropic-ai/sdk@^0.60.0
+156 silly packumentCache full:https://registry.npmjs.org/@anthropic-ai%2fsdk cache-miss
+157 silly fetch manifest @aws-crypto/sha256-js@^4.0.0
+158 silly packumentCache full:https://registry.npmjs.org/@aws-crypto%2fsha256-js cache-miss
+159 silly fetch manifest @codingame/monaco-vscode-configuration-service-override@~20.2.1
+160 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-configuration-service-override cache-miss
+161 silly fetch manifest @codingame/monaco-vscode-editor-api@~20.2.1
+162 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api cache-miss
+163 silly fetch manifest @codingame/monaco-vscode-standalone-css-language-features@~20.2.1
+164 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-css-language-features cache-miss
+165 silly fetch manifest @codingame/monaco-vscode-standalone-html-language-features@~20.2.1
+166 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-html-language-features cache-miss
+167 silly fetch manifest @codingame/monaco-vscode-standalone-json-language-features@~20.2.1
+168 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-json-language-features cache-miss
+169 silly fetch manifest @codingame/monaco-vscode-standalone-languages@~20.2.1
+170 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-languages cache-miss
+171 silly fetch manifest @codingame/monaco-vscode-standalone-typescript-language-features@~20.2.1
+172 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-typescript-language-features cache-miss
+173 silly fetch manifest @json2csv/plainjs@^7.0.6
+174 silly packumentCache full:https://registry.npmjs.org/@json2csv%2fplainjs cache-miss
+175 silly fetch manifest @leeoniya/ufuzzy@^1.0.8
+176 silly packumentCache full:https://registry.npmjs.org/@leeoniya%2fufuzzy cache-miss
+177 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2fsha256-js 69ms (cache miss)
+178 silly packumentCache full:https://registry.npmjs.org/@aws-crypto%2fsha256-js set size:undefined disposed:false
+179 silly fetch manifest @popperjs/core@^2.11.6
+180 silly packumentCache full:https://registry.npmjs.org/@popperjs%2fcore cache-miss
+181 http fetch GET 200 https://registry.npmjs.org/@anthropic-ai%2fsdk 74ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/@anthropic-ai%2fsdk set size:undefined disposed:false
+183 silly fetch manifest @redocly/json-to-json-schema@^0.0.1
+184 silly packumentCache full:https://registry.npmjs.org/@redocly%2fjson-to-json-schema cache-miss
+185 http fetch GET 200 https://registry.npmjs.org/@leeoniya%2fufuzzy 105ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/@leeoniya%2fufuzzy set size:undefined disposed:false
+187 silly fetch manifest @scalar/openapi-parser@^0.15.0
+188 silly packumentCache full:https://registry.npmjs.org/@scalar%2fopenapi-parser cache-miss
+189 http fetch GET 200 https://registry.npmjs.org/@popperjs%2fcore 89ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/@popperjs%2fcore set size:undefined disposed:false
+191 silly fetch manifest @tanstack/svelte-table@npm:tanstack-table-8-svelte-5@^0.1
+192 silly packumentCache full:https://registry.npmjs.org/tanstack-table-8-svelte-5 cache-miss
+193 http fetch GET 200 https://registry.npmjs.org/@scalar%2fopenapi-parser 106ms (cache miss)
+194 silly packumentCache full:https://registry.npmjs.org/@scalar%2fopenapi-parser set size:undefined disposed:false
+195 silly fetch manifest @tutorlatin/svelte-tiny-virtual-list@^3.0.2
+196 silly packumentCache full:https://registry.npmjs.org/@tutorlatin%2fsvelte-tiny-virtual-list cache-miss
+197 http fetch GET 200 https://registry.npmjs.org/tanstack-table-8-svelte-5 605ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/tanstack-table-8-svelte-5 set size:undefined disposed:false
+199 silly fetch manifest @windmill-labs/svelte-dnd-action@^0.9.44
+200 silly packumentCache full:https://registry.npmjs.org/@windmill-labs%2fsvelte-dnd-action cache-miss
+201 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-css-language-features 1085ms (cache miss)
+202 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-css-language-features set size:undefined disposed:false
+203 silly fetch manifest @xterm/addon-fit@^0.10.0
+204 silly packumentCache full:https://registry.npmjs.org/@xterm%2faddon-fit cache-miss
+205 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-html-language-features 1146ms (cache miss)
+206 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-html-language-features set size:undefined disposed:false
+207 silly fetch manifest @xyflow/svelte@^1.0.0
+208 silly packumentCache full:https://registry.npmjs.org/@xyflow%2fsvelte cache-miss
+209 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-configuration-service-override 1154ms (cache miss)
+210 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-configuration-service-override set size:undefined disposed:false
+211 silly fetch manifest ansi_up@^6.0.6
+212 silly packumentCache full:https://registry.npmjs.org/ansi_up cache-miss
+213 http fetch GET 200 https://registry.npmjs.org/@json2csv%2fplainjs 1177ms (cache miss)
+214 silly packumentCache full:https://registry.npmjs.org/@json2csv%2fplainjs set size:undefined disposed:false
+215 silly fetch manifest clone@^2.1.2
+216 silly packumentCache full:https://registry.npmjs.org/clone cache-miss
+217 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-typescript-language-features 1179ms (cache miss)
+218 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-typescript-language-features set size:undefined disposed:false
+219 silly fetch manifest d3-zoom@^3.0.0
+220 silly packumentCache full:https://registry.npmjs.org/d3-zoom cache-miss
+221 http cache https://registry.npmjs.org/clone 8ms (cache hit)
+222 silly packumentCache full:https://registry.npmjs.org/clone set size:82973 disposed:false
+223 silly fetch manifest date-fns@^2.30.0
+224 silly packumentCache full:https://registry.npmjs.org/date-fns cache-miss
+225 http fetch GET 200 https://registry.npmjs.org/@xterm%2faddon-fit 102ms (cache miss)
+226 silly packumentCache full:https://registry.npmjs.org/@xterm%2faddon-fit set size:undefined disposed:false
+227 silly fetch manifest diff@^7.0.0
+228 silly packumentCache full:https://registry.npmjs.org/diff cache-miss
+229 http cache https://registry.npmjs.org/date-fns 8ms (cache hit)
+230 silly packumentCache full:https://registry.npmjs.org/date-fns set size:3443779 disposed:false
+231 silly fetch manifest driver.js@^1.3.0
+232 silly packumentCache full:https://registry.npmjs.org/driver.js cache-miss
+233 http fetch GET 200 https://registry.npmjs.org/d3-zoom 44ms (cache miss)
+234 silly packumentCache full:https://registry.npmjs.org/d3-zoom set size:undefined disposed:false
+235 silly fetch manifest fast-equals@^5.0.1
+236 silly packumentCache full:https://registry.npmjs.org/fast-equals cache-miss
+237 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-json-language-features 1227ms (cache miss)
+238 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-json-language-features set size:undefined disposed:false
+239 silly fetch manifest graphql@^16.7.1
+240 silly packumentCache full:https://registry.npmjs.org/graphql cache-miss
+241 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-languages 1230ms (cache miss)
+242 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-standalone-languages set size:undefined disposed:false
+243 silly fetch manifest hash-sum@^2.0.0
+244 silly packumentCache full:https://registry.npmjs.org/hash-sum cache-miss
+245 http fetch GET 200 https://registry.npmjs.org/diff 42ms (cache miss)
+246 silly packumentCache full:https://registry.npmjs.org/diff set size:undefined disposed:false
+247 silly fetch manifest highlight.js@^11.8.0
+248 silly packumentCache full:https://registry.npmjs.org/highlight.js cache-miss
+249 http fetch GET 200 https://registry.npmjs.org/@redocly%2fjson-to-json-schema 1157ms (cache miss)
+250 silly packumentCache full:https://registry.npmjs.org/@redocly%2fjson-to-json-schema set size:undefined disposed:false
+251 silly fetch manifest idb@^8.0.2
+252 silly packumentCache full:https://registry.npmjs.org/idb cache-miss
+253 http fetch GET 200 https://registry.npmjs.org/driver.js 29ms (cache miss)
+254 silly packumentCache full:https://registry.npmjs.org/driver.js set size:undefined disposed:false
+255 silly fetch manifest lru-cache@^11.1.0
+256 silly packumentCache full:https://registry.npmjs.org/lru-cache cache-miss
+257 http fetch GET 200 https://registry.npmjs.org/fast-equals 36ms (cache miss)
+258 silly packumentCache full:https://registry.npmjs.org/fast-equals set size:undefined disposed:false
+259 silly fetch manifest lucide-svelte@^0.540.0
+260 silly packumentCache full:https://registry.npmjs.org/lucide-svelte cache-miss
+261 http fetch GET 200 https://registry.npmjs.org/idb 38ms (cache miss)
+262 silly packumentCache full:https://registry.npmjs.org/idb set size:undefined disposed:false
+263 silly fetch manifest minimatch@^10.0.1
+264 silly packumentCache full:https://registry.npmjs.org/minimatch cache-miss
+265 http fetch GET 200 https://registry.npmjs.org/highlight.js 48ms (cache miss)
+266 silly packumentCache full:https://registry.npmjs.org/highlight.js set size:undefined disposed:false
+267 silly fetch manifest monaco-editor@npm:@codingame/monaco-vscode-editor-api@~20.2.1
+268 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api cache-miss
+269 http fetch GET 200 https://registry.npmjs.org/graphql 60ms (cache miss)
+270 silly packumentCache full:https://registry.npmjs.org/graphql set size:undefined disposed:false
+271 silly fetch manifest monaco-editor-wrapper@6.12.0
+272 silly packumentCache full:https://registry.npmjs.org/monaco-editor-wrapper cache-miss
+273 http fetch GET 200 https://registry.npmjs.org/lru-cache 42ms (cache miss)
+274 silly packumentCache full:https://registry.npmjs.org/lru-cache set size:undefined disposed:false
+275 silly fetch manifest monaco-graphql@=1.6.0
+276 silly packumentCache full:https://registry.npmjs.org/monaco-graphql cache-miss
+277 http fetch GET 200 https://registry.npmjs.org/hash-sum 68ms (cache miss)
+278 silly packumentCache full:https://registry.npmjs.org/hash-sum set size:undefined disposed:false
+279 silly fetch manifest monaco-languageclient@9.11.0
+280 silly packumentCache full:https://registry.npmjs.org/monaco-languageclient cache-miss
+281 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api 1302ms (cache miss)
+282 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api set size:undefined disposed:false
+283 silly fetch manifest monaco-vim@^0.4.1
+284 silly packumentCache full:https://registry.npmjs.org/monaco-vim cache-miss
+285 http fetch GET 200 https://registry.npmjs.org/minimatch 40ms (cache miss)
+286 silly packumentCache full:https://registry.npmjs.org/minimatch set size:undefined disposed:false
+287 silly fetch manifest openai@^5.16.0
+288 silly packumentCache full:https://registry.npmjs.org/openai cache-miss
+289 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api 50ms (cache miss)
+290 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api set size:undefined disposed:false
+291 silly fetch manifest openapi-types@^12.1.3
+292 silly packumentCache full:https://registry.npmjs.org/openapi-types cache-miss
+293 http fetch GET 200 https://registry.npmjs.org/lucide-svelte 77ms (cache miss)
+294 silly packumentCache full:https://registry.npmjs.org/lucide-svelte set size:undefined disposed:false
+295 silly fetch manifest p-limit@^6.1.0
+296 silly packumentCache full:https://registry.npmjs.org/p-limit cache-miss
+297 http fetch GET 200 https://registry.npmjs.org/monaco-vim 50ms (cache miss)
+298 silly packumentCache full:https://registry.npmjs.org/monaco-vim set size:undefined disposed:false
+299 silly fetch manifest panzoom@^9.4.3
+300 silly packumentCache full:https://registry.npmjs.org/panzoom cache-miss
+301 http fetch GET 200 https://registry.npmjs.org/openapi-types 34ms (cache miss)
+302 silly packumentCache full:https://registry.npmjs.org/openapi-types set size:undefined disposed:false
+303 silly fetch manifest rehype-github-alerts@^3.0.0
+304 silly packumentCache full:https://registry.npmjs.org/rehype-github-alerts cache-miss
+305 http fetch GET 200 https://registry.npmjs.org/openai 63ms (cache miss)
+306 silly packumentCache full:https://registry.npmjs.org/openai set size:undefined disposed:false
+307 silly fetch manifest rehype-raw@^7.0.0
+308 silly packumentCache full:https://registry.npmjs.org/rehype-raw cache-miss
+309 http fetch GET 200 https://registry.npmjs.org/p-limit 42ms (cache miss)
+310 silly packumentCache full:https://registry.npmjs.org/p-limit set size:undefined disposed:false
+311 silly fetch manifest rfc4648@^1.5.3
+312 silly packumentCache full:https://registry.npmjs.org/rfc4648 cache-miss
+313 http fetch GET 200 https://registry.npmjs.org/panzoom 52ms (cache miss)
+314 silly packumentCache full:https://registry.npmjs.org/panzoom set size:undefined disposed:false
+315 silly fetch manifest svelte-carousel@^1.0.25
+316 silly packumentCache full:https://registry.npmjs.org/svelte-carousel cache-miss
+317 http fetch GET 200 https://registry.npmjs.org/rehype-raw 39ms (cache miss)
+318 silly packumentCache full:https://registry.npmjs.org/rehype-raw set size:undefined disposed:false
+319 silly fetch manifest svelte-exmarkdown@^5.0.0
+320 silly packumentCache full:https://registry.npmjs.org/svelte-exmarkdown cache-miss
+321 http fetch GET 200 https://registry.npmjs.org/rfc4648 49ms (cache miss)
+322 silly packumentCache full:https://registry.npmjs.org/rfc4648 set size:undefined disposed:false
+323 silly fetch manifest svelte-infinite-loading@^1.4.0
+324 silly packumentCache full:https://registry.npmjs.org/svelte-infinite-loading cache-miss
+325 http fetch GET 200 https://registry.npmjs.org/@tutorlatin%2fsvelte-tiny-virtual-list 1288ms (cache miss)
+326 silly packumentCache full:https://registry.npmjs.org/@tutorlatin%2fsvelte-tiny-virtual-list set size:undefined disposed:false
+327 silly fetch manifest tailwind-merge@^1.13.2
+328 silly packumentCache full:https://registry.npmjs.org/tailwind-merge cache-miss
+329 http fetch GET 200 https://registry.npmjs.org/tailwind-merge 44ms (cache miss)
+330 silly packumentCache full:https://registry.npmjs.org/tailwind-merge set size:undefined disposed:false
+331 silly fetch manifest vscode@npm:@codingame/monaco-vscode-extension-api@~20.2.1
+332 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extension-api cache-miss
+333 http fetch GET 200 https://registry.npmjs.org/ansi_up 632ms (cache miss)
+334 silly packumentCache full:https://registry.npmjs.org/ansi_up set size:undefined disposed:false
+335 silly fetch manifest vscode-languageclient@~9.0.1
+336 silly packumentCache full:https://registry.npmjs.org/vscode-languageclient cache-miss
+337 http fetch GET 200 https://registry.npmjs.org/vscode-languageclient 51ms (cache miss)
+338 silly packumentCache full:https://registry.npmjs.org/vscode-languageclient set size:undefined disposed:false
+339 silly fetch manifest vscode-uri@~3.1.0
+340 silly packumentCache full:https://registry.npmjs.org/vscode-uri cache-miss
+341 http fetch GET 200 https://registry.npmjs.org/monaco-graphql 580ms (cache miss)
+342 silly packumentCache full:https://registry.npmjs.org/monaco-graphql set size:undefined disposed:false
+343 silly fetch manifest vscode-ws-jsonrpc@~3.5.0
+344 silly packumentCache full:https://registry.npmjs.org/vscode-ws-jsonrpc cache-miss
+345 http fetch GET 200 https://registry.npmjs.org/monaco-languageclient 582ms (cache miss)
+346 silly packumentCache full:https://registry.npmjs.org/monaco-languageclient set size:undefined disposed:false
+347 silly fetch manifest windmill-parser-wasm-csharp@1.510.1
+348 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-csharp cache-miss
+349 http fetch GET 200 https://registry.npmjs.org/vscode-uri 46ms (cache miss)
+350 silly packumentCache full:https://registry.npmjs.org/vscode-uri set size:undefined disposed:false
+351 silly fetch manifest windmill-parser-wasm-go@1.510.1
+352 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-go cache-miss
+353 http fetch GET 200 https://registry.npmjs.org/monaco-editor-wrapper 611ms (cache miss)
+354 silly packumentCache full:https://registry.npmjs.org/monaco-editor-wrapper set size:undefined disposed:false
+355 silly fetch manifest windmill-parser-wasm-java@1.510.1
+356 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-java cache-miss
+357 http fetch GET 200 https://registry.npmjs.org/rehype-github-alerts 577ms (cache miss)
+358 silly packumentCache full:https://registry.npmjs.org/rehype-github-alerts set size:undefined disposed:false
+359 silly fetch manifest windmill-parser-wasm-nu@1.510.1
+360 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-nu cache-miss
+361 http fetch GET 200 https://registry.npmjs.org/@windmill-labs%2fsvelte-dnd-action 1191ms (cache miss)
+362 silly packumentCache full:https://registry.npmjs.org/@windmill-labs%2fsvelte-dnd-action set size:undefined disposed:false
+363 silly fetch manifest windmill-parser-wasm-php@1.510.1
+364 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-php cache-miss
+365 http fetch GET 200 https://registry.npmjs.org/svelte-carousel 557ms (cache miss)
+366 silly packumentCache full:https://registry.npmjs.org/svelte-carousel set size:undefined disposed:false
+367 silly fetch manifest windmill-parser-wasm-py@1.538.0
+368 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-py cache-miss
+369 http fetch GET 200 https://registry.npmjs.org/svelte-infinite-loading 540ms (cache miss)
+370 silly packumentCache full:https://registry.npmjs.org/svelte-infinite-loading set size:undefined disposed:false
+371 silly fetch manifest windmill-parser-wasm-regex@1.512.0
+372 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-regex cache-miss
+373 http fetch GET 200 https://registry.npmjs.org/svelte-exmarkdown 651ms (cache miss)
+374 silly packumentCache full:https://registry.npmjs.org/svelte-exmarkdown set size:undefined disposed:false
+375 silly fetch manifest windmill-parser-wasm-ruby@1.526.1
+376 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-ruby cache-miss
+377 http fetch GET 200 https://registry.npmjs.org/@xyflow%2fsvelte 1210ms (cache miss)
+378 silly packumentCache full:https://registry.npmjs.org/@xyflow%2fsvelte set size:undefined disposed:false
+379 silly fetch manifest windmill-parser-wasm-rust@1.510.1
+380 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-rust cache-miss
+381 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-go 544ms (cache miss)
+382 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-go set size:undefined disposed:false
+383 silly fetch manifest windmill-parser-wasm-ts@1.538.0
+384 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-ts cache-miss
+385 http fetch GET 200 https://registry.npmjs.org/vscode-ws-jsonrpc 610ms (cache miss)
+386 silly packumentCache full:https://registry.npmjs.org/vscode-ws-jsonrpc set size:undefined disposed:false
+387 silly fetch manifest windmill-parser-wasm-yaml@1.510.1
+388 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-yaml cache-miss
+389 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-java 599ms (cache miss)
+390 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-java set size:undefined disposed:false
+391 silly fetch manifest windmill-sql-datatype-parser-wasm@1.512.0
+392 silly packumentCache full:https://registry.npmjs.org/windmill-sql-datatype-parser-wasm cache-miss
+393 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-php 564ms (cache miss)
+394 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-php set size:undefined disposed:false
+395 silly fetch manifest windmill-utils-internal@^1.3.0
+396 silly packumentCache full:https://registry.npmjs.org/windmill-utils-internal cache-miss
+397 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-csharp 656ms (cache miss)
+398 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-csharp set size:undefined disposed:false
+399 silly fetch manifest xterm@^5.3.0
+400 silly packumentCache full:https://registry.npmjs.org/xterm cache-miss
+401 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-regex 570ms (cache miss)
+402 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-regex set size:undefined disposed:false
+403 silly fetch manifest xterm-readline@^1.1.2
+404 silly packumentCache full:https://registry.npmjs.org/xterm-readline cache-miss
+405 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-py 597ms (cache miss)
+406 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-py set size:undefined disposed:false
+407 silly fetch manifest y-monaco@^0.1.4
+408 silly packumentCache full:https://registry.npmjs.org/y-monaco cache-miss
+409 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-nu 661ms (cache miss)
+410 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-nu set size:undefined disposed:false
+411 silly fetch manifest y-websocket@^1.5.4
+412 silly packumentCache full:https://registry.npmjs.org/y-websocket cache-miss
+413 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-ruby 594ms (cache miss)
+414 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-ruby set size:undefined disposed:false
+415 silly fetch manifest yaml@^2.8.0
+416 silly packumentCache full:https://registry.npmjs.org/yaml cache-miss
+417 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-extension-api 1166ms (cache miss)
+418 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extension-api set size:undefined disposed:false
+419 silly fetch manifest yjs@^13.6.7
+420 silly packumentCache full:https://registry.npmjs.org/yjs cache-miss
+421 http fetch GET 200 https://registry.npmjs.org/xterm 183ms (cache miss)
+422 silly packumentCache full:https://registry.npmjs.org/xterm set size:undefined disposed:false
+423 silly fetch manifest zod@^3.24.2
+424 silly packumentCache full:https://registry.npmjs.org/zod cache-miss
+425 http fetch GET 200 https://registry.npmjs.org/yaml 129ms (cache miss)
+426 silly packumentCache full:https://registry.npmjs.org/yaml set size:undefined disposed:false
+427 silly fetch manifest zod-to-json-schema@^3.24.5
+428 silly packumentCache full:https://registry.npmjs.org/zod-to-json-schema cache-miss
+429 http fetch GET 200 https://registry.npmjs.org/yjs 87ms (cache miss)
+430 silly packumentCache full:https://registry.npmjs.org/yjs set size:undefined disposed:false
+431 silly fetch manifest @rollup/rollup-linux-x64-gnu@^4.35.0
+432 silly packumentCache full:https://registry.npmjs.org/@rollup%2frollup-linux-x64-gnu cache-miss
+433 http fetch GET 200 https://registry.npmjs.org/zod-to-json-schema 38ms (cache miss)
+434 silly packumentCache full:https://registry.npmjs.org/zod-to-json-schema set size:undefined disposed:false
+435 http fetch GET 200 https://registry.npmjs.org/zod 52ms (cache miss)
+436 silly packumentCache full:https://registry.npmjs.org/zod set size:undefined disposed:false
+437 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-gnu 59ms (cache miss)
+438 silly packumentCache full:https://registry.npmjs.org/@rollup%2frollup-linux-x64-gnu set size:undefined disposed:false
+439 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-rust 606ms (cache miss)
+440 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-rust set size:undefined disposed:false
+441 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-ts 604ms (cache miss)
+442 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-ts set size:undefined disposed:false
+443 http fetch GET 200 https://registry.npmjs.org/windmill-parser-wasm-yaml 616ms (cache miss)
+444 silly packumentCache full:https://registry.npmjs.org/windmill-parser-wasm-yaml set size:undefined disposed:false
+445 http fetch GET 200 https://registry.npmjs.org/windmill-utils-internal 603ms (cache miss)
+446 silly packumentCache full:https://registry.npmjs.org/windmill-utils-internal set size:undefined disposed:false
+447 http fetch GET 200 https://registry.npmjs.org/xterm-readline 623ms (cache miss)
+448 silly packumentCache full:https://registry.npmjs.org/xterm-readline set size:undefined disposed:false
+449 http fetch GET 200 https://registry.npmjs.org/y-monaco 623ms (cache miss)
+450 silly packumentCache full:https://registry.npmjs.org/y-monaco set size:undefined disposed:false
+451 http fetch GET 200 https://registry.npmjs.org/windmill-sql-datatype-parser-wasm 686ms (cache miss)
+452 silly packumentCache full:https://registry.npmjs.org/windmill-sql-datatype-parser-wasm set size:undefined disposed:false
+453 http fetch GET 200 https://registry.npmjs.org/y-websocket 702ms (cache miss)
+454 silly packumentCache full:https://registry.npmjs.org/y-websocket set size:undefined disposed:false
+455 silly placeDep ROOT @kurkle/color@0.3.4 OK for: chart.js@4.5.0 want: ^0.3.0
+456 silly placeDep ROOT @types/hammerjs@2.0.46 OK for: chartjs-plugin-zoom@2.2.0 want: ^2.0.45
+457 silly placeDep ROOT hammerjs@2.0.8 OK for: chartjs-plugin-zoom@2.2.0 want: ^2.0.8
+458 silly placeDep ROOT earcut@2.2.4 OK for: ol@7.5.2 want: ^2.2.3
+459 silly placeDep ROOT geotiff@2.1.3 OK for: ol@7.5.2 want: ^2.0.7
+460 silly placeDep ROOT ol-mapbox-style@10.7.0 OK for: ol@7.5.2 want: ^10.1.0
+461 silly placeDep ROOT pbf@3.2.1 OK for: ol@7.5.2 want: 3.2.1
+462 silly placeDep ROOT rbush@3.0.1 OK for: ol@7.5.2 want: ^3.0.1
+463 silly fetch manifest lerc@^3.0.0
+464 silly packumentCache full:https://registry.npmjs.org/lerc cache-miss
+465 silly fetch manifest pako@^2.0.4
+466 silly packumentCache full:https://registry.npmjs.org/pako cache-miss
+467 silly fetch manifest zstddec@^0.1.0
+468 silly packumentCache full:https://registry.npmjs.org/zstddec cache-miss
+469 silly fetch manifest quick-lru@^6.1.1
+470 silly packumentCache full:https://registry.npmjs.org/quick-lru cache-miss
+471 silly fetch manifest xml-utils@^1.0.2
+472 silly packumentCache full:https://registry.npmjs.org/xml-utils cache-miss
+473 silly fetch manifest web-worker@^1.2.0
+474 silly packumentCache full:https://registry.npmjs.org/web-worker cache-miss
+475 silly fetch manifest parse-headers@^2.0.2
+476 silly packumentCache full:https://registry.npmjs.org/parse-headers cache-miss
+477 silly fetch manifest @petamoriken/float16@^3.4.7
+478 silly packumentCache full:https://registry.npmjs.org/@petamoriken%2ffloat16 cache-miss
+479 silly fetch manifest mapbox-to-css-font@^2.4.1
+480 silly packumentCache full:https://registry.npmjs.org/mapbox-to-css-font cache-miss
+481 silly fetch manifest @mapbox/mapbox-gl-style-spec@^13.23.1
+482 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fmapbox-gl-style-spec cache-miss
+483 silly fetch manifest ieee754@^1.1.12
+484 silly packumentCache full:https://registry.npmjs.org/ieee754 cache-miss
+485 http fetch GET 200 https://registry.npmjs.org/zstddec 36ms (cache miss)
+486 silly packumentCache full:https://registry.npmjs.org/zstddec set size:undefined disposed:false
+487 silly fetch manifest resolve-protobuf-schema@^2.1.0
+488 silly packumentCache full:https://registry.npmjs.org/resolve-protobuf-schema cache-miss
+489 http fetch GET 200 https://registry.npmjs.org/pako 43ms (cache miss)
+490 silly packumentCache full:https://registry.npmjs.org/pako set size:undefined disposed:false
+491 silly fetch manifest quickselect@^2.0.0
+492 silly packumentCache full:https://registry.npmjs.org/quickselect cache-miss
+493 http fetch GET 200 https://registry.npmjs.org/quick-lru 52ms (cache miss)
+494 silly packumentCache full:https://registry.npmjs.org/quick-lru set size:undefined disposed:false
+495 http fetch GET 200 https://registry.npmjs.org/ieee754 52ms (cache miss)
+496 silly packumentCache full:https://registry.npmjs.org/ieee754 set size:undefined disposed:false
+497 http fetch GET 200 https://registry.npmjs.org/web-worker 54ms (cache miss)
+498 silly packumentCache full:https://registry.npmjs.org/web-worker set size:undefined disposed:false
+499 http fetch GET 200 https://registry.npmjs.org/parse-headers 56ms (cache miss)
+500 silly packumentCache full:https://registry.npmjs.org/parse-headers set size:undefined disposed:false
+501 http fetch GET 200 https://registry.npmjs.org/lerc 59ms (cache miss)
+502 silly packumentCache full:https://registry.npmjs.org/lerc set size:undefined disposed:false
+503 http fetch GET 200 https://registry.npmjs.org/resolve-protobuf-schema 37ms (cache miss)
+504 silly packumentCache full:https://registry.npmjs.org/resolve-protobuf-schema set size:undefined disposed:false
+505 http fetch GET 200 https://registry.npmjs.org/quickselect 38ms (cache miss)
+506 silly packumentCache full:https://registry.npmjs.org/quickselect set size:undefined disposed:false
+507 http fetch GET 200 https://registry.npmjs.org/@mapbox%2fmapbox-gl-style-spec 87ms (cache miss)
+508 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fmapbox-gl-style-spec set size:undefined disposed:false
+509 http fetch GET 200 https://registry.npmjs.org/@petamoriken%2ffloat16 103ms (cache miss)
+510 silly packumentCache full:https://registry.npmjs.org/@petamoriken%2ffloat16 set size:undefined disposed:false
+511 http fetch GET 200 https://registry.npmjs.org/mapbox-to-css-font 249ms (cache miss)
+512 silly packumentCache full:https://registry.npmjs.org/mapbox-to-css-font set size:undefined disposed:false
+513 http fetch GET 200 https://registry.npmjs.org/xml-utils 613ms (cache miss)
+514 silly packumentCache full:https://registry.npmjs.org/xml-utils set size:undefined disposed:false
+515 silly placeDep ROOT @petamoriken/float16@3.9.2 OK for: geotiff@2.1.3 want: ^3.4.7
+516 silly placeDep ROOT lerc@3.0.0 OK for: geotiff@2.1.3 want: ^3.0.0
+517 silly placeDep ROOT pako@2.1.0 OK for: geotiff@2.1.3 want: ^2.0.4
+518 silly placeDep ROOT parse-headers@2.0.6 OK for: geotiff@2.1.3 want: ^2.0.2
+519 silly placeDep ROOT quick-lru@6.1.2 OK for: geotiff@2.1.3 want: ^6.1.1
+520 silly placeDep ROOT web-worker@1.5.0 OK for: geotiff@2.1.3 want: ^1.2.0
+521 silly placeDep ROOT xml-utils@1.10.2 OK for: geotiff@2.1.3 want: ^1.0.2
+522 silly placeDep ROOT zstddec@0.1.0 OK for: geotiff@2.1.3 want: ^0.1.0
+523 silly placeDep ROOT @mapbox/mapbox-gl-style-spec@13.28.0 OK for: ol-mapbox-style@10.7.0 want: ^13.23.1
+524 silly placeDep ROOT mapbox-to-css-font@2.4.5 OK for: ol-mapbox-style@10.7.0 want: ^2.4.1
+525 silly fetch manifest rw@^1.3.3
+526 silly packumentCache full:https://registry.npmjs.org/rw cache-miss
+527 silly fetch manifest sort-object@^0.3.2
+528 silly packumentCache full:https://registry.npmjs.org/sort-object cache-miss
+529 silly fetch manifest csscolorparser@~1.0.2
+530 silly packumentCache full:https://registry.npmjs.org/csscolorparser cache-miss
+531 silly fetch manifest @mapbox/unitbezier@^0.0.0
+532 silly packumentCache full:https://registry.npmjs.org/@mapbox%2funitbezier cache-miss
+533 silly fetch manifest @mapbox/point-geometry@^0.1.0
+534 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fpoint-geometry cache-miss
+535 silly fetch manifest json-stringify-pretty-compact@^2.0.0
+536 silly packumentCache full:https://registry.npmjs.org/json-stringify-pretty-compact cache-miss
+537 silly fetch manifest @mapbox/jsonlint-lines-primitives@~2.0.2
+538 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fjsonlint-lines-primitives cache-miss
+539 http fetch GET 200 https://registry.npmjs.org/rw 35ms (cache miss)
+540 silly packumentCache full:https://registry.npmjs.org/rw set size:undefined disposed:false
+541 http fetch GET 200 https://registry.npmjs.org/json-stringify-pretty-compact 44ms (cache miss)
+542 silly packumentCache full:https://registry.npmjs.org/json-stringify-pretty-compact set size:undefined disposed:false
+543 http fetch GET 200 https://registry.npmjs.org/sort-object 55ms (cache miss)
+544 silly packumentCache full:https://registry.npmjs.org/sort-object set size:undefined disposed:false
+545 http fetch GET 200 https://registry.npmjs.org/csscolorparser 62ms (cache miss)
+546 silly packumentCache full:https://registry.npmjs.org/csscolorparser set size:undefined disposed:false
+547 http fetch GET 200 https://registry.npmjs.org/@mapbox%2fjsonlint-lines-primitives 62ms (cache miss)
+548 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fjsonlint-lines-primitives set size:undefined disposed:false
+549 http fetch GET 200 https://registry.npmjs.org/@mapbox%2fpoint-geometry 87ms (cache miss)
+550 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fpoint-geometry set size:undefined disposed:false
+551 http fetch GET 200 https://registry.npmjs.org/@mapbox%2funitbezier 115ms (cache miss)
+552 silly packumentCache full:https://registry.npmjs.org/@mapbox%2funitbezier set size:undefined disposed:false
+553 silly placeDep ROOT @mapbox/jsonlint-lines-primitives@2.0.2 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ~2.0.2
+554 silly placeDep ROOT @mapbox/point-geometry@0.1.0 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ^0.1.0
+555 silly placeDep ROOT @mapbox/unitbezier@0.0.0 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ^0.0.0
+556 silly placeDep ROOT csscolorparser@1.0.3 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ~1.0.2
+557 silly placeDep ROOT json-stringify-pretty-compact@2.0.0 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ^2.0.0
+558 silly placeDep ROOT rw@1.3.3 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ^1.3.3
+559 silly placeDep ROOT sort-object@0.3.2 OK for: @mapbox/mapbox-gl-style-spec@13.28.0 want: ^0.3.2
+560 silly fetch manifest sort-asc@^0.1.0
+561 silly packumentCache full:https://registry.npmjs.org/sort-asc cache-miss
+562 silly fetch manifest sort-desc@^0.1.1
+563 silly packumentCache full:https://registry.npmjs.org/sort-desc cache-miss
+564 http fetch GET 200 https://registry.npmjs.org/sort-asc 57ms (cache miss)
+565 silly packumentCache full:https://registry.npmjs.org/sort-asc set size:undefined disposed:false
+566 http fetch GET 200 https://registry.npmjs.org/sort-desc 58ms (cache miss)
+567 silly packumentCache full:https://registry.npmjs.org/sort-desc set size:undefined disposed:false
+568 silly placeDep ROOT ieee754@1.2.1 OK for: pbf@3.2.1 want: ^1.1.12
+569 silly placeDep ROOT resolve-protobuf-schema@2.1.0 OK for: pbf@3.2.1 want: ^2.1.0
+570 silly fetch manifest protocol-buffers-schema@^3.3.1
+571 silly packumentCache full:https://registry.npmjs.org/protocol-buffers-schema cache-miss
+572 http fetch GET 200 https://registry.npmjs.org/protocol-buffers-schema 34ms (cache miss)
+573 silly packumentCache full:https://registry.npmjs.org/protocol-buffers-schema set size:undefined disposed:false
+574 silly placeDep ROOT canvas@3.2.0 OK for: pdfjs-dist@4.8.69 want: ^3.0.0-rc2
+575 silly placeDep ROOT path2d@0.2.2 OK for: pdfjs-dist@4.8.69 want: ^0.2.1
+576 silly fetch manifest node-addon-api@^7.0.0
+577 silly packumentCache full:https://registry.npmjs.org/node-addon-api cache-miss
+578 silly fetch manifest prebuild-install@^7.1.3
+579 silly packumentCache full:https://registry.npmjs.org/prebuild-install cache-miss
+580 http fetch GET 200 https://registry.npmjs.org/prebuild-install 33ms (cache miss)
+581 silly packumentCache full:https://registry.npmjs.org/prebuild-install set size:undefined disposed:false
+582 http fetch GET 200 https://registry.npmjs.org/node-addon-api 46ms (cache miss)
+583 silly packumentCache full:https://registry.npmjs.org/node-addon-api set size:undefined disposed:false
+584 silly placeDep ROOT node-addon-api@7.1.1 OK for: canvas@3.2.0 want: ^7.0.0
+585 silly placeDep ROOT prebuild-install@7.1.3 OK for: canvas@3.2.0 want: ^7.1.3
+586 silly fetch manifest expand-template@^2.0.3
+587 silly packumentCache full:https://registry.npmjs.org/expand-template cache-miss
+588 silly fetch manifest github-from-package@0.0.0
+589 silly packumentCache full:https://registry.npmjs.org/github-from-package cache-miss
+590 silly fetch manifest mkdirp-classic@^0.5.3
+591 silly packumentCache full:https://registry.npmjs.org/mkdirp-classic cache-miss
+592 silly fetch manifest napi-build-utils@^2.0.0
+593 silly packumentCache full:https://registry.npmjs.org/napi-build-utils cache-miss
+594 silly fetch manifest node-abi@^3.3.0
+595 silly packumentCache full:https://registry.npmjs.org/node-abi cache-miss
+596 silly fetch manifest pump@^3.0.0
+597 silly packumentCache full:https://registry.npmjs.org/pump cache-miss
+598 silly fetch manifest rc@^1.2.7
+599 silly packumentCache full:https://registry.npmjs.org/rc cache-miss
+600 silly fetch manifest simple-get@^4.0.0
+601 silly packumentCache full:https://registry.npmjs.org/simple-get cache-miss
+602 silly fetch manifest tar-fs@^2.0.0
+603 silly packumentCache full:https://registry.npmjs.org/tar-fs cache-miss
+604 silly fetch manifest tunnel-agent@^0.6.0
+605 silly packumentCache full:https://registry.npmjs.org/tunnel-agent cache-miss
+606 http fetch GET 200 https://registry.npmjs.org/napi-build-utils 27ms (cache miss)
+607 silly packumentCache full:https://registry.npmjs.org/napi-build-utils set size:undefined disposed:false
+608 http fetch GET 200 https://registry.npmjs.org/expand-template 32ms (cache miss)
+609 silly packumentCache full:https://registry.npmjs.org/expand-template set size:undefined disposed:false
+610 http fetch GET 200 https://registry.npmjs.org/tar-fs 37ms (cache miss)
+611 silly packumentCache full:https://registry.npmjs.org/tar-fs set size:undefined disposed:false
+612 http fetch GET 200 https://registry.npmjs.org/tunnel-agent 41ms (cache miss)
+613 silly packumentCache full:https://registry.npmjs.org/tunnel-agent set size:undefined disposed:false
+614 http fetch GET 200 https://registry.npmjs.org/github-from-package 44ms (cache miss)
+615 silly packumentCache full:https://registry.npmjs.org/github-from-package set size:undefined disposed:false
+616 http fetch GET 200 https://registry.npmjs.org/simple-get 43ms (cache miss)
+617 silly packumentCache full:https://registry.npmjs.org/simple-get set size:undefined disposed:false
+618 http fetch GET 200 https://registry.npmjs.org/node-abi 46ms (cache miss)
+619 silly packumentCache full:https://registry.npmjs.org/node-abi set size:undefined disposed:false
+620 http fetch GET 200 https://registry.npmjs.org/pump 54ms (cache miss)
+621 silly packumentCache full:https://registry.npmjs.org/pump set size:undefined disposed:false
+622 http fetch GET 200 https://registry.npmjs.org/rc 55ms (cache miss)
+623 silly packumentCache full:https://registry.npmjs.org/rc set size:undefined disposed:false
+624 http fetch GET 200 https://registry.npmjs.org/mkdirp-classic 59ms (cache miss)
+625 silly packumentCache full:https://registry.npmjs.org/mkdirp-classic set size:undefined disposed:false
+626 silly placeDep ROOT expand-template@2.0.3 OK for: prebuild-install@7.1.3 want: ^2.0.3
+627 silly placeDep ROOT github-from-package@0.0.0 OK for: prebuild-install@7.1.3 want: 0.0.0
+628 silly placeDep ROOT mkdirp-classic@0.5.3 OK for: prebuild-install@7.1.3 want: ^0.5.3
+629 silly placeDep ROOT napi-build-utils@2.0.0 OK for: prebuild-install@7.1.3 want: ^2.0.0
+630 silly placeDep ROOT node-abi@3.77.0 OK for: prebuild-install@7.1.3 want: ^3.3.0
+631 silly placeDep ROOT pump@3.0.3 OK for: prebuild-install@7.1.3 want: ^3.0.0
+632 silly placeDep ROOT rc@1.2.8 OK for: prebuild-install@7.1.3 want: ^1.2.7
+633 silly placeDep node_modules/prebuild-install simple-get@4.0.1 OK for: prebuild-install@7.1.3 want: ^4.0.0
+634 silly placeDep ROOT tar-fs@2.1.3 OK for: prebuild-install@7.1.3 want: ^2.0.0
+635 silly placeDep ROOT tunnel-agent@0.6.0 OK for: prebuild-install@7.1.3 want: ^0.6.0
+636 silly fetch manifest semver@^7.3.5
+637 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+638 silly fetch manifest end-of-stream@^1.1.0
+639 silly packumentCache full:https://registry.npmjs.org/end-of-stream cache-miss
+640 silly fetch manifest deep-extend@^0.6.0
+641 silly packumentCache full:https://registry.npmjs.org/deep-extend cache-miss
+642 silly fetch manifest strip-json-comments@~2.0.1
+643 silly packumentCache full:https://registry.npmjs.org/strip-json-comments cache-miss
+644 silly fetch manifest decompress-response@^6.0.0
+645 silly packumentCache full:https://registry.npmjs.org/decompress-response cache-miss
+646 silly fetch manifest chownr@^1.1.1
+647 silly packumentCache full:https://registry.npmjs.org/chownr cache-miss
+648 silly fetch manifest tar-stream@^2.1.4
+649 silly packumentCache full:https://registry.npmjs.org/tar-stream cache-miss
+650 http fetch GET 200 https://registry.npmjs.org/deep-extend 29ms (cache miss)
+651 silly packumentCache full:https://registry.npmjs.org/deep-extend set size:undefined disposed:false
+652 http fetch GET 200 https://registry.npmjs.org/strip-json-comments 38ms (cache miss)
+653 silly packumentCache full:https://registry.npmjs.org/strip-json-comments set size:undefined disposed:false
+654 http fetch GET 200 https://registry.npmjs.org/end-of-stream 39ms (cache miss)
+655 silly packumentCache full:https://registry.npmjs.org/end-of-stream set size:undefined disposed:false
+656 http fetch GET 200 https://registry.npmjs.org/tar-stream 42ms (cache miss)
+657 silly packumentCache full:https://registry.npmjs.org/tar-stream set size:undefined disposed:false
+658 http fetch GET 200 https://registry.npmjs.org/decompress-response 45ms (cache miss)
+659 silly packumentCache full:https://registry.npmjs.org/decompress-response set size:undefined disposed:false
+660 http fetch GET 200 https://registry.npmjs.org/semver 47ms (cache miss)
+661 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+662 http fetch GET 200 https://registry.npmjs.org/chownr 63ms (cache miss)
+663 silly packumentCache full:https://registry.npmjs.org/chownr set size:undefined disposed:false
+664 silly placeDep node_modules/node-abi semver@7.7.2 OK for: node-abi@3.77.0 want: ^7.3.5
+665 silly placeDep ROOT end-of-stream@1.4.5 OK for: pump@3.0.3 want: ^1.1.0
+666 silly placeDep ROOT clone@2.1.2 OK for: quill@1.3.7 want: ^2.1.1
+667 silly placeDep ROOT deep-equal@1.1.2 OK for: quill@1.3.7 want: ^1.0.1
+668 silly placeDep ROOT eventemitter3@2.0.3 OK for: quill@1.3.7 want: ^2.0.3
+669 silly placeDep ROOT extend@3.0.2 OK for: quill@1.3.7 want: ^3.0.2
+670 silly placeDep ROOT parchment@1.1.4 OK for: quill@1.3.7 want: ^1.1.4
+671 silly placeDep ROOT quill-delta@3.6.3 OK for: quill@1.3.7 want: ^3.6.2
+672 silly fetch manifest is-arguments@^1.1.1
+673 silly packumentCache full:https://registry.npmjs.org/is-arguments cache-miss
+674 silly fetch manifest object-is@^1.1.5
+675 silly packumentCache full:https://registry.npmjs.org/object-is cache-miss
+676 silly fetch manifest fast-diff@1.1.2
+677 silly packumentCache full:https://registry.npmjs.org/fast-diff cache-miss
+678 http fetch GET 200 https://registry.npmjs.org/fast-diff 42ms (cache miss)
+679 silly packumentCache full:https://registry.npmjs.org/fast-diff set size:undefined disposed:false
+680 http fetch GET 200 https://registry.npmjs.org/object-is 44ms (cache miss)
+681 silly packumentCache full:https://registry.npmjs.org/object-is set size:undefined disposed:false
+682 http fetch GET 200 https://registry.npmjs.org/is-arguments 46ms (cache miss)
+683 silly packumentCache full:https://registry.npmjs.org/is-arguments set size:undefined disposed:false
+684 silly placeDep ROOT is-arguments@1.2.0 OK for: deep-equal@1.1.2 want: ^1.1.1
+685 silly placeDep ROOT object-is@1.1.6 OK for: deep-equal@1.1.2 want: ^1.1.5
+686 silly placeDep ROOT fast-diff@1.1.2 OK for: quill-delta@3.6.3 want: 1.1.2
+687 silly placeDep ROOT quickselect@2.0.0 OK for: rbush@3.0.1 want: ^2.0.0
+688 silly placeDep ROOT deep-extend@0.6.0 OK for: rc@1.2.8 want: ^0.6.0
+689 silly placeDep ROOT strip-json-comments@2.0.1 OK for: rc@1.2.8 want: ~2.0.1
+690 silly placeDep ROOT protocol-buffers-schema@3.6.0 OK for: resolve-protobuf-schema@2.1.0 want: ^3.3.1
+691 silly placeDep ROOT sort-asc@0.1.0 OK for: sort-object@0.3.2 want: ^0.1.0
+692 silly placeDep ROOT sort-desc@0.1.1 OK for: sort-object@0.3.2 want: ^0.1.1
+693 silly placeDep ROOT chownr@1.1.4 OK for: tar-fs@2.1.3 want: ^1.1.1
+694 silly placeDep ROOT tar-stream@2.2.0 OK for: tar-fs@2.1.3 want: ^2.1.4
+695 silly fetch manifest bl@^4.0.3
+696 silly packumentCache full:https://registry.npmjs.org/bl cache-miss
+697 silly fetch manifest fs-constants@^1.0.0
+698 silly packumentCache full:https://registry.npmjs.org/fs-constants cache-miss
+699 http fetch GET 200 https://registry.npmjs.org/fs-constants 35ms (cache miss)
+700 silly packumentCache full:https://registry.npmjs.org/fs-constants set size:undefined disposed:false
+701 http fetch GET 200 https://registry.npmjs.org/bl 37ms (cache miss)
+702 silly packumentCache full:https://registry.npmjs.org/bl set size:undefined disposed:false
+703 silly placeDep ROOT bl@4.1.0 OK for: tar-stream@2.2.0 want: ^4.0.3
+704 silly placeDep ROOT fs-constants@1.0.0 OK for: tar-stream@2.2.0 want: ^1.0.0
+705 silly fetch manifest buffer@^5.5.0
+706 silly packumentCache full:https://registry.npmjs.org/buffer cache-miss
+707 http fetch GET 200 https://registry.npmjs.org/buffer 46ms (cache miss)
+708 silly packumentCache full:https://registry.npmjs.org/buffer set size:undefined disposed:false
+709 silly placeDep ROOT buffer@5.7.1 OK for: bl@4.1.0 want: ^5.5.0
+710 silly fetch manifest base64-js@^1.3.1
+711 silly packumentCache full:https://registry.npmjs.org/base64-js cache-miss
+712 http fetch GET 200 https://registry.npmjs.org/base64-js 37ms (cache miss)
+713 silly packumentCache full:https://registry.npmjs.org/base64-js set size:undefined disposed:false
+714 silly placeDep ROOT base64-js@1.5.1 OK for: buffer@5.7.1 want: ^1.3.1
+715 silly fetch manifest @xterm/xterm@^5.0.0
+716 silly packumentCache full:https://registry.npmjs.org/@xterm%2fxterm cache-miss
+717 http fetch GET 200 https://registry.npmjs.org/@xterm%2fxterm 101ms (cache miss)
+718 silly packumentCache full:https://registry.npmjs.org/@xterm%2fxterm set size:undefined disposed:false
+719 silly fetch manifest prettier@^2.8.0 || ^3.0.0
+720 silly packumentCache full:https://registry.npmjs.org/prettier cache-miss
+721 http fetch GET 200 https://registry.npmjs.org/prettier 46ms (cache miss)
+722 silly packumentCache full:https://registry.npmjs.org/prettier set size:undefined disposed:false
+723 silly fetch manifest ws@^8.18.0
+724 silly packumentCache full:https://registry.npmjs.org/ws cache-miss
+725 http fetch GET 200 https://registry.npmjs.org/ws 37ms (cache miss)
+726 silly packumentCache full:https://registry.npmjs.org/ws set size:undefined disposed:false
+727 silly fetch manifest bufferutil@^4.0.1
+728 silly packumentCache full:https://registry.npmjs.org/bufferutil cache-miss
+729 http fetch GET 200 https://registry.npmjs.org/bufferutil 33ms (cache miss)
+730 silly packumentCache full:https://registry.npmjs.org/bufferutil set size:undefined disposed:false
+731 silly fetch manifest utf-8-validate@>=5.0.2
+732 silly packumentCache full:https://registry.npmjs.org/utf-8-validate cache-miss
+733 http fetch GET 200 https://registry.npmjs.org/utf-8-validate 35ms (cache miss)
+734 silly packumentCache full:https://registry.npmjs.org/utf-8-validate set size:undefined disposed:false
+735 silly fetch manifest @xterm/xterm@^5.5.0
+736 silly packumentCache full:https://registry.npmjs.org/@xterm%2fxterm cache-miss
+737 http cache https://registry.npmjs.org/@xterm%2fxterm 6ms (cache hit)
+738 silly packumentCache full:https://registry.npmjs.org/@xterm%2fxterm set size:789777 disposed:false
+739 silly placeDep ROOT @anthropic-ai/sdk@0.60.0 OK for: windmill-components@1.542.5 want: ^0.60.0
+740 silly placeDep ROOT @aws-crypto/sha256-js@4.0.0 OK for: windmill-components@1.542.5 want: ^4.0.0
+741 silly placeDep ROOT @codingame/monaco-vscode-configuration-service-override@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+742 silly placeDep ROOT @codingame/monaco-vscode-editor-api@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+743 silly placeDep ROOT @codingame/monaco-vscode-standalone-css-language-features@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+744 silly placeDep ROOT @codingame/monaco-vscode-standalone-html-language-features@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+745 silly placeDep ROOT @codingame/monaco-vscode-standalone-json-language-features@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+746 silly placeDep ROOT @codingame/monaco-vscode-standalone-languages@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+747 silly placeDep ROOT @codingame/monaco-vscode-standalone-typescript-language-features@20.2.1 OK for: windmill-components@1.542.5 want: ~20.2.1
+748 silly placeDep ROOT @json2csv/plainjs@7.0.6 OK for: windmill-components@1.542.5 want: ^7.0.6
+749 silly placeDep ROOT @leeoniya/ufuzzy@1.0.19 OK for: windmill-components@1.542.5 want: ^1.0.8
+750 silly placeDep ROOT @popperjs/core@2.11.8 OK for: windmill-components@1.542.5 want: ^2.11.6
+751 silly placeDep ROOT @redocly/json-to-json-schema@0.0.1 OK for: windmill-components@1.542.5 want: ^0.0.1
+752 silly placeDep ROOT @rollup/rollup-linux-x64-gnu@4.50.1 OK for: windmill-components@1.542.5 want: ^4.35.0
+753 silly placeDep ROOT @scalar/openapi-parser@0.15.0 OK for: windmill-components@1.542.5 want: ^0.15.0
+754 silly placeDep ROOT @tanstack/svelte-table@0.1.2 OK for: windmill-components@1.542.5 want: npm:tanstack-table-8-svelte-5@^0.1
+755 silly placeDep ROOT @tutorlatin/svelte-tiny-virtual-list@3.0.13 OK for: windmill-components@1.542.5 want: ^3.0.2
+756 silly placeDep ROOT @windmill-labs/svelte-dnd-action@0.9.48 OK for: windmill-components@1.542.5 want: ^0.9.44
+757 silly placeDep ROOT @xterm/addon-fit@0.10.0 OK for: windmill-components@1.542.5 want: ^0.10.0
+758 silly placeDep ROOT @xterm/xterm@5.5.0 OK for: @xterm/addon-fit@0.10.0 want: ^5.0.0
+759 silly placeDep ROOT @xyflow/svelte@1.2.4 OK for: windmill-components@1.542.5 want: ^1.0.0
+760 silly placeDep ROOT ansi_up@6.0.6 OK for: windmill-components@1.542.5 want: ^6.0.6
+761 silly placeDep ROOT d3-zoom@3.0.0 OK for: windmill-components@1.542.5 want: ^3.0.0
+762 silly placeDep node_modules/windmill-components date-fns@2.30.0 OK for: windmill-components@1.542.5 want: ^2.30.0
+763 silly placeDep node_modules/windmill-components diff@7.0.0 OK for: windmill-components@1.542.5 want: ^7.0.0
+764 silly placeDep ROOT driver.js@1.3.6 OK for: windmill-components@1.542.5 want: ^1.3.0
+765 silly placeDep ROOT fast-equals@5.2.2 OK for: windmill-components@1.542.5 want: ^5.0.1
+766 silly placeDep ROOT graphql@16.11.0 OK for: windmill-components@1.542.5 want: ^16.7.1
+767 silly placeDep ROOT hash-sum@2.0.0 OK for: windmill-components@1.542.5 want: ^2.0.0
+768 silly placeDep ROOT highlight.js@11.11.1 OK for: windmill-components@1.542.5 want: ^11.8.0
+769 silly placeDep node_modules/windmill-components idb@8.0.3 OK for: windmill-components@1.542.5 want: ^8.0.2
+770 silly placeDep node_modules/windmill-components lru-cache@11.2.1 OK for: windmill-components@1.542.5 want: ^11.1.0
+771 silly placeDep ROOT lucide-svelte@0.540.0 OK for: windmill-components@1.542.5 want: ^0.540.0
+772 silly placeDep node_modules/windmill-components minimatch@10.0.3 OK for: windmill-components@1.542.5 want: ^10.0.1
+773 silly placeDep ROOT monaco-editor@20.2.1 OK for: windmill-components@1.542.5 want: npm:@codingame/monaco-vscode-editor-api@~20.2.1
+774 silly placeDep ROOT monaco-editor-wrapper@6.12.0 OK for: windmill-components@1.542.5 want: 6.12.0
+775 silly placeDep ROOT monaco-graphql@1.6.0 OK for: windmill-components@1.542.5 want: =1.6.0
+776 silly placeDep ROOT prettier@3.6.2 OK for: monaco-graphql@1.6.0 want: ^2.8.0 || ^3.0.0
+777 silly placeDep ROOT monaco-languageclient@9.11.0 OK for: windmill-components@1.542.5 want: 9.11.0
+778 silly placeDep ROOT monaco-vim@0.4.2 OK for: windmill-components@1.542.5 want: ^0.4.1
+779 silly placeDep ROOT openai@5.20.2 OK for: windmill-components@1.542.5 want: ^5.16.0
+780 silly placeDep ROOT openapi-types@12.1.3 OK for: windmill-components@1.542.5 want: ^12.1.3
+781 silly placeDep node_modules/windmill-components p-limit@6.2.0 OK for: windmill-components@1.542.5 want: ^6.1.0
+782 silly placeDep ROOT panzoom@9.4.3 OK for: windmill-components@1.542.5 want: ^9.4.3
+783 silly placeDep ROOT rehype-github-alerts@3.0.0 OK for: windmill-components@1.542.5 want: ^3.0.0
+784 silly placeDep ROOT rehype-raw@7.0.0 OK for: windmill-components@1.542.5 want: ^7.0.0
+785 silly placeDep ROOT rfc4648@1.5.4 OK for: windmill-components@1.542.5 want: ^1.5.3
+786 silly placeDep ROOT svelte-carousel@1.0.25 OK for: windmill-components@1.542.5 want: ^1.0.25
+787 silly placeDep ROOT svelte-exmarkdown@5.0.2 OK for: windmill-components@1.542.5 want: ^5.0.0
+788 silly placeDep ROOT svelte-infinite-loading@1.4.0 OK for: windmill-components@1.542.5 want: ^1.4.0
+789 silly placeDep ROOT tailwind-merge@1.14.0 OK for: windmill-components@1.542.5 want: ^1.13.2
+790 silly placeDep ROOT vscode@20.2.1 OK for: windmill-components@1.542.5 want: npm:@codingame/monaco-vscode-extension-api@~20.2.1
+791 silly placeDep ROOT vscode-languageclient@9.0.1 OK for: windmill-components@1.542.5 want: ~9.0.1
+792 silly placeDep ROOT vscode-uri@3.1.0 OK for: windmill-components@1.542.5 want: ~3.1.0
+793 silly placeDep ROOT vscode-ws-jsonrpc@3.5.0 OK for: windmill-components@1.542.5 want: ~3.5.0
+794 silly placeDep ROOT windmill-parser-wasm-csharp@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+795 silly placeDep ROOT windmill-parser-wasm-go@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+796 silly placeDep ROOT windmill-parser-wasm-java@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+797 silly placeDep ROOT windmill-parser-wasm-nu@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+798 silly placeDep ROOT windmill-parser-wasm-php@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+799 silly placeDep ROOT windmill-parser-wasm-py@1.538.0 OK for: windmill-components@1.542.5 want: 1.538.0
+800 silly placeDep ROOT windmill-parser-wasm-regex@1.512.0 OK for: windmill-components@1.542.5 want: 1.512.0
+801 silly placeDep ROOT windmill-parser-wasm-ruby@1.526.1 OK for: windmill-components@1.542.5 want: 1.526.1
+802 silly placeDep ROOT windmill-parser-wasm-rust@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+803 silly placeDep ROOT windmill-parser-wasm-ts@1.538.0 OK for: windmill-components@1.542.5 want: 1.538.0
+804 silly placeDep ROOT windmill-parser-wasm-yaml@1.510.1 OK for: windmill-components@1.542.5 want: 1.510.1
+805 silly placeDep ROOT windmill-sql-datatype-parser-wasm@1.512.0 OK for: windmill-components@1.542.5 want: 1.512.0
+806 silly placeDep ROOT windmill-utils-internal@1.3.0 OK for: windmill-components@1.542.5 want: ^1.3.0
+807 silly placeDep ROOT xterm@5.3.0 OK for: windmill-components@1.542.5 want: ^5.3.0
+808 silly placeDep ROOT xterm-readline@1.1.2 OK for: windmill-components@1.542.5 want: ^1.1.2
+809 silly placeDep ROOT y-monaco@0.1.6 OK for: windmill-components@1.542.5 want: ^0.1.4
+810 silly placeDep ROOT yjs@13.6.27 OK for: y-monaco@0.1.6 want: ^13.3.1
+811 silly placeDep ROOT y-websocket@1.5.4 OK for: windmill-components@1.542.5 want: ^1.5.4
+812 silly placeDep node_modules/windmill-components yaml@2.8.1 OK for: windmill-components@1.542.5 want: ^2.8.0
+813 silly placeDep ROOT zod@3.25.76 OK for: windmill-components@1.542.5 want: ^3.24.2
+814 silly placeDep ROOT zod-to-json-schema@3.24.6 OK for: windmill-components@1.542.5 want: ^3.24.5
+815 silly fetch manifest tslib@^1.11.1
+816 silly packumentCache full:https://registry.npmjs.org/tslib cache-miss
+817 silly fetch manifest @aws-sdk/types@^3.222.0
+818 silly packumentCache full:https://registry.npmjs.org/@aws-sdk%2ftypes cache-miss
+819 silly fetch manifest @aws-crypto/util@^4.0.0
+820 silly packumentCache full:https://registry.npmjs.org/@aws-crypto%2futil cache-miss
+821 silly fetch manifest @codingame/monaco-vscode-api@20.2.1
+822 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api cache-miss
+823 silly fetch manifest @codingame/monaco-vscode-files-service-override@20.2.1
+824 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-files-service-override cache-miss
+825 silly fetch manifest @codingame/monaco-vscode-158b9837-fc78-5d9c-86f5-9134e4358643-common@20.2.1
+826 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-158b9837-fc78-5d9c-86f5-9134e4358643-common cache-miss
+827 silly fetch manifest @codingame/monaco-vscode-422642f2-7e3a-5c1c-9e1e-1d3ef1817346-common@20.2.1
+828 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-422642f2-7e3a-5c1c-9e1e-1d3ef1817346-common cache-miss
+829 silly fetch manifest @codingame/monaco-vscode-ce7c734f-7712-563c-9335-d7acb43306af-common@20.2.1
+830 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-ce7c734f-7712-563c-9335-d7acb43306af-common cache-miss
+831 silly fetch manifest @codingame/monaco-vscode-d987325e-3e05-53aa-b9ff-6f97476f64db-common@20.2.1
+832 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d987325e-3e05-53aa-b9ff-6f97476f64db-common cache-miss
+833 silly fetch manifest @codingame/monaco-vscode-f24e325c-2ce0-5bba-8236-bfc4f53180ab-common@20.2.1
+834 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-f24e325c-2ce0-5bba-8236-bfc4f53180ab-common cache-miss
+835 silly fetch manifest @codingame/monaco-vscode-api@20.2.1
+836 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api cache-miss
+837 http fetch GET 200 https://registry.npmjs.org/tslib 43ms (cache miss)
+838 silly packumentCache full:https://registry.npmjs.org/tslib set size:undefined disposed:false
+839 silly fetch manifest @codingame/monaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common@20.2.1
+840 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common cache-miss
+841 http fetch GET 200 https://registry.npmjs.org/@aws-crypto%2futil 45ms (cache miss)
+842 silly packumentCache full:https://registry.npmjs.org/@aws-crypto%2futil set size:undefined disposed:false
+843 silly fetch manifest monaco-editor@npm:@codingame/monaco-vscode-editor-api@20.2.1
+844 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api cache-miss
+845 http cache https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api 4ms (cache hit)
+846 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-api set size:697602 disposed:false
+847 silly fetch manifest @json2csv/formatters@^7.0.6
+848 silly packumentCache full:https://registry.npmjs.org/@json2csv%2fformatters cache-miss
+849 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2ftypes 61ms (cache miss)
+850 silly packumentCache full:https://registry.npmjs.org/@aws-sdk%2ftypes set size:undefined disposed:false
+851 silly fetch manifest @streamparser/json@^0.0.20
+852 silly packumentCache full:https://registry.npmjs.org/@streamparser%2fjson cache-miss
+853 http fetch GET 200 https://registry.npmjs.org/@streamparser%2fjson 90ms (cache miss)
+854 silly packumentCache full:https://registry.npmjs.org/@streamparser%2fjson set size:undefined disposed:false
+855 silly fetch manifest ajv@^8.17.1
+856 silly packumentCache full:https://registry.npmjs.org/ajv cache-miss
+857 http fetch GET 200 https://registry.npmjs.org/ajv 40ms (cache miss)
+858 silly packumentCache full:https://registry.npmjs.org/ajv set size:undefined disposed:false
+859 silly fetch manifest yaml@^2.4.5
+860 silly packumentCache full:https://registry.npmjs.org/yaml cache-miss
+861 http cache https://registry.npmjs.org/yaml 2ms (cache hit)
+862 silly packumentCache full:https://registry.npmjs.org/yaml set size:361238 disposed:false
+863 silly fetch manifest leven@^4.0.0
+864 silly packumentCache full:https://registry.npmjs.org/leven cache-miss
+865 http fetch GET 200 https://registry.npmjs.org/leven 33ms (cache miss)
+866 silly packumentCache full:https://registry.npmjs.org/leven set size:undefined disposed:false
+867 silly fetch manifest ajv-formats@^3.0.1
+868 silly packumentCache full:https://registry.npmjs.org/ajv-formats cache-miss
+869 http fetch GET 200 https://registry.npmjs.org/ajv-formats 47ms (cache miss)
+870 silly packumentCache full:https://registry.npmjs.org/ajv-formats set size:undefined disposed:false
+871 silly fetch manifest ajv-draft-04@^1.0.0
+872 silly packumentCache full:https://registry.npmjs.org/ajv-draft-04 cache-miss
+873 http fetch GET 200 https://registry.npmjs.org/ajv-draft-04 34ms (cache miss)
+874 silly packumentCache full:https://registry.npmjs.org/ajv-draft-04 set size:undefined disposed:false
+875 silly fetch manifest @tanstack/table-core@^8.20.5
+876 silly packumentCache full:https://registry.npmjs.org/@tanstack%2ftable-core cache-miss
+877 http fetch GET 200 https://registry.npmjs.org/@tanstack%2ftable-core 72ms (cache miss)
+878 silly packumentCache full:https://registry.npmjs.org/@tanstack%2ftable-core set size:undefined disposed:false
+879 silly fetch manifest @svelte-put/shortcut@^4.1.0
+880 silly packumentCache full:https://registry.npmjs.org/@svelte-put%2fshortcut cache-miss
+881 http fetch GET 200 https://registry.npmjs.org/@svelte-put%2fshortcut 97ms (cache miss)
+882 silly packumentCache full:https://registry.npmjs.org/@svelte-put%2fshortcut set size:undefined disposed:false
+883 silly fetch manifest @xyflow/system@0.0.68
+884 silly packumentCache full:https://registry.npmjs.org/@xyflow%2fsystem cache-miss
+885 http fetch GET 200 https://registry.npmjs.org/@xyflow%2fsystem 103ms (cache miss)
+886 silly packumentCache full:https://registry.npmjs.org/@xyflow%2fsystem set size:undefined disposed:false
+887 silly fetch manifest d3-dispatch@1 - 3
+888 silly packumentCache full:https://registry.npmjs.org/d3-dispatch cache-miss
+889 http fetch GET 200 https://registry.npmjs.org/d3-dispatch 47ms (cache miss)
+890 silly packumentCache full:https://registry.npmjs.org/d3-dispatch set size:undefined disposed:false
+891 silly fetch manifest d3-drag@2 - 3
+892 silly packumentCache full:https://registry.npmjs.org/d3-drag cache-miss
+893 http fetch GET 200 https://registry.npmjs.org/d3-drag 47ms (cache miss)
+894 silly packumentCache full:https://registry.npmjs.org/d3-drag set size:undefined disposed:false
+895 silly fetch manifest d3-interpolate@1 - 3
+896 silly packumentCache full:https://registry.npmjs.org/d3-interpolate cache-miss
+897 http fetch GET 200 https://registry.npmjs.org/d3-interpolate 52ms (cache miss)
+898 silly packumentCache full:https://registry.npmjs.org/d3-interpolate set size:undefined disposed:false
+899 silly fetch manifest d3-selection@2 - 3
+900 silly packumentCache full:https://registry.npmjs.org/d3-selection cache-miss
+901 http fetch GET 200 https://registry.npmjs.org/d3-selection 66ms (cache miss)
+902 silly packumentCache full:https://registry.npmjs.org/d3-selection set size:undefined disposed:false
+903 silly fetch manifest d3-transition@2 - 3
+904 silly packumentCache full:https://registry.npmjs.org/d3-transition cache-miss
+905 http fetch GET 200 https://registry.npmjs.org/d3-transition 69ms (cache miss)
+906 silly packumentCache full:https://registry.npmjs.org/d3-transition set size:undefined disposed:false
+907 silly fetch manifest @isaacs/brace-expansion@^5.0.0
+908 silly packumentCache full:https://registry.npmjs.org/@isaacs%2fbrace-expansion cache-miss
+909 http fetch GET 200 https://registry.npmjs.org/@isaacs%2fbrace-expansion 86ms (cache miss)
+910 silly packumentCache full:https://registry.npmjs.org/@isaacs%2fbrace-expansion set size:undefined disposed:false
+911 silly fetch manifest @codingame/monaco-vscode-api@20.2.1
+912 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api cache-miss
+913 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-api 1177ms (cache miss)
+914 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api set size:undefined disposed:false
+915 silly fetch manifest @codingame/monaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common@20.2.1
+916 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common cache-miss
+917 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1205ms (cache miss)
+918 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-422642f2-7e3a-5c1c-9e1e-1d3ef1817346-common set size:undefined disposed:false
+919 silly fetch manifest @codingame/monaco-vscode-api@~20.2.1
+920 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api cache-miss
+921 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1209ms (cache miss)
+922 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d987325e-3e05-53aa-b9ff-6f97476f64db-common set size:undefined disposed:false
+923 silly fetch manifest @codingame/monaco-vscode-editor-service-override@~20.2.1
+924 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-service-override cache-miss
+925 http cache https://registry.npmjs.org/@codingame%2fmonaco-vscode-api 5ms (cache hit)
+926 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api set size:1713672 disposed:false
+927 silly fetch manifest @codingame/monaco-vscode-extension-api@~20.2.1
+928 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extension-api cache-miss
+929 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1222ms (cache miss)
+930 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-158b9837-fc78-5d9c-86f5-9134e4358643-common set size:undefined disposed:false
+931 silly fetch manifest @codingame/monaco-vscode-language-pack-cs@~20.2.1
+932 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-cs cache-miss
+933 http cache https://registry.npmjs.org/@codingame%2fmonaco-vscode-extension-api 8ms (cache hit)
+934 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extension-api set size:169139 disposed:false
+935 silly fetch manifest @codingame/monaco-vscode-language-pack-de@~20.2.1
+936 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-de cache-miss
+937 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1229ms (cache miss)
+938 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-ce7c734f-7712-563c-9335-d7acb43306af-common set size:undefined disposed:false
+939 silly fetch manifest @codingame/monaco-vscode-language-pack-es@~20.2.1
+940 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-es cache-miss
+941 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1230ms (cache miss)
+942 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-f24e325c-2ce0-5bba-8236-bfc4f53180ab-common set size:undefined disposed:false
+943 silly fetch manifest @codingame/monaco-vscode-language-pack-fr@~20.2.1
+944 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-fr cache-miss
+945 http fetch GET 200 https://registry.npmjs.org/@json2csv%2fformatters 1205ms (cache miss)
+946 silly packumentCache full:https://registry.npmjs.org/@json2csv%2fformatters set size:undefined disposed:false
+947 silly fetch manifest @codingame/monaco-vscode-language-pack-it@~20.2.1
+948 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-it cache-miss
+949 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-files-service-override 1260ms (cache miss)
+950 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-files-service-override set size:undefined disposed:false
+951 silly fetch manifest @codingame/monaco-vscode-language-pack-ja@~20.2.1
+952 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ja cache-miss
+953 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-api 1271ms (cache miss)
+954 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api set size:undefined disposed:false
+955 silly fetch manifest @codingame/monaco-vscode-language-pack-ko@~20.2.1
+956 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ko cache-miss
+957 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1243ms (cache miss)
+958 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common set size:undefined disposed:false
+959 silly fetch manifest @codingame/monaco-vscode-language-pack-pl@~20.2.1
+960 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-pl cache-miss
+961 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-api 601ms (cache miss)
+962 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-api set size:undefined disposed:false
+963 silly fetch manifest @codingame/monaco-vscode-language-pack-pt-br@~20.2.1
+964 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-pt-br cache-miss
+965 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 642ms (cache miss)
+966 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common set size:undefined disposed:false
+967 silly fetch manifest @codingame/monaco-vscode-language-pack-qps-ploc@~20.2.1
+968 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-qps-ploc cache-miss
+969 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-service-override 1183ms (cache miss)
+970 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-editor-service-override set size:undefined disposed:false
+971 silly fetch manifest @codingame/monaco-vscode-language-pack-ru@~20.2.1
+972 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ru cache-miss
+973 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-it 1143ms (cache miss)
+974 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-it set size:undefined disposed:false
+975 silly fetch manifest @codingame/monaco-vscode-language-pack-tr@~20.2.1
+976 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-tr cache-miss
+977 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-cs 1187ms (cache miss)
+978 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-cs set size:undefined disposed:false
+979 silly fetch manifest @codingame/monaco-vscode-language-pack-zh-hans@~20.2.1
+980 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-zh-hans cache-miss
+981 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-de 1186ms (cache miss)
+982 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-de set size:undefined disposed:false
+983 silly fetch manifest @codingame/monaco-vscode-language-pack-zh-hant@~20.2.1
+984 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-zh-hant cache-miss
+985 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-fr 1199ms (cache miss)
+986 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-fr set size:undefined disposed:false
+987 silly fetch manifest @codingame/monaco-vscode-monarch-service-override@~20.2.1
+988 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-monarch-service-override cache-miss
+989 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-es 1219ms (cache miss)
+990 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-es set size:undefined disposed:false
+991 silly fetch manifest @codingame/monaco-vscode-textmate-service-override@~20.2.1
+992 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-textmate-service-override cache-miss
+993 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ko 1171ms (cache miss)
+994 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ko set size:undefined disposed:false
+995 silly fetch manifest @codingame/monaco-vscode-theme-defaults-default-extension@~20.2.1
+996 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-theme-defaults-default-extension cache-miss
+997 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ja 1200ms (cache miss)
+998 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ja set size:undefined disposed:false
+999 silly fetch manifest @codingame/monaco-vscode-theme-service-override@~20.2.1
+1000 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-theme-service-override cache-miss
+1001 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-pl 1178ms (cache miss)
+1002 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-pl set size:undefined disposed:false
+1003 silly fetch manifest @codingame/monaco-vscode-views-service-override@~20.2.1
+1004 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-views-service-override cache-miss
+1005 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-pt-br 1342ms (cache miss)
+1006 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-pt-br set size:undefined disposed:false
+1007 silly fetch manifest @codingame/monaco-vscode-workbench-service-override@~20.2.1
+1008 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-workbench-service-override cache-miss
+1009 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-qps-ploc 1163ms (cache miss)
+1010 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-qps-ploc set size:undefined disposed:false
+1011 silly fetch manifest monaco-languageclient@~9.11.0
+1012 silly packumentCache full:https://registry.npmjs.org/monaco-languageclient cache-miss
+1013 http cache https://registry.npmjs.org/monaco-languageclient 2ms (cache hit)
+1014 silly packumentCache full:https://registry.npmjs.org/monaco-languageclient set size:832745 disposed:false
+1015 silly fetch manifest vscode-languageserver-protocol@~3.17.5
+1016 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-miss
+1017 http fetch GET 200 https://registry.npmjs.org/vscode-languageserver-protocol 64ms (cache miss)
+1018 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol set size:undefined disposed:false
+1019 silly fetch manifest picomatch-browser@^2.2.6
+1020 silly packumentCache full:https://registry.npmjs.org/picomatch-browser cache-miss
+1021 http fetch GET 200 https://registry.npmjs.org/picomatch-browser 54ms (cache miss)
+1022 silly packumentCache full:https://registry.npmjs.org/picomatch-browser set size:undefined disposed:false
+1023 silly fetch manifest graphql-language-service@^5.3.0
+1024 silly packumentCache full:https://registry.npmjs.org/graphql-language-service cache-miss
+1025 http fetch GET 200 https://registry.npmjs.org/graphql-language-service 51ms (cache miss)
+1026 silly packumentCache full:https://registry.npmjs.org/graphql-language-service set size:undefined disposed:false
+1027 silly fetch manifest @codingame/monaco-vscode-log-service-override@~20.2.1
+1028 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-log-service-override cache-miss
+1029 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-tr 1109ms (cache miss)
+1030 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-tr set size:undefined disposed:false
+1031 silly fetch manifest @codingame/monaco-vscode-model-service-override@~20.2.1
+1032 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-model-service-override cache-miss
+1033 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-monarch-service-override 1123ms (cache miss)
+1034 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-monarch-service-override set size:undefined disposed:false
+1035 silly fetch manifest @codingame/monaco-vscode-languages-service-override@~20.2.1
+1036 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-languages-service-override cache-miss
+1037 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-theme-service-override 1125ms (cache miss)
+1038 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-theme-service-override set size:undefined disposed:false
+1039 silly fetch manifest @codingame/monaco-vscode-extensions-service-override@~20.2.1
+1040 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extensions-service-override cache-miss
+1041 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ru 1260ms (cache miss)
+1042 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-ru set size:undefined disposed:false
+1043 silly fetch manifest @codingame/monaco-vscode-localization-service-override@~20.2.1
+1044 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-localization-service-override cache-miss
+1045 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-zh-hans 1253ms (cache miss)
+1046 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-zh-hans set size:undefined disposed:false
+1047 silly fetch manifest yocto-queue@^1.1.1
+1048 silly packumentCache full:https://registry.npmjs.org/yocto-queue cache-miss
+1049 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-zh-hant 1258ms (cache miss)
+1050 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-language-pack-zh-hant set size:undefined disposed:false
+1051 silly fetch manifest amator@^1.1.0
+1052 silly packumentCache full:https://registry.npmjs.org/amator cache-miss
+1053 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-theme-defaults-default-extension 1226ms (cache miss)
+1054 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-theme-defaults-default-extension set size:undefined disposed:false
+1055 silly fetch manifest ngraph.events@^1.2.2
+1056 silly packumentCache full:https://registry.npmjs.org/ngraph.events cache-miss
+1057 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-textmate-service-override 1243ms (cache miss)
+1058 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-textmate-service-override set size:undefined disposed:false
+1059 silly fetch manifest wheel@^1.0.0
+1060 silly packumentCache full:https://registry.npmjs.org/wheel cache-miss
+1061 http fetch GET 200 https://registry.npmjs.org/yocto-queue 37ms (cache miss)
+1062 silly packumentCache full:https://registry.npmjs.org/yocto-queue set size:undefined disposed:false
+1063 silly fetch manifest unist-util-visit@^5.0.0
+1064 silly packumentCache full:https://registry.npmjs.org/unist-util-visit cache-miss
+1065 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-views-service-override 1247ms (cache miss)
+1066 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-views-service-override set size:undefined disposed:false
+1067 silly fetch manifest hast-util-from-html@^2.0.1
+1068 silly packumentCache full:https://registry.npmjs.org/hast-util-from-html cache-miss
+1069 http fetch GET 200 https://registry.npmjs.org/ngraph.events 38ms (cache miss)
+1070 silly packumentCache full:https://registry.npmjs.org/ngraph.events set size:undefined disposed:false
+1071 silly fetch manifest hast-util-is-element@^3.0.0
+1072 silly packumentCache full:https://registry.npmjs.org/hast-util-is-element cache-miss
+1073 http fetch GET 200 https://registry.npmjs.org/hast-util-from-html 34ms (cache miss)
+1074 silly packumentCache full:https://registry.npmjs.org/hast-util-from-html set size:undefined disposed:false
+1075 silly fetch manifest @types/hast@^3.0.0
+1076 silly packumentCache full:https://registry.npmjs.org/@types%2fhast cache-miss
+1077 http fetch GET 200 https://registry.npmjs.org/unist-util-visit 53ms (cache miss)
+1078 silly packumentCache full:https://registry.npmjs.org/unist-util-visit set size:undefined disposed:false
+1079 silly fetch manifest hast-util-raw@^9.0.0
+1080 silly packumentCache full:https://registry.npmjs.org/hast-util-raw cache-miss
+1081 http fetch GET 200 https://registry.npmjs.org/@types%2fhast 40ms (cache miss)
+1082 silly packumentCache full:https://registry.npmjs.org/@types%2fhast set size:undefined disposed:false
+1083 silly fetch manifest vfile@^6.0.0
+1084 silly packumentCache full:https://registry.npmjs.org/vfile cache-miss
+1085 http fetch GET 200 https://registry.npmjs.org/hast-util-raw 58ms (cache miss)
+1086 silly packumentCache full:https://registry.npmjs.org/hast-util-raw set size:undefined disposed:false
+1087 silly fetch manifest easy-reactive@1.0.4
+1088 silly packumentCache full:https://registry.npmjs.org/easy-reactive cache-miss
+1089 http fetch GET 200 https://registry.npmjs.org/vfile 35ms (cache miss)
+1090 silly packumentCache full:https://registry.npmjs.org/vfile set size:undefined disposed:false
+1091 silly fetch manifest remark-gfm@^4.0.1
+1092 silly packumentCache full:https://registry.npmjs.org/remark-gfm cache-miss
+1093 http fetch GET 200 https://registry.npmjs.org/remark-gfm 30ms (cache miss)
+1094 silly packumentCache full:https://registry.npmjs.org/remark-gfm set size:undefined disposed:false
+1095 silly fetch manifest remark-parse@^11.0.0
+1096 silly packumentCache full:https://registry.npmjs.org/remark-parse cache-miss
+1097 http fetch GET 200 https://registry.npmjs.org/remark-parse 41ms (cache miss)
+1098 silly packumentCache full:https://registry.npmjs.org/remark-parse set size:undefined disposed:false
+1099 silly fetch manifest remark-rehype@^11.1.2
+1100 silly packumentCache full:https://registry.npmjs.org/remark-rehype cache-miss
+1101 http fetch GET 200 https://registry.npmjs.org/remark-rehype 32ms (cache miss)
+1102 silly packumentCache full:https://registry.npmjs.org/remark-rehype set size:undefined disposed:false
+1103 silly fetch manifest unified@^11.0.5
+1104 silly packumentCache full:https://registry.npmjs.org/unified cache-miss
+1105 http fetch GET 200 https://registry.npmjs.org/unified 40ms (cache miss)
+1106 silly packumentCache full:https://registry.npmjs.org/unified set size:undefined disposed:false
+1107 silly fetch manifest @codingame/monaco-vscode-extensions-service-override@20.2.1
+1108 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extensions-service-override cache-miss
+1109 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-workbench-service-override 1237ms (cache miss)
+1110 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-workbench-service-override set size:undefined disposed:false
+1111 silly fetch manifest @codingame/monaco-vscode-34a0ffd3-b9f5-5699-b43b-38af5732f38a-common@20.2.1
+1112 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-34a0ffd3-b9f5-5699-b43b-38af5732f38a-common cache-miss
+1113 http fetch GET 200 https://registry.npmjs.org/amator 600ms (cache miss)
+1114 silly packumentCache full:https://registry.npmjs.org/amator set size:undefined disposed:false
+1115 silly fetch manifest @codingame/monaco-vscode-4a3ac544-9a61-534c-88df-756262793ef7-common@20.2.1
+1116 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-4a3ac544-9a61-534c-88df-756262793ef7-common cache-miss
+1117 http fetch GET 200 https://registry.npmjs.org/hast-util-is-element 566ms (cache miss)
+1118 silly packumentCache full:https://registry.npmjs.org/hast-util-is-element set size:undefined disposed:false
+1119 silly fetch manifest semver@^7.3.7
+1120 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+1121 http fetch GET 200 https://registry.npmjs.org/wheel 598ms (cache miss)
+1122 silly packumentCache full:https://registry.npmjs.org/wheel set size:undefined disposed:false
+1123 silly fetch manifest minimatch@^5.1.0
+1124 silly packumentCache full:https://registry.npmjs.org/minimatch cache-miss
+1125 http cache https://registry.npmjs.org/semver 10ms (cache hit)
+1126 silly packumentCache full:https://registry.npmjs.org/semver set size:224186 disposed:false
+1127 silly fetch manifest vscode-languageserver-protocol@3.17.5
+1128 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol cache-miss
+1129 http cache https://registry.npmjs.org/minimatch 13ms (cache hit)
+1130 silly packumentCache full:https://registry.npmjs.org/minimatch set size:298903 disposed:false
+1131 silly fetch manifest vscode-jsonrpc@~8.2.1
+1132 silly packumentCache full:https://registry.npmjs.org/vscode-jsonrpc cache-miss
+1133 http cache https://registry.npmjs.org/vscode-languageserver-protocol 17ms (cache hit)
+1134 silly packumentCache full:https://registry.npmjs.org/vscode-languageserver-protocol set size:479089 disposed:false
+1135 silly fetch manifest lib0@^0.2.43
+1136 silly packumentCache full:https://registry.npmjs.org/lib0 cache-miss
+1137 http fetch GET 200 https://registry.npmjs.org/vscode-jsonrpc 43ms (cache miss)
+1138 silly packumentCache full:https://registry.npmjs.org/vscode-jsonrpc set size:undefined disposed:false
+1139 silly fetch manifest lib0@^0.2.99
+1140 silly packumentCache full:https://registry.npmjs.org/lib0 cache-miss
+1141 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-log-service-override 1174ms (cache miss)
+1142 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-log-service-override set size:undefined disposed:false
+1143 silly fetch manifest lib0@^0.2.52
+1144 silly packumentCache full:https://registry.npmjs.org/lib0 cache-miss
+1145 http fetch GET 200 https://registry.npmjs.org/easy-reactive 565ms (cache miss)
+1146 silly packumentCache full:https://registry.npmjs.org/easy-reactive set size:undefined disposed:false
+1147 silly fetch manifest y-protocols@^1.0.5
+1148 silly packumentCache full:https://registry.npmjs.org/y-protocols cache-miss
+1149 http fetch GET 200 https://registry.npmjs.org/lib0 65ms (cache miss)
+1150 silly packumentCache full:https://registry.npmjs.org/lib0 set size:undefined disposed:false
+1151 silly fetch manifest ws@^6.2.1
+1152 silly packumentCache full:https://registry.npmjs.org/ws cache-miss
+1153 http cache https://registry.npmjs.org/ws 3ms (cache hit)
+1154 silly packumentCache full:https://registry.npmjs.org/ws set size:410885 disposed:false
+1155 silly fetch manifest y-leveldb@^0.1.0
+1156 silly packumentCache full:https://registry.npmjs.org/y-leveldb cache-miss
+1157 http fetch GET 200 https://registry.npmjs.org/lib0 52ms (cache miss)
+1158 silly packumentCache full:https://registry.npmjs.org/lib0 set size:undefined disposed:false
+1159 http fetch GET 200 https://registry.npmjs.org/lib0 56ms (cache miss)
+1160 silly packumentCache full:https://registry.npmjs.org/lib0 set size:undefined disposed:false
+1161 http fetch GET 200 https://registry.npmjs.org/y-protocols 53ms (cache miss)
+1162 silly packumentCache full:https://registry.npmjs.org/y-protocols set size:undefined disposed:false
+1163 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-model-service-override 1116ms (cache miss)
+1164 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-model-service-override set size:undefined disposed:false
+1165 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-languages-service-override 1250ms (cache miss)
+1166 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-languages-service-override set size:undefined disposed:false
+1167 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-localization-service-override 1202ms (cache miss)
+1168 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-localization-service-override set size:undefined disposed:false
+1169 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-extensions-service-override 1308ms (cache miss)
+1170 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extensions-service-override set size:undefined disposed:false
+1171 http fetch GET 200 https://registry.npmjs.org/y-leveldb 538ms (cache miss)
+1172 silly packumentCache full:https://registry.npmjs.org/y-leveldb set size:undefined disposed:false
+1173 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-extensions-service-override 1219ms (cache miss)
+1174 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-extensions-service-override set size:undefined disposed:false
+1175 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1230ms (cache miss)
+1176 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-34a0ffd3-b9f5-5699-b43b-38af5732f38a-common set size:undefined disposed:false
+1177 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1333ms (cache miss)
+1178 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-4a3ac544-9a61-534c-88df-756262793ef7-common set size:undefined disposed:false
+1179 silly placeDep ROOT @aws-crypto/util@4.0.0 OK for: @aws-crypto/sha256-js@4.0.0 want: ^4.0.0
+1180 silly placeDep ROOT @aws-sdk/types@3.887.0 OK for: @aws-crypto/sha256-js@4.0.0 want: ^3.222.0
+1181 silly placeDep node_modules/@aws-crypto/sha256-js tslib@1.14.1 OK for: @aws-crypto/sha256-js@4.0.0 want: ^1.11.1
+1182 silly fetch manifest @aws-sdk/util-utf8-browser@^3.0.0
+1183 silly packumentCache full:https://registry.npmjs.org/@aws-sdk%2futil-utf8-browser cache-miss
+1184 silly fetch manifest @smithy/types@^4.5.0
+1185 silly packumentCache full:https://registry.npmjs.org/@smithy%2ftypes cache-miss
+1186 http fetch GET 200 https://registry.npmjs.org/@smithy%2ftypes 57ms (cache miss)
+1187 silly packumentCache full:https://registry.npmjs.org/@smithy%2ftypes set size:undefined disposed:false
+1188 http fetch GET 200 https://registry.npmjs.org/@aws-sdk%2futil-utf8-browser 69ms (cache miss)
+1189 silly packumentCache full:https://registry.npmjs.org/@aws-sdk%2futil-utf8-browser set size:undefined disposed:false
+1190 silly placeDep ROOT @aws-sdk/util-utf8-browser@3.259.0 OK for: @aws-crypto/util@4.0.0 want: ^3.0.0
+1191 silly placeDep node_modules/@aws-crypto/util tslib@1.14.1 OK for: @aws-crypto/util@4.0.0 want: ^1.11.1
+1192 silly placeDep ROOT @smithy/types@4.5.0 OK for: @aws-sdk/types@3.887.0 want: ^4.5.0
+1193 silly placeDep ROOT @codingame/monaco-vscode-158b9837-fc78-5d9c-86f5-9134e4358643-common@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1194 silly placeDep ROOT @codingame/monaco-vscode-422642f2-7e3a-5c1c-9e1e-1d3ef1817346-common@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1195 silly placeDep ROOT @codingame/monaco-vscode-api@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1196 silly placeDep ROOT @codingame/monaco-vscode-ce7c734f-7712-563c-9335-d7acb43306af-common@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1197 silly placeDep ROOT @codingame/monaco-vscode-d987325e-3e05-53aa-b9ff-6f97476f64db-common@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1198 silly placeDep ROOT @codingame/monaco-vscode-f24e325c-2ce0-5bba-8236-bfc4f53180ab-common@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1199 silly placeDep ROOT @codingame/monaco-vscode-files-service-override@20.2.1 OK for: @codingame/monaco-vscode-configuration-service-override@20.2.1 want: 20.2.1
+1200 silly fetch manifest marked@14.0.0
+1201 silly packumentCache full:https://registry.npmjs.org/marked cache-miss
+1202 silly fetch manifest dompurify@3.2.6
+1203 silly packumentCache full:https://registry.npmjs.org/dompurify cache-miss
+1204 silly fetch manifest jschardet@3.1.4
+1205 silly packumentCache full:https://registry.npmjs.org/jschardet cache-miss
+1206 silly fetch manifest @vscode/iconv-lite-umd@0.7.0
+1207 silly packumentCache full:https://registry.npmjs.org/@vscode%2ficonv-lite-umd cache-miss
+1208 silly fetch manifest @codingame/monaco-vscode-base-service-override@20.2.1
+1209 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-base-service-override cache-miss
+1210 silly fetch manifest @codingame/monaco-vscode-host-service-override@20.2.1
+1211 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-host-service-override cache-miss
+1212 silly fetch manifest @codingame/monaco-vscode-layout-service-override@20.2.1
+1213 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-layout-service-override cache-miss
+1214 silly fetch manifest @codingame/monaco-vscode-environment-service-override@20.2.1
+1215 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-environment-service-override cache-miss
+1216 silly fetch manifest @codingame/monaco-vscode-quickaccess-service-override@20.2.1
+1217 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-quickaccess-service-override cache-miss
+1218 silly fetch manifest @codingame/monaco-vscode-0c06bfba-d24d-5c4d-90cd-b40cefb7f811-common@20.2.1
+1219 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-0c06bfba-d24d-5c4d-90cd-b40cefb7f811-common cache-miss
+1220 silly fetch manifest @codingame/monaco-vscode-15626ec7-b165-51e1-8caf-7bcc2ae9b95a-common@20.2.1
+1221 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-15626ec7-b165-51e1-8caf-7bcc2ae9b95a-common cache-miss
+1222 http fetch GET 200 https://registry.npmjs.org/dompurify 42ms (cache miss)
+1223 silly packumentCache full:https://registry.npmjs.org/dompurify set size:undefined disposed:false
+1224 silly fetch manifest @codingame/monaco-vscode-2f06fe84-148e-5e6b-a7ca-c7989c5f128a-common@20.2.1
+1225 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-2f06fe84-148e-5e6b-a7ca-c7989c5f128a-common cache-miss
+1226 http fetch GET 200 https://registry.npmjs.org/marked 63ms (cache miss)
+1227 silly packumentCache full:https://registry.npmjs.org/marked set size:undefined disposed:false
+1228 silly fetch manifest @codingame/monaco-vscode-60014c9d-b815-501d-83a9-4b08725c2ec2-common@20.2.1
+1229 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-60014c9d-b815-501d-83a9-4b08725c2ec2-common cache-miss
+1230 http fetch GET 200 https://registry.npmjs.org/jschardet 625ms (cache miss)
+1231 silly packumentCache full:https://registry.npmjs.org/jschardet set size:undefined disposed:false
+1232 silly fetch manifest @codingame/monaco-vscode-caeb744c-8e3f-5c11-80fb-0f057d24d544-common@20.2.1
+1233 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-caeb744c-8e3f-5c11-80fb-0f057d24d544-common cache-miss
+1234 http fetch GET 200 https://registry.npmjs.org/@vscode%2ficonv-lite-umd 1174ms (cache miss)
+1235 silly packumentCache full:https://registry.npmjs.org/@vscode%2ficonv-lite-umd set size:undefined disposed:false
+1236 silly fetch manifest @codingame/monaco-vscode-cea4d01f-6526-5c2f-8b09-b168fead499f-common@20.2.1
+1237 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-cea4d01f-6526-5c2f-8b09-b168fead499f-common cache-miss
+1238 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-environment-service-override 1179ms (cache miss)
+1239 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-environment-service-override set size:undefined disposed:false
+1240 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1193ms (cache miss)
+1241 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-15626ec7-b165-51e1-8caf-7bcc2ae9b95a-common set size:undefined disposed:false
+1242 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-base-service-override 1199ms (cache miss)
+1243 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-base-service-override set size:undefined disposed:false
+1244 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1137ms (cache miss)
+1245 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-60014c9d-b815-501d-83a9-4b08725c2ec2-common set size:undefined disposed:false
+1246 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-host-service-override 1242ms (cache miss)
+1247 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-host-service-override set size:undefined disposed:false
+1248 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-layout-service-override 1249ms (cache miss)
+1249 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-layout-service-override set size:undefined disposed:false
+1250 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1207ms (cache miss)
+1251 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-2f06fe84-148e-5e6b-a7ca-c7989c5f128a-common set size:undefined disposed:false
+1252 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-quickaccess-service-override 1268ms (cache miss)
+1253 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-quickaccess-service-override set size:undefined disposed:false
+1254 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1289ms (cache miss)
+1255 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-0c06bfba-d24d-5c4d-90cd-b40cefb7f811-common set size:undefined disposed:false
+1256 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1243ms (cache miss)
+1257 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-caeb744c-8e3f-5c11-80fb-0f057d24d544-common set size:undefined disposed:false
+1258 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1216ms (cache miss)
+1259 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-cea4d01f-6526-5c2f-8b09-b168fead499f-common set size:undefined disposed:false
+1260 silly placeDep ROOT @codingame/monaco-vscode-base-service-override@20.2.1 OK for: @codingame/monaco-vscode-api@20.2.1 want: 20.2.1
+1261 silly placeDep ROOT @codingame/monaco-vscode-environment-service-override@20.2.1 OK for: @codingame/monaco-vscode-api@20.2.1 want: 20.2.1
+1262 silly placeDep ROOT @codingame/monaco-vscode-extensions-service-override@20.2.1 OK for: @codingame/monaco-vscode-api@20.2.1 want: 20.2.1
+1263 silly placeDep ROOT @codingame/monaco-vscode-host-service-override@20.2.1 OK for: @codingame/monaco-vscode-api@20.2.1 want: 20.2.1
+1264 silly placeDep ROOT @codingame/monaco-vscode-layout-service-override@20.2.1 OK for: @codingame/monaco-vscode-api@20.2.1 want: 20.2.1
+1265 silly placeDep ROOT @codingame/monaco-vscode-quickaccess-service-override@20.2.1 OK for: @codingame/monaco-vscode-api@20.2.1 want: 20.2.1
+1266 silly placeDep ROOT @vscode/iconv-lite-umd@0.7.0 OK for: @codingame/monaco-vscode-api@20.2.1 want: 0.7.0
+1267 silly placeDep ROOT dompurify@3.2.6 OK for: @codingame/monaco-vscode-api@20.2.1 want: 3.2.6
+1268 silly placeDep ROOT jschardet@3.1.4 OK for: @codingame/monaco-vscode-api@20.2.1 want: 3.1.4
+1269 silly placeDep ROOT marked@14.0.0 OK for: @codingame/monaco-vscode-api@20.2.1 want: 14.0.0
+1270 silly fetch manifest @codingame/monaco-vscode-23aade48-f094-5c08-9555-97fc9cca96c9-common@20.2.1
+1271 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-23aade48-f094-5c08-9555-97fc9cca96c9-common cache-miss
+1272 silly fetch manifest @codingame/monaco-vscode-9a1a5840-af83-5d07-a156-ba32a36c5c4b-common@20.2.1
+1273 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-9a1a5840-af83-5d07-a156-ba32a36c5c4b-common cache-miss
+1274 silly fetch manifest @codingame/monaco-vscode-abed5a84-8a82-5f84-9412-88a736235bae-common@20.2.1
+1275 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-abed5a84-8a82-5f84-9412-88a736235bae-common cache-miss
+1276 silly fetch manifest @codingame/monaco-vscode-0af61f78-dfc5-57ba-8d32-66268c8de38d-common@20.2.1
+1277 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-0af61f78-dfc5-57ba-8d32-66268c8de38d-common cache-miss
+1278 silly fetch manifest @codingame/monaco-vscode-256d5b78-0649-50e9-8354-2807f95f68f4-common@20.2.1
+1279 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-256d5b78-0649-50e9-8354-2807f95f68f4-common cache-miss
+1280 silly fetch manifest @codingame/monaco-vscode-2a94c04a-b85b-5669-b06b-89c1bfa11cb9-common@20.2.1
+1281 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-2a94c04a-b85b-5669-b06b-89c1bfa11cb9-common cache-miss
+1282 silly fetch manifest @codingame/monaco-vscode-571c8352-7953-5038-9f09-e03bb6219a0e-common@20.2.1
+1283 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-571c8352-7953-5038-9f09-e03bb6219a0e-common cache-miss
+1284 silly fetch manifest @codingame/monaco-vscode-622c0cca-d5fa-59b6-b730-0715afcf93ee-common@20.2.1
+1285 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-622c0cca-d5fa-59b6-b730-0715afcf93ee-common cache-miss
+1286 silly fetch manifest @codingame/monaco-vscode-670aae94-7f88-54d7-90ea-6fcbef423557-common@20.2.1
+1287 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-670aae94-7f88-54d7-90ea-6fcbef423557-common cache-miss
+1288 silly fetch manifest @codingame/monaco-vscode-6845754f-e617-5ed9-8aaa-6ca3653a9532-common@20.2.1
+1289 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6845754f-e617-5ed9-8aaa-6ca3653a9532-common cache-miss
+1290 silly fetch manifest @codingame/monaco-vscode-6f931a91-88ea-5232-897f-a17ec3929ba5-common@20.2.1
+1291 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6f931a91-88ea-5232-897f-a17ec3929ba5-common cache-miss
+1292 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1144ms (cache miss)
+1293 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-9a1a5840-af83-5d07-a156-ba32a36c5c4b-common set size:undefined disposed:false
+1294 silly fetch manifest @codingame/monaco-vscode-7f39b6f1-3542-5430-8760-0f404d7a7cee-common@20.2.1
+1295 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-7f39b6f1-3542-5430-8760-0f404d7a7cee-common cache-miss
+1296 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1182ms (cache miss)
+1297 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-622c0cca-d5fa-59b6-b730-0715afcf93ee-common set size:undefined disposed:false
+1298 silly fetch manifest @codingame/monaco-vscode-8ccb7637-50ea-5359-97bf-00015d7fe567-common@20.2.1
+1299 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-8ccb7637-50ea-5359-97bf-00015d7fe567-common cache-miss
+1300 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1191ms (cache miss)
+1301 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-0af61f78-dfc5-57ba-8d32-66268c8de38d-common set size:undefined disposed:false
+1302 silly fetch manifest @codingame/monaco-vscode-a17e9d37-b6c1-5556-8402-5db73960fae3-common@20.2.1
+1303 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a17e9d37-b6c1-5556-8402-5db73960fae3-common cache-miss
+1304 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1198ms (cache miss)
+1305 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-256d5b78-0649-50e9-8354-2807f95f68f4-common set size:undefined disposed:false
+1306 silly fetch manifest @codingame/monaco-vscode-a654b07e-8806-5425-b124-18f03ba8e11a-common@20.2.1
+1307 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a654b07e-8806-5425-b124-18f03ba8e11a-common cache-miss
+1308 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1205ms (cache miss)
+1309 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-2a94c04a-b85b-5669-b06b-89c1bfa11cb9-common set size:undefined disposed:false
+1310 silly fetch manifest @codingame/monaco-vscode-a8d3bd74-e63e-5327-96e8-4f931661e329-common@20.2.1
+1311 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a8d3bd74-e63e-5327-96e8-4f931661e329-common cache-miss
+1312 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1220ms (cache miss)
+1313 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6845754f-e617-5ed9-8aaa-6ca3653a9532-common set size:undefined disposed:false
+1314 silly fetch manifest @codingame/monaco-vscode-a9da9abe-278d-5ce6-9418-99c7c07c5c37-common@20.2.1
+1315 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a9da9abe-278d-5ce6-9418-99c7c07c5c37-common cache-miss
+1316 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1225ms (cache miss)
+1317 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6f931a91-88ea-5232-897f-a17ec3929ba5-common set size:undefined disposed:false
+1318 silly fetch manifest @codingame/monaco-vscode-b994942c-360d-5b68-8a33-77d4bde6b714-common@20.2.1
+1319 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-b994942c-360d-5b68-8a33-77d4bde6b714-common cache-miss
+1320 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1242ms (cache miss)
+1321 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-23aade48-f094-5c08-9555-97fc9cca96c9-common set size:undefined disposed:false
+1322 silly fetch manifest @codingame/monaco-vscode-bf94ddb5-e436-506a-9763-5ab86b642508-common@20.2.1
+1323 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-bf94ddb5-e436-506a-9763-5ab86b642508-common cache-miss
+1324 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1242ms (cache miss)
+1325 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-abed5a84-8a82-5f84-9412-88a736235bae-common set size:undefined disposed:false
+1326 silly fetch manifest @codingame/monaco-vscode-d0569cfb-4706-5ad6-b0b0-5115ad8685db-common@20.2.1
+1327 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d0569cfb-4706-5ad6-b0b0-5115ad8685db-common cache-miss
+1328 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1251ms (cache miss)
+1329 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-670aae94-7f88-54d7-90ea-6fcbef423557-common set size:undefined disposed:false
+1330 silly fetch manifest @codingame/monaco-vscode-eb7d5efd-2e60-59f8-9ba4-9a8ae8cb2957-common@20.2.1
+1331 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-eb7d5efd-2e60-59f8-9ba4-9a8ae8cb2957-common cache-miss
+1332 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1336ms (cache miss)
+1333 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-571c8352-7953-5038-9f09-e03bb6219a0e-common set size:undefined disposed:false
+1334 silly fetch manifest @codingame/monaco-vscode-eba0b9b3-174c-5dae-9867-a37810ca1808-common@20.2.1
+1335 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-eba0b9b3-174c-5dae-9867-a37810ca1808-common cache-miss
+1336 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1088ms (cache miss)
+1337 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a8d3bd74-e63e-5327-96e8-4f931661e329-common set size:undefined disposed:false
+1338 silly fetch manifest @codingame/monaco-vscode-f22e7e55-aee8-5b52-a6bc-950efd9f5890-common@20.2.1
+1339 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-f22e7e55-aee8-5b52-a6bc-950efd9f5890-common cache-miss
+1340 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1159ms (cache miss)
+1341 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-7f39b6f1-3542-5430-8760-0f404d7a7cee-common set size:undefined disposed:false
+1342 silly fetch manifest @codingame/monaco-vscode-6bf85d7b-e6e3-54e9-9bc1-7e08d663f0f6-common@20.2.1
+1343 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6bf85d7b-e6e3-54e9-9bc1-7e08d663f0f6-common cache-miss
+1344 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1140ms (cache miss)
+1345 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-8ccb7637-50ea-5359-97bf-00015d7fe567-common set size:undefined disposed:false
+1346 silly fetch manifest @codingame/monaco-vscode-85886bdb-61c5-52f1-8eb7-d1d32f6f8cbd-common@20.2.1
+1347 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-85886bdb-61c5-52f1-8eb7-d1d32f6f8cbd-common cache-miss
+1348 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1209ms (cache miss)
+1349 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a17e9d37-b6c1-5556-8402-5db73960fae3-common set size:undefined disposed:false
+1350 silly fetch manifest @codingame/monaco-vscode-40cada32-7e9c-528a-81fc-766e4da54147-common@20.2.1
+1351 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-40cada32-7e9c-528a-81fc-766e4da54147-common cache-miss
+1352 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1158ms (cache miss)
+1353 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d0569cfb-4706-5ad6-b0b0-5115ad8685db-common set size:undefined disposed:false
+1354 silly fetch manifest @codingame/monaco-vscode-d609a7d3-bf87-551a-884f-550a8b327ec5-common@20.2.1
+1355 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d609a7d3-bf87-551a-884f-550a8b327ec5-common cache-miss
+1356 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1196ms (cache miss)
+1357 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-b994942c-360d-5b68-8a33-77d4bde6b714-common set size:undefined disposed:false
+1358 silly fetch manifest @codingame/monaco-vscode-eda30bac-0984-5b42-9362-c68996b85232-common@20.2.1
+1359 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-eda30bac-0984-5b42-9362-c68996b85232-common cache-miss
+1360 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1205ms (cache miss)
+1361 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a9da9abe-278d-5ce6-9418-99c7c07c5c37-common set size:undefined disposed:false
+1362 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1185ms (cache miss)
+1363 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-eb7d5efd-2e60-59f8-9ba4-9a8ae8cb2957-common set size:undefined disposed:false
+1364 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1227ms (cache miss)
+1365 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-bf94ddb5-e436-506a-9763-5ab86b642508-common set size:undefined disposed:false
+1366 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1292ms (cache miss)
+1367 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-a654b07e-8806-5425-b124-18f03ba8e11a-common set size:undefined disposed:false
+1368 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1215ms (cache miss)
+1369 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-eba0b9b3-174c-5dae-9867-a37810ca1808-common set size:undefined disposed:false
+1370 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1201ms (cache miss)
+1371 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6bf85d7b-e6e3-54e9-9bc1-7e08d663f0f6-common set size:undefined disposed:false
+1372 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1201ms (cache miss)
+1373 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-85886bdb-61c5-52f1-8eb7-d1d32f6f8cbd-common set size:undefined disposed:false
+1374 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1236ms (cache miss)
+1375 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-f22e7e55-aee8-5b52-a6bc-950efd9f5890-common set size:undefined disposed:false
+1376 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1161ms (cache miss)
+1377 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-eda30bac-0984-5b42-9362-c68996b85232-common set size:undefined disposed:false
+1378 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1210ms (cache miss)
+1379 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-40cada32-7e9c-528a-81fc-766e4da54147-common set size:undefined disposed:false
+1380 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1225ms (cache miss)
+1381 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d609a7d3-bf87-551a-884f-550a8b327ec5-common set size:undefined disposed:false
+1382 silly placeDep ROOT @codingame/monaco-vscode-23aade48-f094-5c08-9555-97fc9cca96c9-common@20.2.1 OK for: @codingame/monaco-vscode-base-service-override@20.2.1 want: 20.2.1
+1383 silly placeDep ROOT @codingame/monaco-vscode-34a0ffd3-b9f5-5699-b43b-38af5732f38a-common@20.2.1 OK for: @codingame/monaco-vscode-base-service-override@20.2.1 want: 20.2.1
+1384 silly placeDep ROOT @codingame/monaco-vscode-60014c9d-b815-501d-83a9-4b08725c2ec2-common@20.2.1 OK for: @codingame/monaco-vscode-base-service-override@20.2.1 want: 20.2.1
+1385 silly placeDep ROOT @codingame/monaco-vscode-9a1a5840-af83-5d07-a156-ba32a36c5c4b-common@20.2.1 OK for: @codingame/monaco-vscode-base-service-override@20.2.1 want: 20.2.1
+1386 silly placeDep ROOT @codingame/monaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common@20.2.1 OK for: @codingame/monaco-vscode-editor-api@20.2.1 want: 20.2.1
+1387 silly placeDep ROOT @codingame/monaco-vscode-0af61f78-dfc5-57ba-8d32-66268c8de38d-common@20.2.1 OK for: @codingame/monaco-vscode-5452e2b7-9081-5f95-839b-4ab3544ce28f-common@20.2.1 want: 20.2.1
+1388 silly fetch manifest @codingame/monaco-vscode-d941ac7b-412f-57e3-b1bf-f6b0eb253b21-common@20.2.1
+1389 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d941ac7b-412f-57e3-b1bf-f6b0eb253b21-common cache-miss
+1390 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1151ms (cache miss)
+1391 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-d941ac7b-412f-57e3-b1bf-f6b0eb253b21-common set size:undefined disposed:false
+1392 silly placeDep ROOT @codingame/monaco-vscode-b994942c-360d-5b68-8a33-77d4bde6b714-common@20.2.1 OK for: @codingame/monaco-vscode-0af61f78-dfc5-57ba-8d32-66268c8de38d-common@20.2.1 want: 20.2.1
+1393 silly placeDep ROOT @codingame/monaco-vscode-d941ac7b-412f-57e3-b1bf-f6b0eb253b21-common@20.2.1 OK for: @codingame/monaco-vscode-0af61f78-dfc5-57ba-8d32-66268c8de38d-common@20.2.1 want: 20.2.1
+1394 silly placeDep ROOT @codingame/monaco-vscode-abed5a84-8a82-5f84-9412-88a736235bae-common@20.2.1 OK for: @codingame/monaco-vscode-environment-service-override@20.2.1 want: 20.2.1
+1395 silly placeDep ROOT @codingame/monaco-vscode-256d5b78-0649-50e9-8354-2807f95f68f4-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1396 silly placeDep ROOT @codingame/monaco-vscode-2a94c04a-b85b-5669-b06b-89c1bfa11cb9-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1397 silly placeDep ROOT @codingame/monaco-vscode-4a3ac544-9a61-534c-88df-756262793ef7-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1398 silly placeDep ROOT @codingame/monaco-vscode-571c8352-7953-5038-9f09-e03bb6219a0e-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1399 silly placeDep ROOT @codingame/monaco-vscode-622c0cca-d5fa-59b6-b730-0715afcf93ee-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1400 silly placeDep ROOT @codingame/monaco-vscode-670aae94-7f88-54d7-90ea-6fcbef423557-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1401 silly placeDep ROOT @codingame/monaco-vscode-6845754f-e617-5ed9-8aaa-6ca3653a9532-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1402 silly placeDep ROOT @codingame/monaco-vscode-6f931a91-88ea-5232-897f-a17ec3929ba5-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1403 silly placeDep ROOT @codingame/monaco-vscode-7f39b6f1-3542-5430-8760-0f404d7a7cee-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1404 silly placeDep ROOT @codingame/monaco-vscode-8ccb7637-50ea-5359-97bf-00015d7fe567-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1405 silly placeDep ROOT @codingame/monaco-vscode-a17e9d37-b6c1-5556-8402-5db73960fae3-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1406 silly placeDep ROOT @codingame/monaco-vscode-a654b07e-8806-5425-b124-18f03ba8e11a-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1407 silly placeDep ROOT @codingame/monaco-vscode-a8d3bd74-e63e-5327-96e8-4f931661e329-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1408 silly placeDep ROOT @codingame/monaco-vscode-a9da9abe-278d-5ce6-9418-99c7c07c5c37-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1409 silly placeDep ROOT @codingame/monaco-vscode-bf94ddb5-e436-506a-9763-5ab86b642508-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1410 silly placeDep ROOT @codingame/monaco-vscode-caeb744c-8e3f-5c11-80fb-0f057d24d544-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1411 silly placeDep ROOT @codingame/monaco-vscode-d0569cfb-4706-5ad6-b0b0-5115ad8685db-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1412 silly placeDep ROOT @codingame/monaco-vscode-eb7d5efd-2e60-59f8-9ba4-9a8ae8cb2957-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1413 silly placeDep ROOT @codingame/monaco-vscode-eba0b9b3-174c-5dae-9867-a37810ca1808-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1414 silly placeDep ROOT @codingame/monaco-vscode-f22e7e55-aee8-5b52-a6bc-950efd9f5890-common@20.2.1 OK for: @codingame/monaco-vscode-extensions-service-override@20.2.1 want: 20.2.1
+1415 silly fetch manifest @codingame/monaco-vscode-249dc928-1da3-51c1-82d0-45e0ba9d08a1-common@20.2.1
+1416 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-249dc928-1da3-51c1-82d0-45e0ba9d08a1-common cache-miss
+1417 silly fetch manifest @codingame/monaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common@20.2.1
+1418 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common cache-miss
+1419 silly fetch manifest @codingame/monaco-vscode-6db1b967-5327-5c5c-8c17-bd92774c0fb2-common@20.2.1
+1420 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6db1b967-5327-5c5c-8c17-bd92774c0fb2-common cache-miss
+1421 silly fetch manifest @codingame/monaco-vscode-897bebad-39df-57cb-8a57-36a271d038be-common@20.2.1
+1422 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-897bebad-39df-57cb-8a57-36a271d038be-common cache-miss
+1423 silly fetch manifest @codingame/monaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common@20.2.1
+1424 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common cache-miss
+1425 silly fetch manifest @codingame/monaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common@20.2.1
+1426 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common cache-miss
+1427 silly fetch manifest @codingame/monaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common@20.2.1
+1428 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common cache-miss
+1429 silly fetch manifest @codingame/monaco-vscode-9ee79c1a-3f03-568b-8eac-b02513a98b68-common@20.2.1
+1430 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-9ee79c1a-3f03-568b-8eac-b02513a98b68-common cache-miss
+1431 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1140ms (cache miss)
+1432 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6db1b967-5327-5c5c-8c17-bd92774c0fb2-common set size:undefined disposed:false
+1433 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1162ms (cache miss)
+1434 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common set size:undefined disposed:false
+1435 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1180ms (cache miss)
+1436 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-249dc928-1da3-51c1-82d0-45e0ba9d08a1-common set size:undefined disposed:false
+1437 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1214ms (cache miss)
+1438 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-897bebad-39df-57cb-8a57-36a271d038be-common set size:undefined disposed:false
+1439 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1216ms (cache miss)
+1440 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common set size:undefined disposed:false
+1441 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1243ms (cache miss)
+1442 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common set size:undefined disposed:false
+1443 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1256ms (cache miss)
+1444 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-9ee79c1a-3f03-568b-8eac-b02513a98b68-common set size:undefined disposed:false
+1445 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1268ms (cache miss)
+1446 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common set size:undefined disposed:false
+1447 silly placeDep ROOT @codingame/monaco-vscode-249dc928-1da3-51c1-82d0-45e0ba9d08a1-common@20.2.1 OK for: @codingame/monaco-vscode-571c8352-7953-5038-9f09-e03bb6219a0e-common@20.2.1 want: 20.2.1
+1448 silly placeDep ROOT @codingame/monaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common@20.2.1 OK for: @codingame/monaco-vscode-6f931a91-88ea-5232-897f-a17ec3929ba5-common@20.2.1 want: 20.2.1
+1449 silly fetch manifest @codingame/monaco-vscode-6883db80-c313-54eb-8fbc-5872c56b0326-common@20.2.1
+1450 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6883db80-c313-54eb-8fbc-5872c56b0326-common cache-miss
+1451 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1217ms (cache miss)
+1452 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-6883db80-c313-54eb-8fbc-5872c56b0326-common set size:undefined disposed:false
+1453 silly placeDep ROOT @codingame/monaco-vscode-6883db80-c313-54eb-8fbc-5872c56b0326-common@20.2.1 OK for: @codingame/monaco-vscode-262ed59d-4f76-57cd-9e9f-1877f26ae049-common@20.2.1 want: 20.2.1
+1454 silly placeDep ROOT @codingame/monaco-vscode-6db1b967-5327-5c5c-8c17-bd92774c0fb2-common@20.2.1 OK for: @codingame/monaco-vscode-8ccb7637-50ea-5359-97bf-00015d7fe567-common@20.2.1 want: 20.2.1
+1455 silly placeDep ROOT @codingame/monaco-vscode-897bebad-39df-57cb-8a57-36a271d038be-common@20.2.1 OK for: @codingame/monaco-vscode-8ccb7637-50ea-5359-97bf-00015d7fe567-common@20.2.1 want: 20.2.1
+1456 silly placeDep ROOT @codingame/monaco-vscode-501b06ab-3f58-516b-8a1a-c29d375d3da4-common@20.2.1 OK for: @codingame/monaco-vscode-a8d3bd74-e63e-5327-96e8-4f931661e329-common@20.2.1 want: 20.2.1
+1457 silly placeDep ROOT @codingame/monaco-vscode-9ee79c1a-3f03-568b-8eac-b02513a98b68-common@20.2.1 OK for: @codingame/monaco-vscode-eb7d5efd-2e60-59f8-9ba4-9a8ae8cb2957-common@20.2.1 want: 20.2.1
+1458 silly placeDep ROOT @codingame/monaco-vscode-0c06bfba-d24d-5c4d-90cd-b40cefb7f811-common@20.2.1 OK for: @codingame/monaco-vscode-files-service-override@20.2.1 want: 20.2.1
+1459 silly placeDep ROOT @codingame/monaco-vscode-15626ec7-b165-51e1-8caf-7bcc2ae9b95a-common@20.2.1 OK for: @codingame/monaco-vscode-files-service-override@20.2.1 want: 20.2.1
+1460 silly placeDep ROOT @codingame/monaco-vscode-2f06fe84-148e-5e6b-a7ca-c7989c5f128a-common@20.2.1 OK for: @codingame/monaco-vscode-files-service-override@20.2.1 want: 20.2.1
+1461 silly placeDep ROOT @codingame/monaco-vscode-cea4d01f-6526-5c2f-8b09-b168fead499f-common@20.2.1 OK for: @codingame/monaco-vscode-files-service-override@20.2.1 want: 20.2.1
+1462 silly placeDep ROOT @codingame/monaco-vscode-6bf85d7b-e6e3-54e9-9bc1-7e08d663f0f6-common@20.2.1 OK for: @codingame/monaco-vscode-layout-service-override@20.2.1 want: 20.2.1
+1463 silly placeDep ROOT @codingame/monaco-vscode-85886bdb-61c5-52f1-8eb7-d1d32f6f8cbd-common@20.2.1 OK for: @codingame/monaco-vscode-layout-service-override@20.2.1 want: 20.2.1
+1464 silly fetch manifest @codingame/monaco-vscode-0cc5da60-f921-59b9-bd8c-a018e93c0a6f-common@20.2.1
+1465 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-0cc5da60-f921-59b9-bd8c-a018e93c0a6f-common cache-miss
+1466 silly fetch manifest @codingame/monaco-vscode-96e83782-7f38-572e-8787-02e981f1c54f-common@20.2.1
+1467 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-96e83782-7f38-572e-8787-02e981f1c54f-common cache-miss
+1468 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1133ms (cache miss)
+1469 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-96e83782-7f38-572e-8787-02e981f1c54f-common set size:undefined disposed:false
+1470 http fetch GET 200 https://registry.npmjs.org/@codingame%2fmonaco-vscode-***-common 1222ms (cache miss)
+1471 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-0cc5da60-f921-59b9-bd8c-a018e93c0a6f-common set size:undefined disposed:false
+1472 silly placeDep ROOT @codingame/monaco-vscode-0cc5da60-f921-59b9-bd8c-a018e93c0a6f-common@20.2.1 OK for: @codingame/monaco-vscode-6bf85d7b-e6e3-54e9-9bc1-7e08d663f0f6-common@20.2.1 want: 20.2.1
+1473 silly placeDep ROOT @codingame/monaco-vscode-96e83782-7f38-572e-8787-02e981f1c54f-common@20.2.1 OK for: @codingame/monaco-vscode-6bf85d7b-e6e3-54e9-9bc1-7e08d663f0f6-common@20.2.1 want: 20.2.1
+1474 silly fetch manifest @codingame/monaco-vscode-ebba7d85-8a22-5735-adf4-8299cd976dce-common@20.2.1
+1475 silly packumentCache full:https://registry.npmjs.org/@codingame%2fmonaco-vscode-ebba7d85-8a22-5735-adf4-8299cd976dce-common cache-miss
