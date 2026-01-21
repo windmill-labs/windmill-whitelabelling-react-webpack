@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://windmill-sdk-example.com",
   "dependencies": {
-    "@windmill-labs/windmill-react-sdk": "1.613.0",
+    "@windmill-labs/windmill-react-sdk": "1.613.2",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.1",
@@ -12,7 +12,7 @@
   },
   "overrides": {
     "monaco-graphql": {
-      "monaco-editor": "npm:@codingame/monaco-vscode-editor-api@~21.6.0"
+      "monaco-editor": "npm:@codingame/monaco-vscode-editor-api@=24.2.0"
     }
   },
   "devDependencies": {
