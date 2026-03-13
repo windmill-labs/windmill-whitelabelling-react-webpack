@@ -6,7 +6,11 @@ set -euo pipefail
 # outputs a markdown API reference.
 
 SDK="node_modules/@windmill-labs/windmill-react-sdk"
+# windmill-components may be nested inside the SDK or hoisted to top-level node_modules
 WC="$SDK/node_modules/windmill-components/package"
+if [ ! -d "$WC" ]; then
+  WC="node_modules/windmill-components/package"
+fi
 CUSTOM_UI="$WC/components/custom_ui.d.ts"
 
 if [ ! -f "$CUSTOM_UI" ]; then

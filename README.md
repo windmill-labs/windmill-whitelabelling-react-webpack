@@ -203,6 +203,7 @@ type FlowBuilderWhitelabelCustomUi = {
     tagSelectNoLabel?: boolean;
     tagLabel?: string;
     aiAgent?: boolean;
+    aiSandbox?: boolean;
 };
 ```
 
@@ -323,4 +324,5 @@ type ScriptBuilderWhitelabelCustomUi = {
     tagSelectPlaceholder?: string;
 };
 ```
+
 <!-- API_REFERENCE_END -->
