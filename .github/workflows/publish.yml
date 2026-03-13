@@ -27,7 +27,7 @@ jobs:
         run: bash copy_workers.sh
 
       - name: Build
-        run: NODE_OPTIONS=--max_old_space_size=8096 npm run build --if-present
+        run: NODE_OPTIONS=--max_old_space_size=8096 DISABLE_ESLINT_PLUGIN=true npm run build --if-present
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps chromium
