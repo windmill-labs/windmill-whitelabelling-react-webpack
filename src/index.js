@@ -11,6 +11,14 @@ import { OpenAPI as ClientOpenAPI } from "windmill-client";
 import { OpenAPI as ComponentsOpenAPI } from "@windmill-labs/windmill-react-sdk";
 import App from "./App";
 
+const RESIZE_OBSERVER_ERR = /ResizeObserver loop (limit exceeded|completed with undelivered notifications)/;
+window.addEventListener("error", (e) => {
+  if (RESIZE_OBSERVER_ERR.test(e.message)) {
+    e.stopImmediatePropagation();
+    e.preventDefault();
+  }
+});
+
 async function initializeClients() {
   ClientOpenAPI.BASE = "./api";
   ClientOpenAPI.CREDENTIALS = "include";
