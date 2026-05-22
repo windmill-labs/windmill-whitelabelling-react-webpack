@@ -30,7 +30,11 @@ export default function App() {
   // customIcon.white =
   //   "https://www.exabeam.com/wp-content/uploads/MISC-Exabeam-light-logo-01.svg";
 
-  const [email, setEmail] = useState("whitelabel@windmill-test.com");
+  const isLocalhost =
+    typeof window !== "undefined" && window.location.hostname === "localhost";
+  const [email, setEmail] = useState(
+    isLocalhost ? "admin@windmill.dev" : "whitelabel@windmill-test.com"
+  );
   const [password, setPassword] = useState("changeme");
   const [workspace, setWorkspace] = useState("");
 
