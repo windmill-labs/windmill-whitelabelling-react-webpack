@@ -33,6 +33,10 @@ jobs:
         run: npx playwright install --with-deps chromium
 
       - name: Run Playwright tests
+        # Non-blocking: failures are surfaced via annotations and the uploaded
+        # screenshots, but must not skip the Deploy step below (a flaky/broken
+        # smoke test should never freeze the live demo site).
+        continue-on-error: true
         run: npx playwright test
 
       - name: Upload test screenshots
