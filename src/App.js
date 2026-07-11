@@ -22,6 +22,7 @@ import {
 import ScriptEditor from "./ScriptEditor";
 import SchemaEditor from "./SchemaEditor";
 import ResourceEditor from "./ResourceEditor";
+import { SDK_VERSION } from "./sdkVersion";
 
 export default function App() {
   INITIAL_CODE.python3.script = `def main(x: str) -> str:`;
@@ -140,6 +141,10 @@ export default function App() {
           {error && error?.body ? error?.body?.toString() : error?.toString()}
         </div>
         <div className="text-xs">
+          <span className="font-mono font-semibold">
+            windmill-react-sdk v{SDK_VERSION}
+          </span>
+          <br />
           Example of using the Windmill SDK backed by app.windmill.dev to
           whitelabel Windmill's Flow Builder and App Viewer in a React app using
           the default create-react-app template. The sources are available{" "}
