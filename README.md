@@ -28,6 +28,35 @@ Monaco workers need to be available at the /assets/ path. This is done by
 calling `./copy_workers.sh` which will pull them from node_modules. It is
 already done on this repo.
 
+## Layout: the builders/editors need a height
+
+`FlowBuilder`, `ScriptBuilder`, `ScriptEditor` and `AppEditor` **fill their
+parent** — like Monaco or ag-grid, they have no intrinsic height and are only as
+tall as the container you give them. If the container has no resolved height they
+collapse to ~0px (Monaco / the flow graph render with no height), even when
+everything else is wired correctly.
+
+So the host app must give them a container with a **definite** height. A
+percentage/`h-full` chain only resolves if every ancestor up to the document has
+a height, so this app sets one once in [`src/style.css`](src/style.css):
+
+```css
+html,
+body,
+#root {
+  height: 100%;
+}
+#root {
+  display: flex;
+  flex-direction: column;
+}
+```
+
+and the builder container fills the remaining space as a flex child. See
+`src/App.js` for the layout and `src/ScriptEditor.js` for the alternative of
+wrapping a single editor in a fixed-height box (`h-screen`), which needs no
+`height:100%` chain because its height is definite on its own.
+
 ## Regenerating API Docs
 
 To update the API reference below after an SDK upgrade:
