@@ -80,3 +80,34 @@
     border: transparent;
   }
 }
+
+/* The SDK builders (ScriptBuilder / FlowBuilder) fill their parent: their
+   wrapper is `h-full flex flex-col` and their inner layout is `flex-1 min-h-0`.
+   That only resolves to a real height if the host establishes one — a
+   `height:100%` chain needs every ancestor (html, body, #root) to have a
+   definite height, otherwise `h-full` collapses to content height and Monaco /
+   the flow graph render at ~0px.
+
+   Give the document a full-viewport height chain and lay the app out as a flex
+   column so the builder container fills the space under the control bars.
+   (ScriptEditor already sizes itself via `h-screen`, so it is unaffected.) */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+/* The builder/host container (`p-2 h-full border embedded`) is the flex child
+   that should fill the remaining height. `flex: 1` + `height: auto` neutralises
+   its `h-full` so it grows into the leftover space instead of forcing 100% of
+   the viewport (which would overflow past the control bars). */
+#root > .embedded {
+  flex: 1 1 0%;
+  min-height: 0;
+  height: auto;
+}
