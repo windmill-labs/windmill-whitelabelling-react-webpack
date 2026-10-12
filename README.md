@@ -187,12 +187,14 @@ Set a field to `false` to hide the corresponding UI element.
 
 ```typescript
 type FlowBuilderWhitelabelCustomUi = {
+    /** Opt out of FlowEditor's `modalPanel` to keep the classic always-docked pane. */
+    modalPanel?: boolean;
     topBar?: {
         path?: boolean;
+        editablePath?: boolean;
         export?: boolean;
         history?: boolean;
         aiBuilder?: boolean;
-        tutorials?: boolean;
         diff?: boolean;
         extraDeployOptions?: boolean;
         editableSummary?: boolean;
@@ -225,6 +227,8 @@ type FlowBuilderWhitelabelCustomUi = {
     languages?: (SupportedLanguage | 'docker' | 'bunnative')[];
     scriptFork?: boolean;
     scriptEdit?: boolean;
+    /** Set to false to hide the inline step's "Save to workspace" button. */
+    saveToWorkspace?: boolean;
     tagEdit?: boolean;
     editorBar?: EditorBarUi;
     downloadLogs?: boolean;
@@ -233,6 +237,9 @@ type FlowBuilderWhitelabelCustomUi = {
     tagLabel?: string;
     aiAgent?: boolean;
     aiSandbox?: boolean;
+    suggestIntegration?: boolean;
+    suggestScript?: boolean;
+    defaultTimeout?: number;
 };
 ```
 
@@ -253,10 +260,17 @@ type PreviewPanelUi = {
     disableTracing?: boolean;
     disableTriggerCaptures?: boolean;
     disableTriggerButton?: boolean;
+    disableJsonView?: boolean;
     displayResult?: DisplayResultUi;
     disableVariablePicker?: boolean;
     disableDownload?: boolean;
     tagLabel?: string;
+    hideArgs?: boolean;
+    logsResultSideBySide?: boolean;
+    downstreamSubscribers?: number;
+    argsAboveLogs?: boolean;
+    loadLastRunOnMount?: boolean;
+    onBoundedRun?: () => void;
 };
 ```
 
@@ -283,6 +297,7 @@ type EditorBarUi = {
     s3object?: boolean;
     database?: boolean;
     ducklake?: boolean;
+    metrics?: boolean;
     dataTable?: boolean;
     debug?: boolean;
     history?: boolean;
@@ -351,7 +366,7 @@ type ScriptBuilderWhitelabelCustomUi = {
     editorBar?: EditorBarUi;
     previewPanel?: PreviewPanelUi;
     tagSelectPlaceholder?: string;
+    defaultTimeout?: number;
 };
 ```
-
 <!-- API_REFERENCE_END -->

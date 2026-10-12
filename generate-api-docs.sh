@@ -11,6 +11,10 @@ WC="$SDK/node_modules/windmill-components/package"
 if [ ! -d "$WC" ]; then
   WC="node_modules/windmill-components/package"
 fi
+# Published as @windmill-labs/components since the package was renamed.
+if [ ! -d "$WC" ]; then
+  WC="node_modules/@windmill-labs/components/package"
+fi
 CUSTOM_UI="$WC/components/custom_ui.d.ts"
 
 if [ ! -f "$CUSTOM_UI" ]; then
