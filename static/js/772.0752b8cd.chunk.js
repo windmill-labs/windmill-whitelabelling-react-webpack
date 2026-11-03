@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkWindmill_Whitelabel_Example=self.webpackChunkWindmill_Whitelabel_Example||[]).push([[772],{772(e,l,i){i.d(l,{createArchitectureServices:()=>a.M});var a=i(9406)}}]);

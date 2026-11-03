@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkWindmill_Whitelabel_Example=self.webpackChunkWindmill_Whitelabel_Example||[]).push([[32083],{32083(e,l,t){t.r(l),t.d(l,{default:()=>i});var i={type:"sync",importFFI:()=>t.e(64194).then(t.bind(t,41813)).then(e=>e.QuickJSFFI),importModuleLoader:()=>t.e(13935).then(t.bind(t,13935)).then(e=>e.default)}}}]);
