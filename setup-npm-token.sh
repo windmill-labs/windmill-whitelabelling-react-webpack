@@ -2,7 +2,8 @@
 set -euo pipefail
 
 REPO="windmill-labs/windmill-whitelabelling-react-webpack"
-URL="https://www.npmjs.com/settings/rubenfiszel/tokens/granular-access-tokens/new"
+PACKAGE="@windmill-labs/windmill-react-sdk"
+URL="https://www.npmjs.com/settings/~/tokens/granular-access-tokens/new"
 
 echo "=== NPM Token Setup for GitHub Actions ==="
 echo ""
@@ -13,9 +14,10 @@ echo ""
 echo "Create a token with:"
 echo "  - Type:        Granular Access Token"
 echo "  - Name:        CI: $REPO"
-echo "  - Expiration:  90 days"
-echo "  - Packages:    Only select packages -> @windmill-labs/windmill-react-sdk"
-echo "  - Permissions: Read-only"
+echo "  - Expiration:  Custom, as far out as npm allows"
+echo "  - Packages:    Only select packages -> $PACKAGE"
+echo "  - Permissions: Read-only (npm caps tokens with write access at 90 days)"
+echo "  - Bypass 2FA:  No"
 echo ""
 
 if command -v xdg-open &>/dev/null; then
@@ -32,14 +34,22 @@ if [ -z "$TOKEN" ]; then
   exit 1
 fi
 
-TRUNCATED="${TOKEN:0:8}...${TOKEN: -4}"
+echo "Checking that the token can read $PACKAGE..."
+# Outside the repo and without ~/.npmrc, so that only the pasted token can authenticate.
+CHECK_DIR="$(mktemp -d)"
+trap 'rm -rf "$CHECK_DIR"' EXIT
+echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > "$CHECK_DIR/npmrc"
+if ! (cd "$CHECK_DIR" && NPM_TOKEN="$TOKEN" npm view "$PACKAGE" name \
+  --userconfig "$CHECK_DIR/npmrc" --cache "$CHECK_DIR/cache" --prefer-online > /dev/null); then
+  echo "ERROR: this token cannot read $PACKAGE. The secret was left unchanged."
+  exit 1
+fi
 
 echo "Setting NPM_TOKEN secret on $REPO..."
-gh secret set NPM_TOKEN -R "$REPO" <<< "$TOKEN"
+printf '%s' "$TOKEN" | gh secret set NPM_TOKEN -R "$REPO"
 
 echo ""
 echo "=== Summary ==="
-echo "  token:        $TRUNCATED"
 echo "  github repo:  $REPO"
 echo "  secret name:  NPM_TOKEN"
 echo ""

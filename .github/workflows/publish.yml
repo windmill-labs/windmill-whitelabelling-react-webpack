@@ -19,6 +19,16 @@ jobs:
         with:
           node-version: "20.x"
 
+      # npm answers an expired token with a 404 on the tarball, so name the real cause.
+      - name: Check npm read token
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: |
+          if ! npm view @windmill-labs/windmill-react-sdk name; then
+            echo "::error::Cannot read the private SDK from npm. If NPM_TOKEN expired, run ./setup-npm-token.sh"
+            exit 1
+          fi
+
       - run: npm ci
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -47,6 +57,7 @@ jobs:
           path: tests/*.png
 
       - name: Deploy
+        if: github.ref == 'refs/heads/main'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
