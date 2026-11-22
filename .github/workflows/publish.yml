@@ -56,8 +56,16 @@ jobs:
           name: playwright-screenshots
           path: tests/*.png
 
+      # In the shell because `==` in expressions ignores case, and refs do not.
+      - name: Check deploy branch
+        id: target
+        run: |
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            echo "deploy=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Deploy
-        if: github.ref == 'refs/heads/main'
+        if: steps.target.outputs.deploy == 'true'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages

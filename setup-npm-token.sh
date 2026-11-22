@@ -21,9 +21,9 @@ echo "  - Bypass 2FA:  No"
 echo ""
 
 if command -v xdg-open &>/dev/null; then
-  xdg-open "$URL" 2>/dev/null
+  xdg-open "$URL" 2>/dev/null || true
 elif command -v open &>/dev/null; then
-  open "$URL" 2>/dev/null
+  open "$URL" 2>/dev/null || true
 fi
 
 read -rsp "Paste the token here: " TOKEN
